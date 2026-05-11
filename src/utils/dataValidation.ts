@@ -8,10 +8,22 @@ const VALID_RESTAURANT_STATUSES = new Set<Restaurant['status']>([
   'unknown',
 ]);
 
+const LOWERCASE_KEBAB_CASE_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+function assertLowercaseKebabCaseId(id: string, label: string) {
+  if (!LOWERCASE_KEBAB_CASE_PATTERN.test(id)) {
+    throw new Error(
+      `${label} "${id}" must use lowercase kebab-case letters and numbers only.`,
+    );
+  }
+}
+
 export function validateRestaurantRegistry(
   restaurants: Record<RestaurantId, Restaurant> = RESTAURANTS,
 ) {
   for (const [restaurantId, restaurant] of Object.entries(restaurants)) {
+    assertLowercaseKebabCaseId(restaurantId, 'Restaurant id');
+
     if (restaurant.id !== restaurantId) {
       throw new Error(
         `Restaurant registry key "${restaurantId}" does not match restaurant.id "${restaurant.id}".`,
@@ -55,6 +67,8 @@ export function validateCategoryMemberships(
   restaurants: Record<RestaurantId, Restaurant> = RESTAURANTS,
 ) {
   for (const category of categories) {
+    assertLowercaseKebabCaseId(category.id, 'Category id');
+
     const seenRestaurantIds = new Set<RestaurantId>();
 
     for (const restaurantId of category.restaurantIds) {

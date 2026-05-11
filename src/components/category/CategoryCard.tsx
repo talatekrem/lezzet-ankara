@@ -22,8 +22,8 @@ export function CategoryCard({ category, onPress }: CategoryCardProps) {
       <View style={styles.iconWrap}>
         <RightArrowIcon
           color={COLORS.accentGoldStart}
-          height={16}
-          width={16}
+          height={22}
+          width={22}
         />
       </View>
     </Pressable>
@@ -33,33 +33,37 @@ export function CategoryCard({ category, onPress }: CategoryCardProps) {
 const styles = StyleSheet.create({
   card: {
     alignItems: 'center',
-    backgroundColor: COLORS.surface,
-    borderColor: COLORS.border,
-    borderRadius: RADIUS.xl,
+    backgroundColor: COLORS.surfaceSoft,
+    borderColor: COLORS.borderGoldSoft,
+    borderRadius: RADIUS.sm,
     borderWidth: StyleSheet.hairlineWidth,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    minHeight: 76,
+    minHeight: 36,
     paddingHorizontal: SPACING.lg,
-    paddingVertical: SPACING.lg,
+    paddingVertical: SPACING.xs,
+    shadowColor: COLORS.accentGoldStart,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.12,
+    shadowRadius: 6,
   },
   cardPressed: {
-    opacity: 0.78,
+    opacity: 0.76,
   },
   name: {
     ...TYPOGRAPHY.restaurantName,
     flex: 1,
-    letterSpacing: 0.15,
+    color: COLORS.textSecondary,
+    fontFamily: TYPOGRAPHY.meta.fontFamily,
+    fontSize: 16,
+    letterSpacing: 2.3,
+    lineHeight: 20,
     marginRight: SPACING.md,
   },
   iconWrap: {
     alignItems: 'center',
-    backgroundColor: COLORS.surfaceSoft,
-    borderColor: COLORS.borderSoft,
-    borderRadius: RADIUS.pill,
-    borderWidth: StyleSheet.hairlineWidth,
-    height: 34,
+    height: 20,
     justifyContent: 'center',
-    width: 34,
+    width: 26,
   },
 });

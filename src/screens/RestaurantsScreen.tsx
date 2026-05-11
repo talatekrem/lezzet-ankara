@@ -22,6 +22,7 @@ export function RestaurantsScreen({
   const { categoryId } = route.params;
   const category = getCategoryById(categoryId);
   const restaurants = getRestaurantsByCategoryId(categoryId);
+  const title = category?.name.toLocaleUpperCase('tr-TR') ?? 'KATEGORİ';
 
   function handleMapPress(restaurant: Restaurant) {
     void openRestaurantLocation(restaurant.mapQuery);
@@ -46,8 +47,8 @@ export function RestaurantsScreen({
           <RightArrowIcon height={16} style={styles.backIcon} width={16} />
         </Pressable>
 
-        <View style={styles.headerText}>
-          <Text style={styles.title}>{category?.name ?? 'Kategori'}</Text>
+        <View style={styles.titleWrap}>
+          <Text style={styles.title}>{title}</Text>
           {category?.description ? (
             <Text style={styles.subtitle}>{category.description}</Text>
           ) : null}
@@ -73,33 +74,47 @@ const styles = StyleSheet.create({
     paddingTop: SPACING.lg,
   },
   header: {
-    marginBottom: SPACING.lg,
+    marginBottom: 58,
+    minHeight: 86,
   },
   backButton: {
     alignItems: 'center',
     backgroundColor: COLORS.surface,
-    borderColor: COLORS.borderSoft,
-    borderRadius: RADIUS.pill,
+    borderColor: COLORS.borderGoldSoft,
+    borderRadius: RADIUS.sm,
     borderWidth: StyleSheet.hairlineWidth,
-    height: 40,
+    height: 38,
     justifyContent: 'center',
-    marginBottom: SPACING.md,
-    width: 40,
+    shadowColor: COLORS.accentGoldStart,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    width: 38,
   },
   backIcon: {
     transform: [{ rotate: '180deg' }],
   },
-  headerText: {
-    gap: SPACING.xs,
+  titleWrap: {
+    alignItems: 'center',
+    marginTop: SPACING.xs,
   },
   title: {
     ...TYPOGRAPHY.screenTitle,
+    color: COLORS.textSecondary,
+    fontFamily: TYPOGRAPHY.meta.fontFamily,
+    fontSize: 24,
+    letterSpacing: 7,
+    lineHeight: 30,
+    textAlign: 'center',
   },
   subtitle: {
     ...TYPOGRAPHY.meta,
+    letterSpacing: 0.25,
+    marginTop: SPACING.sm,
+    textAlign: 'center',
   },
   list: {
-    gap: SPACING.sm,
+    gap: 26,
   },
   pressed: {
     opacity: 0.78,

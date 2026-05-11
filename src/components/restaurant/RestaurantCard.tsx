@@ -1,5 +1,6 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
+import Svg, { Path, Rect } from 'react-native-svg';
 
 import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
 import type { Restaurant } from '../../types';
@@ -10,9 +11,9 @@ type RestaurantCardProps = {
 };
 
 const STATUS_LABELS: Record<Restaurant['status'], string> = {
-  open: 'Open',
-  closed: 'Closed',
-  unknown: 'Unknown',
+  open: 'Açık',
+  closed: 'Kapalı',
+  unknown: 'Bilinmiyor',
 };
 
 const MAP_BUTTON_GRADIENT = [
@@ -26,7 +27,7 @@ export function RestaurantCard({
 }: RestaurantCardProps) {
   return (
     <View style={styles.card}>
-      <View style={styles.main}>
+      <View style={styles.header}>
         <View style={styles.titleRow}>
           <Text numberOfLines={1} style={styles.name}>
             {restaurant.name}
@@ -34,10 +35,17 @@ export function RestaurantCard({
           <StatusBadge status={restaurant.status} />
         </View>
 
-        <Text style={styles.district}>{restaurant.district}</Text>
-        <Text style={styles.meta}>
-          {restaurant.rating.toFixed(1)} rating / {restaurant.reviewCount} reviews
-        </Text>
+        <View style={styles.metaRow}>
+          <Text style={styles.meta}>{restaurant.district}</Text>
+          <Text style={styles.meta}>puan : {restaurant.rating.toFixed(1)}</Text>
+          <Text style={styles.meta}>yorum : {restaurant.reviewCount}</Text>
+        </View>
+
+        {restaurant.note ? (
+          <Text numberOfLines={1} style={styles.note}>
+            {restaurant.note}
+          </Text>
+        ) : null}
       </View>
 
       <Pressable
@@ -49,10 +57,38 @@ export function RestaurantCard({
         ]}
       >
         <LinearGradient colors={MAP_BUTTON_GRADIENT} style={styles.mapButton}>
-          <Text style={styles.mapButtonText}>Map</Text>
+          <MapIcon />
+          <Text style={styles.mapButtonText}>Haritada Gör</Text>
         </LinearGradient>
       </Pressable>
     </View>
+  );
+}
+
+function MapIcon() {
+  return (
+    <Svg fill="none" height={28} viewBox="0 0 32 32" width={28}>
+      <Path
+        d="M5 7.5L12.5 4L20 7.5L27 4.5V24.5L20 27.5L12.5 24L5 27.5V7.5Z"
+        stroke={COLORS.accentGoldText}
+        strokeLinejoin="round"
+        strokeWidth={2.2}
+      />
+      <Path
+        d="M12.5 4V24M20 7.5V27.5"
+        stroke={COLORS.accentGoldText}
+        strokeLinecap="round"
+        strokeWidth={2.2}
+      />
+      <Rect
+        height={26}
+        opacity={0.001}
+        stroke={COLORS.accentGoldText}
+        width={26}
+        x={3}
+        y={3}
+      />
+    </Svg>
   );
 }
 
@@ -68,46 +104,57 @@ function StatusBadge({ status }: Pick<Restaurant, 'status'>) {
 
 const styles = StyleSheet.create({
   card: {
-    alignItems: 'stretch',
     backgroundColor: COLORS.surface,
-    borderColor: COLORS.border,
-    borderRadius: RADIUS.xl,
+    borderColor: COLORS.borderGoldSoft,
+    borderRadius: 34,
     borderWidth: StyleSheet.hairlineWidth,
-    flexDirection: 'row',
-    gap: SPACING.md,
-    minHeight: 108,
-    paddingHorizontal: SPACING.lg,
-    paddingVertical: SPACING.lg,
+    paddingHorizontal: SPACING.xl,
+    paddingVertical: SPACING.md,
+    shadowColor: COLORS.accentGoldStart,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.06,
+    shadowRadius: 13,
   },
-  main: {
-    flex: 1,
-    justifyContent: 'center',
+  header: {
+    marginBottom: SPACING.lg,
   },
   titleRow: {
-    alignItems: 'flex-start',
+    alignItems: 'center',
     flexDirection: 'row',
     gap: SPACING.sm,
-    marginBottom: SPACING.sm,
+    marginBottom: SPACING.xs,
   },
   name: {
     ...TYPOGRAPHY.restaurantName,
     flex: 1,
-    letterSpacing: 0.1,
-  },
-  district: {
-    ...TYPOGRAPHY.meta,
     color: COLORS.textSecondary,
+    fontSize: 13,
+    lineHeight: 17,
+    letterSpacing: 0.2,
+  },
+  metaRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: SPACING.md,
     marginBottom: SPACING.xs,
   },
   meta: {
     ...TYPOGRAPHY.meta,
+    color: COLORS.textSecondary,
+    fontSize: 11,
+    lineHeight: 15,
+  },
+  note: {
+    ...TYPOGRAPHY.meta,
+    color: COLORS.textMuted,
+    fontSize: 11,
+    lineHeight: 15,
   },
   badge: {
-    backgroundColor: COLORS.surfaceSoft,
+    backgroundColor: 'rgba(182, 176, 162, 0.09)',
     borderRadius: RADIUS.pill,
-    borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: SPACING.sm,
-    paddingVertical: 3,
+    paddingVertical: 2,
   },
   open: {
     borderColor: COLORS.success,
@@ -116,14 +163,14 @@ const styles = StyleSheet.create({
     borderColor: COLORS.danger,
   },
   unknown: {
-    borderColor: COLORS.border,
+    backgroundColor: 'rgba(182, 176, 162, 0.09)',
   },
   badgeText: {
     ...TYPOGRAPHY.meta,
     fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
-    fontSize: 11,
-    lineHeight: 14,
-    letterSpacing: 0.25,
+    fontSize: 10,
+    lineHeight: 12,
+    letterSpacing: 1.4,
   },
   openText: {
     color: COLORS.success,
@@ -132,25 +179,29 @@ const styles = StyleSheet.create({
     color: COLORS.danger,
   },
   unknownText: {
-    color: COLORS.textMuted,
+    color: COLORS.textSecondary,
   },
   mapButtonPressable: {
-    alignSelf: 'center',
     borderRadius: RADIUS.pill,
     overflow: 'hidden',
   },
   mapButton: {
     alignItems: 'center',
     borderRadius: RADIUS.pill,
+    flexDirection: 'row',
+    gap: SPACING.md,
     justifyContent: 'center',
-    minWidth: 64,
-    paddingHorizontal: SPACING.md,
+    minHeight: 48,
+    paddingHorizontal: SPACING.xl,
     paddingVertical: SPACING.sm,
   },
   mapButtonText: {
     ...TYPOGRAPHY.buttonLabel,
+    fontSize: 22,
+    letterSpacing: 5,
+    lineHeight: 28,
   },
   pressed: {
-    opacity: 0.78,
+    opacity: 0.82,
   },
 });

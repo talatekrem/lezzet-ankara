@@ -5,7 +5,7 @@ import { CategoryCard } from '../components/category/CategoryCard';
 import { Screen } from '../components/layout/Screen';
 import { getAllCategories } from '../data';
 import type { RootStackParamList } from '../navigation/types';
-import { SPACING, TYPOGRAPHY } from '../theme';
+import { COLORS, SPACING, TYPOGRAPHY } from '../theme';
 
 const categories = getAllCategories();
 
@@ -23,7 +23,6 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
     >
       <View style={styles.header}>
         <Text style={styles.title}>LEZZET ANKARA</Text>
-        <Text style={styles.subtitle}>Ankara&apos;da ne yemek istiyorsun?</Text>
       </View>
 
       <View style={styles.list}>
@@ -44,19 +43,22 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
 const styles = StyleSheet.create({
   content: {
     paddingBottom: SPACING.xxl,
-    paddingTop: SPACING.lg,
+    paddingTop: 74,
   },
   header: {
-    marginBottom: SPACING.lg,
+    alignItems: 'center',
+    marginBottom: 78,
   },
   title: {
     ...TYPOGRAPHY.appTitle,
-    marginBottom: SPACING.sm,
-  },
-  subtitle: {
-    ...TYPOGRAPHY.meta,
+    color: COLORS.textSecondary,
+    fontFamily: TYPOGRAPHY.screenTitle.fontFamily,
+    fontSize: 30,
+    letterSpacing: 7,
+    lineHeight: 36,
+    textAlign: 'center',
   },
   list: {
-    gap: SPACING.sm,
+    gap: 26,
   },
 });

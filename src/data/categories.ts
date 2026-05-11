@@ -4,7 +4,12 @@ export const CATEGORIES: Category[] = [
   {
     id: 'alinazik',
     name: 'Alinazik',
-    restaurantIds: [],
+    restaurantIds: [
+      'meshur-kebapci-cahit-usta',
+      'cukuraga',
+      'masabasi',
+      'muslum-kebap',
+    ],
   },
   {
     id: 'aspava-kebap',

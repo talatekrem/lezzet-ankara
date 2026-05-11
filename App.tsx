@@ -1,10 +1,9 @@
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
-import { StyleSheet, Text } from 'react-native';
 
-import { Screen } from './src/components/layout/Screen';
-import { FONT_FAMILY, TYPOGRAPHY } from './src/theme';
+import { CategoriesScreen } from './src/screens/CategoriesScreen';
+import { FONT_FAMILY } from './src/theme';
 
 SplashScreen.preventAutoHideAsync().catch(() => {
   // Splash may already be controlled by the native runtime during fast refresh.
@@ -31,20 +30,5 @@ export default function App() {
     return null;
   }
 
-  return (
-    <Screen contentContainerStyle={styles.content}>
-      <Text style={[TYPOGRAPHY.appTitle, styles.title]}>LEZZET ANKARA</Text>
-    </Screen>
-  );
+  return <CategoriesScreen />;
 }
-
-const styles = StyleSheet.create({
-  content: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    textAlign: 'center',
-  },
-});

@@ -2,7 +2,7 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
-import { CategoriesScreen } from './src/screens/CategoriesScreen';
+import { AppNavigator } from './src/navigation/AppNavigator';
 import { FONT_FAMILY } from './src/theme';
 
 SplashScreen.preventAutoHideAsync().catch(() => {
@@ -30,5 +30,5 @@ export default function App() {
     return null;
   }
 
-  return <CategoriesScreen />;
+  return <AppNavigator />;
 }

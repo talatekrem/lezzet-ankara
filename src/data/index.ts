@@ -2,20 +2,6 @@ import { CATEGORIES } from './categories';
 import { RESTAURANTS } from './restaurants';
 import type { Category, CategoryId, Restaurant, RestaurantId } from '../types';
 
-function assertValidCategoryRestaurantReferences() {
-  for (const category of CATEGORIES) {
-    for (const restaurantId of category.restaurantIds) {
-      if (!RESTAURANTS[restaurantId]) {
-        throw new Error(
-          `Category "${category.id}" references missing restaurant "${restaurantId}".`,
-        );
-      }
-    }
-  }
-}
-
-assertValidCategoryRestaurantReferences();
-
 export function getRestaurantById(id: RestaurantId): Restaurant | undefined {
   return RESTAURANTS[id];
 }

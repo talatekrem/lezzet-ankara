@@ -44,10 +44,10 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
 const styles = StyleSheet.create({
   content: {
     paddingBottom: SPACING.xxl,
-    paddingTop: SPACING.xl,
+    paddingTop: SPACING.lg,
   },
   header: {
-    marginBottom: SPACING.xl,
+    marginBottom: SPACING.lg,
   },
   title: {
     ...TYPOGRAPHY.appTitle,
@@ -57,6 +57,6 @@ const styles = StyleSheet.create({
     ...TYPOGRAPHY.meta,
   },
   list: {
-    gap: SPACING.md,
+    gap: SPACING.sm,
   },
 });

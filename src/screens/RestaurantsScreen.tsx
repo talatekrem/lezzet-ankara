@@ -70,10 +70,10 @@ export function RestaurantsScreen({
 const styles = StyleSheet.create({
   content: {
     paddingBottom: SPACING.xxl,
-    paddingTop: SPACING.xl,
+    paddingTop: SPACING.lg,
   },
   header: {
-    marginBottom: SPACING.xl,
+    marginBottom: SPACING.lg,
   },
   backButton: {
     alignItems: 'center',
@@ -83,14 +83,14 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
     height: 40,
     justifyContent: 'center',
-    marginBottom: SPACING.lg,
+    marginBottom: SPACING.md,
     width: 40,
   },
   backIcon: {
     transform: [{ rotate: '180deg' }],
   },
   headerText: {
-    gap: SPACING.sm,
+    gap: SPACING.xs,
   },
   title: {
     ...TYPOGRAPHY.screenTitle,
@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
     ...TYPOGRAPHY.meta,
   },
   list: {
-    gap: SPACING.md,
+    gap: SPACING.sm,
   },
   pressed: {
-    opacity: 0.72,
+    opacity: 0.78,
   },
 });

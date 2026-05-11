@@ -1,3 +1,4 @@
+import { LinearGradient } from 'expo-linear-gradient';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
@@ -13,6 +14,11 @@ const STATUS_LABELS: Record<Restaurant['status'], string> = {
   closed: 'Closed',
   unknown: 'Unknown',
 };
+
+const MAP_BUTTON_GRADIENT = [
+  COLORS.accentGoldStart,
+  COLORS.accentGoldEnd,
+] as const;
 
 export function RestaurantCard({
   restaurant,
@@ -37,9 +43,14 @@ export function RestaurantCard({
       <Pressable
         accessibilityRole="button"
         onPress={() => onMapPress(restaurant)}
-        style={({ pressed }) => [styles.mapButton, pressed && styles.pressed]}
+        style={({ pressed }) => [
+          styles.mapButtonPressable,
+          pressed && styles.pressed,
+        ]}
       >
-        <Text style={styles.mapButtonText}>Map</Text>
+        <LinearGradient colors={MAP_BUTTON_GRADIENT} style={styles.mapButton}>
+          <Text style={styles.mapButtonText}>Map</Text>
+        </LinearGradient>
       </Pressable>
     </View>
   );
@@ -57,28 +68,31 @@ function StatusBadge({ status }: Pick<Restaurant, 'status'>) {
 
 const styles = StyleSheet.create({
   card: {
-    alignItems: 'center',
+    alignItems: 'stretch',
     backgroundColor: COLORS.surface,
-    borderColor: COLORS.borderSoft,
-    borderRadius: RADIUS.lg,
+    borderColor: COLORS.border,
+    borderRadius: RADIUS.xl,
     borderWidth: StyleSheet.hairlineWidth,
     flexDirection: 'row',
     gap: SPACING.md,
+    minHeight: 108,
     paddingHorizontal: SPACING.lg,
-    paddingVertical: SPACING.md,
+    paddingVertical: SPACING.lg,
   },
   main: {
     flex: 1,
+    justifyContent: 'center',
   },
   titleRow: {
-    alignItems: 'center',
+    alignItems: 'flex-start',
     flexDirection: 'row',
     gap: SPACING.sm,
-    marginBottom: SPACING.xs,
+    marginBottom: SPACING.sm,
   },
   name: {
     ...TYPOGRAPHY.restaurantName,
     flex: 1,
+    letterSpacing: 0.1,
   },
   district: {
     ...TYPOGRAPHY.meta,
@@ -89,27 +103,27 @@ const styles = StyleSheet.create({
     ...TYPOGRAPHY.meta,
   },
   badge: {
+    backgroundColor: COLORS.surfaceSoft,
     borderRadius: RADIUS.pill,
     borderWidth: StyleSheet.hairlineWidth,
     paddingHorizontal: SPACING.sm,
-    paddingVertical: SPACING.xs,
+    paddingVertical: 3,
   },
   open: {
-    backgroundColor: COLORS.surfaceSoft,
     borderColor: COLORS.success,
   },
   closed: {
-    backgroundColor: COLORS.surfaceSoft,
     borderColor: COLORS.danger,
   },
   unknown: {
-    backgroundColor: COLORS.surfaceSoft,
     borderColor: COLORS.border,
   },
   badgeText: {
     ...TYPOGRAPHY.meta,
+    fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
     fontSize: 11,
     lineHeight: 14,
+    letterSpacing: 0.25,
   },
   openText: {
     color: COLORS.success,
@@ -120,19 +134,23 @@ const styles = StyleSheet.create({
   unknownText: {
     color: COLORS.textMuted,
   },
-  mapButton: {
-    backgroundColor: COLORS.surfaceSoft,
-    borderColor: COLORS.borderSoft,
+  mapButtonPressable: {
+    alignSelf: 'center',
     borderRadius: RADIUS.pill,
-    borderWidth: StyleSheet.hairlineWidth,
+    overflow: 'hidden',
+  },
+  mapButton: {
+    alignItems: 'center',
+    borderRadius: RADIUS.pill,
+    justifyContent: 'center',
+    minWidth: 64,
     paddingHorizontal: SPACING.md,
     paddingVertical: SPACING.sm,
   },
   mapButtonText: {
     ...TYPOGRAPHY.buttonLabel,
-    color: COLORS.accentGoldStart,
   },
   pressed: {
-    opacity: 0.72,
+    opacity: 0.78,
   },
 });

@@ -66,8 +66,16 @@ export function validateCategoryMemberships(
   categories: Category[] = CATEGORIES,
   restaurants: Record<RestaurantId, Restaurant> = RESTAURANTS,
 ) {
+  const seenCategoryIds = new Set<string>();
+
   for (const category of categories) {
     assertLowercaseKebabCaseId(category.id, 'Category id');
+
+    if (seenCategoryIds.has(category.id)) {
+      throw new Error(`Duplicate category id "${category.id}" found.`);
+    }
+
+    seenCategoryIds.add(category.id);
 
     const seenRestaurantIds = new Set<RestaurantId>();
 

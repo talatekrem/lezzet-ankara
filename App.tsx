@@ -1,3 +1,4 @@
+import { requireOptionalNativeModule } from 'expo';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
@@ -20,6 +21,15 @@ export default function App() {
     [FONT_FAMILY.interMedium]: require('./assets/fonts/inter/Inter_18pt-Medium.ttf'),
     [FONT_FAMILY.interSemiBold]: require('./assets/fonts/inter/Inter_18pt-SemiBold.ttf'),
   });
+
+  useEffect(() => {
+    const DevMenuPreferences = requireOptionalNativeModule<{
+      setPreferencesAsync?: (prefs: { showFloatingActionButton: boolean }) => Promise<void>;
+    }>('DevMenuPreferences');
+    void DevMenuPreferences?.setPreferencesAsync?.({
+      showFloatingActionButton: false,
+    });
+  }, []);
 
   useEffect(() => {
     if (fontsLoaded) {

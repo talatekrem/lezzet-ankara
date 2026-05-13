@@ -1,0 +1,54 @@
+---
+description: Lezzet Ankara restaurant registry, categories-as-IDs-only, weighted display ranking
+alwaysApply: true
+---
+
+# Restaurant data and ranking architecture
+
+Follow this model when editing structured data (`src/data/`, rankings, validations).
+
+## Registry-first architecture
+
+- **Single source of truth:** All venue records live in `src/data/restaurants.ts` as entries in object `RESTAURANTS`: one **kebab-case** `id` per restaurant, keyed by registry key == `Restaurant.id`.
+- **No duplicated restaurant definitions:** Never copy the full restaurant payload into categories or duplicate the same slug with two different IDs for the same place. Add or update exactly one registry entry.
+
+## Categories only reference IDs
+
+- `src/data/categories.ts` (and nested `Category` objects) MUST keep **`restaurantIds: RestaurantId[]` only** for membership — no inline restaurant payloads, nested objects mirroring venues, or category-local duplicates of RESTAURANTS rows.
+
+## Weighted ranking (display order)
+
+- **Always** derive the ordered list shown for a category screen through **`getRestaurantsByCategoryId`** in `src/data/index.ts`.
+- **`getRestaurantsByCategoryId` MUST ALWAYS** resolve registry rows from `RESTAURANTS`, then **`[...list].sort(compareRestaurantsForDisplay)`** — never return unsorted slices of `category.restaurantIds`.
+
+Compare / tie-break (`src/utils/restaurantRanking.ts`), in order:
+
+1. **Weighted display score descending** (`restaurantDisplayScore`: Bayesian-style blend of `rating`, `reviewCount`, and configured prior).
+2. If equal → **reviewCount descending**.
+3. If equal → **raw `rating` descending**.
+4. If equal → **`name ascending`** using Turkish locale (`localeCompare(..., 'tr', { sensitivity: 'base' })`).
+
+Keep scoring logic centralized in **`compareRestaurantsForDisplay`** — do not reimplement ad-hoc sort keys in screens or duplicated helpers unless explicitly migrating architecture.
+
+## After changing restaurant or category membership data
+
+Run and fix failures before considering the edit done:
+
+```bash
+npx tsc --noEmit
+npx tsx scripts/verify-weighted-restaurant-ranking.ts
+```
+
+The verification script asserts every category with `restaurantIds` is strictly ordered according to **`compareRestaurantsForDisplay`** (see `scripts/verify-weighted-restaurant-ranking.ts`). Use `--verbose` for full dumps.
+
+## Product scope reminder (minimal app)
+
+Preserve this restraint unless the product explicitly changes:
+
+- No search UI or search stack.
+- No favorites / bookmarks.
+- No backend or remote API for app data here.
+- No auth / accounts.
+- No filters UI on category lists beyond what shipped.
+
+Do not broaden scope casually when touching data layers.

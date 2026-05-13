@@ -2,7 +2,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import MapIcon from '../../../assets/icons/map.svg';
-import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
+import { COLORS, FONT_FAMILY, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
 import type { Restaurant } from '../../types';
 
 type RestaurantCardProps = {
@@ -35,7 +35,9 @@ export function RestaurantCard({
         <View style={styles.headerRow}>
           <View style={styles.headerMain}>
             <View style={styles.titleRow}>
-              {rank ? <Text style={styles.rank}>{rank}</Text> : null}
+              {rank != null ? (
+                <Text style={styles.rank}>{rank}</Text>
+              ) : null}
               <Text numberOfLines={1} style={styles.name}>
                 {restaurant.name}
               </Text>
@@ -93,7 +95,7 @@ export function RestaurantCard({
         ]}
       >
         <LinearGradient colors={MAP_BUTTON_GRADIENT} style={styles.mapButton}>
-          <MapIcon height={24} width={24} />
+          <MapIcon height={20} width={20} />
           <Text style={styles.mapButtonText}>Haritada Gör</Text>
         </LinearGradient>
       </Pressable>
@@ -187,18 +189,19 @@ const styles = StyleSheet.create({
     maxWidth: '100%',
   },
   titleRow: {
-    alignItems: 'center',
+    alignItems: 'baseline',
     flexDirection: 'row',
     gap: SPACING.sm,
     marginBottom: 6,
   },
   rank: {
-    ...TYPOGRAPHY.meta,
     color: COLORS.restaurantNote,
-    fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
-    fontSize: 11,
-    lineHeight: 14,
-    minWidth: 18,
+    flexShrink: 0,
+    fontFamily: TYPOGRAPHY.meta.fontFamily,
+    fontSize: 13,
+    fontVariant: ['tabular-nums'],
+    letterSpacing: 0.35,
+    lineHeight: 16,
   },
   name: {
     ...TYPOGRAPHY.restaurantName,
@@ -233,30 +236,34 @@ const styles = StyleSheet.create({
   badge: {
     backgroundColor: COLORS.badgeSubtle,
     borderRadius: RADIUS.pill,
-    paddingHorizontal: 7,
-    paddingVertical: 1,
+    borderWidth: StyleSheet.hairlineWidth,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
   },
   open: {
-    borderColor: COLORS.success,
+    backgroundColor: COLORS.badgeOpenTint,
+    borderColor: COLORS.badgeOpenBorder,
   },
   closed: {
-    borderColor: COLORS.danger,
+    backgroundColor: COLORS.badgeClosedTint,
+    borderColor: COLORS.badgeClosedBorder,
   },
   unknown: {
     backgroundColor: COLORS.badgeSubtle,
+    borderColor: COLORS.badgeMutedBorder,
   },
   badgeText: {
     ...TYPOGRAPHY.meta,
-    fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
-    fontSize: 9,
-    lineHeight: 11,
-    letterSpacing: 1.1,
+    fontFamily: FONT_FAMILY.interMedium,
+    fontSize: 10,
+    lineHeight: 13,
+    letterSpacing: 0.38,
   },
   openText: {
-    color: COLORS.success,
+    color: COLORS.badgeOpenText,
   },
   closedText: {
-    color: COLORS.danger,
+    color: COLORS.badgeClosedText,
   },
   unknownText: {
     color: COLORS.textSecondary,

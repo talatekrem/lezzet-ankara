@@ -2,6 +2,7 @@ import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import RightArrowIcon from '../../assets/icons/right-arrow.svg';
+import { CategoryCard } from '../components/category/CategoryCard';
 import { RestaurantCard } from '../components/restaurant/RestaurantCard';
 import { Screen } from '../components/layout/Screen';
 import { getCategoryById, getRestaurantsByCategoryId } from '../data';
@@ -23,6 +24,9 @@ export function RestaurantsScreen({
   const category = getCategoryById(categoryId);
   const restaurants = getRestaurantsByCategoryId(categoryId);
   const title = category?.name.toLocaleUpperCase('tr-TR') ?? 'KATEGORİ';
+  const subcategories = category?.subcategories ?? [];
+  const hasSubcategories = subcategories.length > 0;
+  const shouldShowRanks = !hasSubcategories && restaurants.length > 4;
 
   function handleMapPress(restaurant: Restaurant) {
     void openRestaurantLocation(restaurant.mapQuery);
@@ -56,13 +60,26 @@ export function RestaurantsScreen({
       </View>
 
       <View style={styles.list}>
-        {restaurants.map((restaurant) => (
-          <RestaurantCard
-            key={restaurant.id}
-            onMapPress={handleMapPress}
-            restaurant={restaurant}
-          />
-        ))}
+        {hasSubcategories
+          ? subcategories.map((subcategory) => (
+              <CategoryCard
+                category={subcategory}
+                key={subcategory.id}
+                onPress={() =>
+                  navigation.push('Restaurants', {
+                    categoryId: subcategory.id,
+                  })
+                }
+              />
+            ))
+          : restaurants.map((restaurant, index) => (
+              <RestaurantCard
+                key={restaurant.id}
+                onMapPress={handleMapPress}
+                rank={shouldShowRanks ? index + 1 : undefined}
+                restaurant={restaurant}
+              />
+            ))}
       </View>
     </Screen>
   );
@@ -71,11 +88,11 @@ export function RestaurantsScreen({
 const styles = StyleSheet.create({
   content: {
     paddingBottom: SPACING.xxl,
-    paddingTop: SPACING.lg,
+    paddingTop: SPACING.xl,
   },
   header: {
-    marginBottom: 58,
-    minHeight: 86,
+    marginBottom: 64,
+    minHeight: 92,
   },
   backButton: {
     alignItems: 'center',
@@ -100,7 +117,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...TYPOGRAPHY.screenTitle,
-    color: COLORS.textSecondary,
+    color: COLORS.screenTitle,
     fontFamily: TYPOGRAPHY.meta.fontFamily,
     fontSize: 24,
     letterSpacing: 7,
@@ -114,7 +131,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   list: {
-    gap: 26,
+    gap: 28,
   },
   pressed: {
     opacity: 0.78,

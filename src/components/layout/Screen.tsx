@@ -1,4 +1,3 @@
-import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import type { ReactNode } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
@@ -7,12 +6,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import type { Edge } from 'react-native-safe-area-context';
 
 import { COLORS, SPACING } from '../../theme';
-
-const BACKGROUND_GRADIENT = [
-  COLORS.background,
-  COLORS.backgroundSoft,
-  COLORS.background,
-] as const;
 
 type ScreenProps = {
   children: ReactNode;
@@ -42,19 +35,17 @@ export function Screen({
   return (
     <SafeAreaView edges={edges} style={[styles.container, style]}>
       <StatusBar style="light" backgroundColor={COLORS.background} />
-      <LinearGradient colors={BACKGROUND_GRADIENT} style={styles.gradient}>
-        {scroll ? (
-          <ScrollView
-            contentContainerStyle={contentStyle}
-            style={styles.scroll}
-            {...scrollViewProps}
-          >
-            {children}
-          </ScrollView>
-        ) : (
-          <View style={contentStyle}>{children}</View>
-        )}
-      </LinearGradient>
+      {scroll ? (
+        <ScrollView
+          contentContainerStyle={contentStyle}
+          style={styles.scroll}
+          {...scrollViewProps}
+        >
+          {children}
+        </ScrollView>
+      ) : (
+        <View style={contentStyle}>{children}</View>
+      )}
     </SafeAreaView>
   );
 }
@@ -64,11 +55,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: COLORS.background,
   },
-  gradient: {
-    flex: 1,
-  },
   scroll: {
     flex: 1,
+    backgroundColor: COLORS.background,
   },
   content: {
     flexGrow: 1,

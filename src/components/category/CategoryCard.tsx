@@ -33,7 +33,7 @@ export function CategoryCard({ category, onPress }: CategoryCardProps) {
 const styles = StyleSheet.create({
   card: {
     alignItems: 'center',
-    backgroundColor: COLORS.surfaceSoft,
+    backgroundColor: COLORS.surface,
     borderColor: COLORS.borderGoldSoft,
     borderRadius: RADIUS.sm,
     borderWidth: StyleSheet.hairlineWidth,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   name: {
     ...TYPOGRAPHY.restaurantName,
     flex: 1,
-    color: COLORS.textSecondary,
+    color: COLORS.categoryText,
     fontFamily: TYPOGRAPHY.meta.fontFamily,
     fontSize: 16,
     letterSpacing: 2.3,

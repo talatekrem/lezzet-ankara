@@ -7,4 +7,5 @@ export interface Category {
   name: string;
   restaurantIds: RestaurantId[];
   description?: string;
+  subcategories?: Category[];
 }

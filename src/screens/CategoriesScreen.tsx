@@ -1,6 +1,7 @@
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
 
+import TitleUnderline from '../../assets/decor/title-underline.svg';
 import { CategoryCard } from '../components/category/CategoryCard';
 import { Screen } from '../components/layout/Screen';
 import { getAllCategories } from '../data';
@@ -23,6 +24,7 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
     >
       <View style={styles.header}>
         <Text style={styles.title}>LEZZET ANKARA</Text>
+        <TitleUnderline height={18} style={styles.underline} width={244} />
       </View>
 
       <View style={styles.list}>
@@ -51,12 +53,15 @@ const styles = StyleSheet.create({
   },
   title: {
     ...TYPOGRAPHY.appTitle,
-    color: COLORS.textSecondary,
+    color: COLORS.brandTitle,
     fontFamily: TYPOGRAPHY.screenTitle.fontFamily,
     fontSize: 30,
     letterSpacing: 7,
     lineHeight: 36,
     textAlign: 'center',
+  },
+  underline: {
+    marginTop: SPACING.md,
   },
   list: {
     gap: 26,

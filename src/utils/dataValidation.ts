@@ -9,6 +9,7 @@ const VALID_RESTAURANT_STATUSES = new Set<Restaurant['status']>([
 ]);
 
 const LOWERCASE_KEBAB_CASE_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const HOURS_PATTERN = /^\d{2}:\d{2}-\d{2}:\d{2}$/;
 
 function assertLowercaseKebabCaseId(id: string, label: string) {
   if (!LOWERCASE_KEBAB_CASE_PATTERN.test(id)) {
@@ -59,6 +60,12 @@ export function validateRestaurantRegistry(
         `Restaurant "${restaurantId}" has invalid status "${restaurant.status}". Expected open, closed, or unknown.`,
       );
     }
+
+    if (restaurant.hours && !HOURS_PATTERN.test(restaurant.hours)) {
+      throw new Error(
+        `Restaurant "${restaurantId}" has invalid hours "${restaurant.hours}". Expected HH:mm-HH:mm.`,
+      );
+    }
   }
 }
 
@@ -67,7 +74,14 @@ export function validateCategoryMemberships(
   restaurants: Record<RestaurantId, Restaurant> = RESTAURANTS,
 ) {
   const seenCategoryIds = new Set<string>();
+  validateCategories(categories, restaurants, seenCategoryIds);
+}
 
+function validateCategories(
+  categories: Category[],
+  restaurants: Record<RestaurantId, Restaurant>,
+  seenCategoryIds: Set<string>,
+) {
   for (const category of categories) {
     assertLowercaseKebabCaseId(category.id, 'Category id');
 
@@ -93,6 +107,10 @@ export function validateCategoryMemberships(
       }
 
       seenRestaurantIds.add(restaurantId);
+    }
+
+    if (category.subcategories) {
+      validateCategories(category.subcategories, restaurants, seenCategoryIds);
     }
   }
 }

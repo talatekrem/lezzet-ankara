@@ -7,6 +7,7 @@ export interface Restaurant {
   rating: number;
   reviewCount: number;
   status: 'open' | 'closed' | 'unknown';
+  hours?: string;
   mapQuery: string;
   note?: string;
 }

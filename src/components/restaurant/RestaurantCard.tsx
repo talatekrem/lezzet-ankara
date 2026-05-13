@@ -1,13 +1,14 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import Svg, { Path, Rect } from 'react-native-svg';
 
+import MapIcon from '../../../assets/icons/map.svg';
 import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
 import type { Restaurant } from '../../types';
 
 type RestaurantCardProps = {
   restaurant: Restaurant;
   onMapPress: (restaurant: Restaurant) => void;
+  rank?: number;
 };
 
 const STATUS_LABELS: Record<Restaurant['status'], string> = {
@@ -24,22 +25,32 @@ const MAP_BUTTON_GRADIENT = [
 export function RestaurantCard({
   restaurant,
   onMapPress,
+  rank,
 }: RestaurantCardProps) {
+  const displayStatus = getDisplayStatus(restaurant);
+  const metaText = [
+    restaurant.district,
+    `puan ${restaurant.rating.toFixed(1)}`,
+    `yorum ${restaurant.reviewCount}`,
+    restaurant.hours,
+  ]
+    .filter(Boolean)
+    .join(' / ');
+
   return (
     <View style={styles.card}>
       <View style={styles.header}>
         <View style={styles.titleRow}>
+          {rank ? <Text style={styles.rank}>{rank}</Text> : null}
           <Text numberOfLines={1} style={styles.name}>
             {restaurant.name}
           </Text>
-          <StatusBadge status={restaurant.status} />
+          <StatusBadge status={displayStatus} />
         </View>
 
-        <View style={styles.metaRow}>
-          <Text style={styles.meta}>{restaurant.district}</Text>
-          <Text style={styles.meta}>puan : {restaurant.rating.toFixed(1)}</Text>
-          <Text style={styles.meta}>yorum : {restaurant.reviewCount}</Text>
-        </View>
+        <Text numberOfLines={1} style={styles.meta}>
+          {metaText}
+        </Text>
 
         {restaurant.note ? (
           <Text numberOfLines={1} style={styles.note}>
@@ -57,7 +68,7 @@ export function RestaurantCard({
         ]}
       >
         <LinearGradient colors={MAP_BUTTON_GRADIENT} style={styles.mapButton}>
-          <MapIcon />
+          <MapIcon height={24} width={24} />
           <Text style={styles.mapButtonText}>Haritada Gör</Text>
         </LinearGradient>
       </Pressable>
@@ -65,31 +76,34 @@ export function RestaurantCard({
   );
 }
 
-function MapIcon() {
-  return (
-    <Svg fill="none" height={28} viewBox="0 0 32 32" width={28}>
-      <Path
-        d="M5 7.5L12.5 4L20 7.5L27 4.5V24.5L20 27.5L12.5 24L5 27.5V7.5Z"
-        stroke={COLORS.accentGoldText}
-        strokeLinejoin="round"
-        strokeWidth={2.2}
-      />
-      <Path
-        d="M12.5 4V24M20 7.5V27.5"
-        stroke={COLORS.accentGoldText}
-        strokeLinecap="round"
-        strokeWidth={2.2}
-      />
-      <Rect
-        height={26}
-        opacity={0.001}
-        stroke={COLORS.accentGoldText}
-        width={26}
-        x={3}
-        y={3}
-      />
-    </Svg>
-  );
+function getDisplayStatus(restaurant: Restaurant): Restaurant['status'] {
+  if (!restaurant.hours) {
+    return restaurant.status;
+  }
+
+  const hoursStatus = getStatusFromHours(restaurant.hours);
+  return hoursStatus ?? restaurant.status;
+}
+
+function getStatusFromHours(hours: string): Restaurant['status'] | undefined {
+  const match = hours.match(/^(\d{2}):(\d{2})-(\d{2}):(\d{2})$/);
+
+  if (!match) {
+    return undefined;
+  }
+
+  const [, openHour, openMinute, closeHour, closeMinute] = match;
+  const openMinutes = Number(openHour) * 60 + Number(openMinute);
+  const closeMinutes = Number(closeHour) * 60 + Number(closeMinute);
+  const now = new Date();
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+  const isOpen =
+    closeMinutes > openMinutes
+      ? currentMinutes >= openMinutes && currentMinutes < closeMinutes
+      : currentMinutes >= openMinutes || currentMinutes < closeMinutes;
+
+  return isOpen ? 'open' : 'closed';
 }
 
 function StatusBadge({ status }: Pick<Restaurant, 'status'>) {
@@ -106,55 +120,59 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: COLORS.surface,
     borderColor: COLORS.borderGoldSoft,
-    borderRadius: 34,
+    borderRadius: 28,
     borderWidth: StyleSheet.hairlineWidth,
-    paddingHorizontal: SPACING.xl,
-    paddingVertical: SPACING.md,
+    paddingHorizontal: SPACING.lg,
+    paddingVertical: 14,
     shadowColor: COLORS.accentGoldStart,
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.06,
-    shadowRadius: 13,
+    shadowOpacity: 0.035,
+    shadowRadius: 9,
   },
   header: {
-    marginBottom: SPACING.lg,
+    marginBottom: 18,
   },
   titleRow: {
     alignItems: 'center',
     flexDirection: 'row',
     gap: SPACING.sm,
-    marginBottom: SPACING.xs,
+    marginBottom: 6,
+  },
+  rank: {
+    ...TYPOGRAPHY.meta,
+    color: COLORS.restaurantNote,
+    fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
+    fontSize: 11,
+    lineHeight: 14,
+    minWidth: 18,
   },
   name: {
     ...TYPOGRAPHY.restaurantName,
     flex: 1,
-    color: COLORS.textSecondary,
+    color: COLORS.textPrimary,
+    fontFamily: TYPOGRAPHY.meta.fontFamily,
     fontSize: 13,
-    lineHeight: 17,
-    letterSpacing: 0.2,
-  },
-  metaRow: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: SPACING.md,
-    marginBottom: SPACING.xs,
+    lineHeight: 16,
+    letterSpacing: 0.35,
   },
   meta: {
     ...TYPOGRAPHY.meta,
-    color: COLORS.textSecondary,
-    fontSize: 11,
-    lineHeight: 15,
+    color: COLORS.textMuted,
+    fontSize: 10,
+    lineHeight: 14,
+    marginBottom: 5,
   },
   note: {
     ...TYPOGRAPHY.meta,
-    color: COLORS.textMuted,
-    fontSize: 11,
-    lineHeight: 15,
+    color: COLORS.restaurantNote,
+    fontSize: 10,
+    lineHeight: 14,
   },
   badge: {
-    backgroundColor: 'rgba(182, 176, 162, 0.09)',
+    backgroundColor: COLORS.badgeSubtle,
     borderRadius: RADIUS.pill,
-    paddingHorizontal: SPACING.sm,
-    paddingVertical: 2,
+    paddingHorizontal: 7,
+    paddingVertical: 1,
   },
   open: {
     borderColor: COLORS.success,
@@ -163,14 +181,14 @@ const styles = StyleSheet.create({
     borderColor: COLORS.danger,
   },
   unknown: {
-    backgroundColor: 'rgba(182, 176, 162, 0.09)',
+    backgroundColor: COLORS.badgeSubtle,
   },
   badgeText: {
     ...TYPOGRAPHY.meta,
     fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
-    fontSize: 10,
-    lineHeight: 12,
-    letterSpacing: 1.4,
+    fontSize: 9,
+    lineHeight: 11,
+    letterSpacing: 1.1,
   },
   openText: {
     color: COLORS.success,
@@ -189,17 +207,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: RADIUS.pill,
     flexDirection: 'row',
-    gap: SPACING.md,
+    gap: SPACING.sm,
     justifyContent: 'center',
-    minHeight: 48,
+    minHeight: 42,
     paddingHorizontal: SPACING.xl,
-    paddingVertical: SPACING.sm,
+    paddingVertical: 7,
   },
   mapButtonText: {
     ...TYPOGRAPHY.buttonLabel,
-    fontSize: 22,
-    letterSpacing: 5,
-    lineHeight: 28,
+    fontSize: 18,
+    letterSpacing: 4,
+    lineHeight: 22,
   },
   pressed: {
     opacity: 0.82,

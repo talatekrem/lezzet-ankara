@@ -45,11 +45,11 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
 const styles = StyleSheet.create({
   content: {
     paddingBottom: SPACING.xxl,
-    paddingTop: 74,
+    paddingTop: SPACING.xxl,
   },
   header: {
     alignItems: 'center',
-    marginBottom: 78,
+    marginBottom: SPACING.xl,
   },
   title: {
     ...TYPOGRAPHY.appTitle,
@@ -61,9 +61,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   underline: {
-    marginTop: SPACING.md,
+    marginTop: SPACING.sm,
   },
   list: {
-    gap: 26,
+    gap: SPACING.md,
   },
 });

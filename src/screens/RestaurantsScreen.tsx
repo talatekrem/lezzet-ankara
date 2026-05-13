@@ -88,11 +88,10 @@ export function RestaurantsScreen({
 const styles = StyleSheet.create({
   content: {
     paddingBottom: SPACING.xxl,
-    paddingTop: SPACING.xl,
+    paddingTop: SPACING.lg,
   },
   header: {
-    marginBottom: 64,
-    minHeight: 92,
+    marginBottom: SPACING.md,
   },
   backButton: {
     alignItems: 'center',
@@ -113,7 +112,7 @@ const styles = StyleSheet.create({
   },
   titleWrap: {
     alignItems: 'center',
-    marginTop: SPACING.xs,
+    marginTop: SPACING.sm,
   },
   title: {
     ...TYPOGRAPHY.screenTitle,
@@ -131,7 +130,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   list: {
-    gap: 28,
+    gap: SPACING.md,
   },
   pressed: {
     opacity: 0.78,

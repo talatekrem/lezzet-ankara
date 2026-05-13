@@ -28,29 +28,54 @@ export function RestaurantCard({
   rank,
 }: RestaurantCardProps) {
   const displayStatus = getDisplayStatus(restaurant);
-  const metaText = [
-    restaurant.district,
-    `puan ${restaurant.rating.toFixed(1)}`,
-    `yorum ${restaurant.reviewCount}`,
-    restaurant.hours,
-  ]
-    .filter(Boolean)
-    .join(' / ');
 
   return (
     <View style={styles.card}>
       <View style={styles.header}>
-        <View style={styles.titleRow}>
-          {rank ? <Text style={styles.rank}>{rank}</Text> : null}
-          <Text numberOfLines={1} style={styles.name}>
-            {restaurant.name}
-          </Text>
-          <StatusBadge status={displayStatus} />
-        </View>
+        <View style={styles.headerRow}>
+          <View style={styles.headerMain}>
+            <View style={styles.titleRow}>
+              {rank ? <Text style={styles.rank}>{rank}</Text> : null}
+              <Text numberOfLines={1} style={styles.name}>
+                {restaurant.name}
+              </Text>
+            </View>
 
-        <Text numberOfLines={1} style={styles.meta}>
-          {metaText}
-        </Text>
+            <Text numberOfLines={1} style={styles.meta}>
+              {restaurant.district ? (
+                <>
+                  <Text>{restaurant.district}</Text>
+                  <Text>{' / '}</Text>
+                </>
+              ) : null}
+              <Text>puan </Text>
+              <Text style={styles.metaHighlight}>
+                {restaurant.rating.toFixed(1)}
+              </Text>
+              <Text>{' / yorum '}</Text>
+              <Text style={styles.metaHighlight}>
+                {restaurant.reviewCount}
+              </Text>
+            </Text>
+          </View>
+
+          <View style={styles.statusColumn}>
+            <StatusBadge status={displayStatus} />
+            {restaurant.hours ? (
+              <>
+                <View style={styles.hoursSpacer} />
+                <Text
+                  adjustsFontSizeToFit
+                  numberOfLines={1}
+                  minimumFontScale={0.85}
+                  style={styles.hoursText}
+                >
+                  {restaurant.hours}
+                </Text>
+              </>
+            ) : null}
+          </View>
+        </View>
 
         {restaurant.note ? (
           <Text numberOfLines={1} style={styles.note}>
@@ -132,6 +157,35 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: 18,
   },
+  headerRow: {
+    alignItems: 'flex-start',
+    flexDirection: 'row',
+    gap: SPACING.sm,
+    marginBottom: 5,
+  },
+  headerMain: {
+    flex: 1,
+    minWidth: 0,
+  },
+  statusColumn: {
+    alignItems: 'flex-end',
+    flexShrink: 0,
+    maxWidth: '38%',
+    paddingTop: 1,
+  },
+  hoursSpacer: {
+    height: 7,
+  },
+  hoursText: {
+    ...TYPOGRAPHY.meta,
+    color: COLORS.textMuted,
+    fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
+    fontSize: 10,
+    lineHeight: 13,
+    textAlign: 'right',
+    fontVariant: ['tabular-nums'],
+    maxWidth: '100%',
+  },
   titleRow: {
     alignItems: 'center',
     flexDirection: 'row',
@@ -158,15 +212,23 @@ const styles = StyleSheet.create({
   meta: {
     ...TYPOGRAPHY.meta,
     color: COLORS.textMuted,
+    flexShrink: 1,
     fontSize: 10,
     lineHeight: 14,
-    marginBottom: 5,
+  },
+  metaHighlight: {
+    color: COLORS.textSecondary,
+    fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
+    fontSize: 10,
+    lineHeight: 14,
+    fontVariant: ['tabular-nums'],
   },
   note: {
     ...TYPOGRAPHY.meta,
     color: COLORS.restaurantNote,
     fontSize: 10,
     lineHeight: 14,
+    marginTop: 2,
   },
   badge: {
     backgroundColor: COLORS.badgeSubtle,

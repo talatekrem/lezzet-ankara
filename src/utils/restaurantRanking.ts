@@ -20,14 +20,19 @@ export function restaurantDisplayScore(restaurant: Restaurant): number {
 }
 
 export function compareRestaurantsForDisplay(a: Restaurant, b: Restaurant): number {
-  const diff = restaurantDisplayScore(b) - restaurantDisplayScore(a);
-  if (diff !== 0) {
-    return diff;
+  const weightedDiff = restaurantDisplayScore(b) - restaurantDisplayScore(a);
+  if (weightedDiff !== 0) {
+    return weightedDiff;
   }
 
-  const rc = b.reviewCount - a.reviewCount;
-  if (rc !== 0) {
-    return rc;
+  const reviewDiff = b.reviewCount - a.reviewCount;
+  if (reviewDiff !== 0) {
+    return reviewDiff;
+  }
+
+  const ratingDiff = b.rating - a.rating;
+  if (ratingDiff !== 0) {
+    return ratingDiff;
   }
 
   return a.name.localeCompare(b.name, 'tr', { sensitivity: 'base' });

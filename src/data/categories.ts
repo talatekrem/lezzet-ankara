@@ -111,6 +111,7 @@ export const CATEGORIES: Category[] = [
       'basil',
       'espresso-check',
       'meal-up',
+      'meetime-yda-center',
       'huhu',
     ],
   },
@@ -400,6 +401,7 @@ export const CATEGORIES: Category[] = [
     id: 'hamburger',
     name: 'Hamburger',
     restaurantIds: [
+      'arca-burger',
       'brand-burger',
       'periperi-burger',
       'kasa-burger',
@@ -1337,11 +1339,266 @@ export const CATEGORIES: Category[] = [
     id: 'yoresel-lezzetler',
     name: 'Yöresel Lezzetler',
     restaurantIds: [],
+    subcategories: [
+      {
+        id: 'yoresel-elazig',
+        name: 'Elazığ',
+        restaurantIds: ['cayda-cira-ev-yemekleri', 'yeni-firin-et-lokantasi'],
+      },
+      {
+        id: 'yoresel-hatay',
+        name: 'Hatay',
+        restaurantIds: [
+          'hatayli-rifat-usta',
+          'hatay-antakya-sofrasi',
+          'sutlu-kavurma',
+          'hattena',
+        ],
+      },
+      {
+        id: 'yoresel-karadeniz',
+        name: 'Karadeniz',
+        restaurantIds: [
+          'karadeniz-pidem',
+          'kuzey-yildizi-pide',
+          'hamlakit',
+          'guzel-karadeniz',
+          'kardens',
+          'niyazi-kesim-bafra-pidesi',
+          'zigana-pide',
+        ],
+      },
+      {
+        id: 'yoresel-mardin',
+        name: 'Mardin',
+        restaurantIds: [
+          'mardin-sofrasi-serif-usta',
+          'mardin-konagi',
+          'bizim-ev-mardinden',
+        ],
+      },
+    ],
   },
   {
     id: 'kesfet',
     name: 'Keşfet',
     restaurantIds: [],
+    subcategories: [
+      {
+        id: 'kesfet-adana-dolama',
+        name: 'Adana dolama',
+        restaurantIds: ['sirali-kebap'],
+      },
+      {
+        id: 'kesfet-alman-doner',
+        name: 'Alman döner',
+        restaurantIds: ['das-almans'],
+      },
+      {
+        id: 'kesfet-antakya-durum',
+        name: 'Antakya dürüm',
+        restaurantIds: ['326-antakya-durum'],
+      },
+      {
+        id: 'kesfet-balaban-kebabi',
+        name: 'Balaban kebabı',
+        restaurantIds: ['ugrak', 'vefali-kofteci'],
+      },
+      {
+        id: 'kesfet-bamya-corbasi',
+        name: 'Bamya çorbası',
+        restaurantIds: ['cicek-lokantasi'],
+      },
+      {
+        id: 'kesfet-buryan-kebabi',
+        name: 'Büryan kebabı',
+        restaurantIds: ['ridvan-usta-emek'],
+      },
+      {
+        id: 'kesfet-cavlak',
+        name: 'Çavlak',
+        restaurantIds: ['develi-doner-pide'],
+      },
+      {
+        id: 'kesfet-cikolata-kasa-alltogether',
+        name: 'Çikolata kasa (Alltogether)',
+        restaurantIds: ['cadin-nin-yeri-beytepe'],
+      },
+      {
+        id: 'kesfet-cinnamon-roll',
+        name: 'Cinnamon roll',
+        restaurantIds: ['d-dose-bahcelievler', 'arome'],
+      },
+      {
+        id: 'kesfet-cay-saati',
+        name: 'Çay saati',
+        restaurantIds: ['bakerman-firin'],
+      },
+      {
+        id: 'kesfet-curuk',
+        name: 'Çürük',
+        restaurantIds: ['kesigin-yeri'],
+      },
+      {
+        id: 'kesfet-dana-roti',
+        name: 'Dana roti',
+        restaurantIds: ['site2-lokantasi-iskitler'],
+      },
+      {
+        id: 'kesfet-dil-alti',
+        name: 'Dil altı (etlere fön çeken adam)',
+        restaurantIds: ['et-i-ala-cukurambar'],
+      },
+      {
+        id: 'kesfet-dolmaci',
+        name: 'Dolmacı',
+        restaurantIds: ['dolmaci-dukkani-ayranci'],
+      },
+      {
+        id: 'kesfet-ekmek-arasi-kahvalti',
+        name: 'Ekmek arası kahvaltı',
+        restaurantIds: ['gece-kahvalticisi-yunus-usta'],
+      },
+      {
+        id: 'kesfet-eli-bogrunde',
+        name: 'Eli böğründe',
+        restaurantIds: ['ada-sofrasi'],
+      },
+      {
+        id: 'kesfet-fistik-kebabi',
+        name: 'Fıstık kebabı',
+        restaurantIds: ['baklavaci-haci-baba'],
+      },
+      {
+        id: 'kesfet-fransiz-sutlaci',
+        name: 'Fransız sütlacı',
+        restaurantIds: ['unfesta-firin'],
+      },
+      {
+        id: 'kesfet-hashasli-portakalli-kek',
+        name: 'Haşhaşlı portakallı kek',
+        restaurantIds: ['a4-kahve-tunali'],
+      },
+      {
+        id: 'kesfet-hollanda-patatesi',
+        name: 'Hollanda patatesi',
+        restaurantIds: ['frydam'],
+      },
+      {
+        id: 'kesfet-iskender-kavurma',
+        name: 'İskender kavurma',
+        restaurantIds: ['izgar-yenimahalle'],
+      },
+      {
+        id: 'kesfet-iskender-kofte',
+        name: 'İskender köfte',
+        restaurantIds: ['izgar-yenimahalle'],
+      },
+      {
+        id: 'kesfet-iskilip-dolma',
+        name: 'Işıkilip dolma',
+        restaurantIds: ['hanimeli-sulu-yemek-iskitler'],
+      },
+      {
+        id: 'kesfet-kalamar-sandwich',
+        name: 'Kalamar sandwich',
+        restaurantIds: ['ramencity'],
+      },
+      {
+        id: 'kesfet-kavurger',
+        name: 'Kavurger',
+        restaurantIds: ['koce-kavurma'],
+      },
+      {
+        id: 'kesfet-kestane-sekeri',
+        name: 'Kestane şekeri',
+        restaurantIds: ['yildiz-kestane-sekeri-cebeci'],
+      },
+      {
+        id: 'kesfet-kore-tostu-pastirmali',
+        name: 'Kore tostu (pastırmalı)',
+        restaurantIds: ['hum-ayranci'],
+      },
+      {
+        id: 'kesfet-ladana',
+        name: 'Ladana',
+        restaurantIds: ['giyma-adana-kebapcisi'],
+      },
+      {
+        id: 'kesfet-perde-doner',
+        name: 'Perde döner',
+        restaurantIds: ['umut-doner-lahmacun'],
+      },
+      {
+        id: 'kesfet-perde-pilav',
+        name: 'Perde pilav',
+        restaurantIds: ['harikulade-yasamkent'],
+      },
+      {
+        id: 'kesfet-piyaz',
+        name: 'Piyaz',
+        restaurantIds: ['tarihi-lezzet-inegol'],
+      },
+      {
+        id: 'kesfet-saksi-tatlisi',
+        name: 'Saksi tatlısı',
+        restaurantIds: ['simple-chocolate-kizilay'],
+      },
+      {
+        id: 'kesfet-sarimsakli-corek',
+        name: 'Sarımsaklı çörek',
+        restaurantIds: ['kumo-coffee-ayranci', 'rubber-soul'],
+      },
+      {
+        id: 'kesfet-seafood-bowl',
+        name: 'Seafood bowl',
+        restaurantIds: ['chef-bros'],
+      },
+      {
+        id: 'kesfet-sicak-cikolata',
+        name: 'Sıcak çikolata',
+        restaurantIds: ['bala-bake-house-mutlukent'],
+      },
+      {
+        id: 'kesfet-siirt-helvasi',
+        name: 'Siirt helvası',
+        restaurantIds: ['sutlu-kavurma'],
+      },
+      {
+        id: 'kesfet-susurluk-tostu',
+        name: 'Susurluk tostu',
+        restaurantIds: ['touyou-cayyolu'],
+      },
+      {
+        id: 'kesfet-tava-yemekleri',
+        name: 'Tava yemekleri',
+        restaurantIds: ['sayrem-tava-lezzetleri-kizilay'],
+      },
+      {
+        id: 'kesfet-tepsi-kebabi',
+        name: 'Tepsi kebabı',
+        restaurantIds: ['dede-cinili-kebap-lahmacun'],
+      },
+      {
+        id: 'kesfet-visneli-kofte',
+        name: 'Vişneli köfte',
+        restaurantIds: ['lokanta-hatti-kizilay'],
+      },
+      {
+        id: 'kesfet-yaglama',
+        name: 'Yağlama',
+        restaurantIds: [
+          'site2-lokantasi-iskitler',
+          'ankara-basasci-restoran-yenimahalle',
+          '1071-manti',
+        ],
+      },
+      {
+        id: 'kesfet-yagli-kara',
+        name: 'Yağlı kara',
+        restaurantIds: ['adiguzel-meyhane-cankaya'],
+      },
+    ],
   },
   {
     id: 'tavsiyeler',
@@ -1352,5 +1609,124 @@ export const CATEGORIES: Category[] = [
     id: 'diger-lezzetler',
     name: 'Diğer Lezzetler',
     restaurantIds: [],
+    subcategories: [
+      {
+        id: 'diger-bagel',
+        name: 'Bagel',
+        restaurantIds: ['bento-bagel-bilkent'],
+      },
+      {
+        id: 'diger-borek',
+        name: 'Börek',
+        restaurantIds: [
+          'zeliha-bosnak-mutfagi',
+          'borekci-huseyin-usta-altindag',
+          'everek-develi-pide',
+          'tarihi-han-borekcisi-ostim',
+        ],
+      },
+      {
+        id: 'diger-ciborek',
+        name: 'Çibörek',
+        restaurantIds: ['konakbay'],
+      },
+      {
+        id: 'diger-durum',
+        name: 'Dürüm',
+        restaurantIds: [
+          'durumcu-esnaf-cebeci',
+          'durumcu-hanifi-baba-yenimahalle',
+          'durumtek-iskitler',
+          'hatay-doner-mamak',
+          'durumcu-ceto-yenimahalle',
+          'kebo-bahcelievler',
+        ],
+      },
+      {
+        id: 'diger-gozleme',
+        name: 'Gözleme',
+        restaurantIds: [
+          'agah-cafe-bahcelievler',
+          'cicek-gozleme-evi-cebeci',
+          'kirik-okkava-fakulteler',
+        ],
+      },
+      {
+        id: 'diger-kuru-fasulye',
+        name: 'Kuru fasulye',
+        restaurantIds: [
+          'sarwizan-cankaya',
+          'kebapci-kofteci-emin-usta',
+          'meshur-karadenizli-dursun-usta-siteler',
+          'taka-restorant-yenimahalle',
+          'bogazici-lokantasi',
+          'mazali-doner',
+          'husrev-balgat',
+        ],
+      },
+      {
+        id: 'diger-kruvasan',
+        name: 'Kruvasan',
+        restaurantIds: [
+          'a-la-lune',
+          'farro-bakery',
+          'cruffin-bahcelievler',
+          'kruvasante-umitkoy',
+          'arome',
+          'zemhery-umitkoy',
+        ],
+      },
+      {
+        id: 'diger-makarna',
+        name: 'Makarna',
+        restaurantIds: [
+          'ravi-bahcelievler',
+          'pastini-balgat',
+          'prm-cheese-eryaman',
+          'moltobene',
+        ],
+      },
+      {
+        id: 'diger-meze',
+        name: 'Meze',
+        restaurantIds: [
+          'meze-kulubu-eryaman',
+          'meze-yesek-beysukent',
+          'hatay-meze-evi-emek',
+          'mommy-made-yasamkent',
+          'ata-meze-evi-yenimahalle',
+          'villa-meze-incek',
+          'epigevsi-meze-cankaya',
+          'mezzelye-bahcelievler',
+          'mezyevi-yenimahalle',
+        ],
+      },
+      {
+        id: 'diger-mangal-ocakbasi',
+        name: 'Mangal / ocakbaşı',
+        restaurantIds: [
+          'alaattin-ocakbasi',
+          'guderler-et-mangal-golbasi',
+          'kusbasi-modern-ocakbasi-yildiz',
+          'afitap-muhur-ocakbasi-yenimahalle',
+          'kaliruha-ocakbasi-oran',
+          'yeni-nesil-kanatci-etimesgut',
+          'cinaralti-mangalbasi-umitkoy',
+        ],
+      },
+      {
+        id: 'diger-nohutcu',
+        name: 'Nohutçu',
+        restaurantIds: [
+          'gaziantepli-meshur-nohutcu-sihhiye',
+          'gaziantep-harli-firin',
+        ],
+      },
+      {
+        id: 'diger-qukies',
+        name: 'Qukies',
+        restaurantIds: ['qukies-bahcelievler'],
+      },
+    ],
   },
 ];

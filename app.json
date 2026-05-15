@@ -13,7 +13,11 @@
       "backgroundColor": "#16171D"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ekotan.lezzetankara",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,6 +41,12 @@
           ]
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "63f4ed9f-0bcc-4b5c-a04b-8af73109b050"
+      }
+    },
+    "owner": "ekotan"
   }
 }

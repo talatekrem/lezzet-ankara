@@ -7,6 +7,11 @@ export function getRestaurantById(id: RestaurantId): Restaurant | undefined {
   return RESTAURANTS[id];
 }
 
+/**
+ * Kategorideki (ya da alt kategorideki) `restaurantIds` sırasını yok sayar;
+ * dönen liste her zaman `compareRestaurantsForDisplay` ile ağırlıklı puana göre
+ * azalan sırada sıralanır (`restaurantRanking` formülü).
+ */
 export function getRestaurantsByCategoryId(categoryId: CategoryId): Restaurant[] {
   const category = getCategoryById(categoryId);
 

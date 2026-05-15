@@ -22,6 +22,9 @@ const MAP_BUTTON_GRADIENT = [
   COLORS.accentGoldEnd,
 ] as const;
 
+/** Harita ikonu ile “Haritada Gör” metni arası (genel `sm`’den ayrı). */
+const MAP_BUTTON_ICON_TEXT_GAP = 14;
+
 export function RestaurantCard({
   restaurant,
   onMapPress,
@@ -42,41 +45,40 @@ export function RestaurantCard({
                 {restaurant.name}
               </Text>
             </View>
-
-            <Text numberOfLines={1} style={styles.meta}>
-              {restaurant.district ? (
-                <>
-                  <Text>{restaurant.district}</Text>
-                  <Text>{' / '}</Text>
-                </>
-              ) : null}
-              <Text>puan </Text>
-              <Text style={styles.metaHighlight}>
-                {restaurant.rating.toFixed(1)}
-              </Text>
-              <Text>{' / yorum '}</Text>
-              <Text style={styles.metaHighlight}>
-                {restaurant.reviewCount}
-              </Text>
-            </Text>
           </View>
 
-          <View style={styles.statusColumn}>
+          <View style={styles.badgeWrap}>
             <StatusBadge status={displayStatus} />
-            {restaurant.hours ? (
+          </View>
+        </View>
+
+        <View style={styles.metaRow}>
+          <Text numberOfLines={1} style={styles.meta}>
+            {restaurant.district ? (
               <>
-                <View style={styles.hoursSpacer} />
-                <Text
-                  adjustsFontSizeToFit
-                  numberOfLines={1}
-                  minimumFontScale={0.85}
-                  style={styles.hoursText}
-                >
-                  {restaurant.hours}
-                </Text>
+                <Text>{restaurant.district}</Text>
+                <Text>{' / '}</Text>
               </>
             ) : null}
-          </View>
+            <Text>puan </Text>
+            <Text style={styles.metaHighlight}>
+              {restaurant.rating.toFixed(1)}
+            </Text>
+            <Text>{' / yorum '}</Text>
+            <Text style={styles.metaHighlight}>
+              {restaurant.reviewCount}
+            </Text>
+          </Text>
+          {restaurant.hours ? (
+            <Text
+              adjustsFontSizeToFit
+              numberOfLines={1}
+              minimumFontScale={0.85}
+              style={styles.hoursText}
+            >
+              {restaurant.hours}
+            </Text>
+          ) : null}
         </View>
 
         {restaurant.note ? (
@@ -163,36 +165,39 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     flexDirection: 'row',
     gap: SPACING.sm,
-    marginBottom: 5,
   },
   headerMain: {
     flex: 1,
     minWidth: 0,
   },
-  statusColumn: {
-    alignItems: 'flex-end',
+  badgeWrap: {
+    alignSelf: 'flex-start',
     flexShrink: 0,
     maxWidth: '38%',
     paddingTop: 1,
   },
-  hoursSpacer: {
-    height: 7,
+  metaRow: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: SPACING.sm,
+    marginBottom: 5,
+    marginTop: 6,
   },
   hoursText: {
     ...TYPOGRAPHY.meta,
     color: COLORS.textMuted,
+    flexShrink: 0,
     fontFamily: TYPOGRAPHY.buttonLabel.fontFamily,
     fontSize: 10,
-    lineHeight: 13,
+    lineHeight: 14,
+    maxWidth: '38%',
     textAlign: 'right',
     fontVariant: ['tabular-nums'],
-    maxWidth: '100%',
   },
   titleRow: {
     alignItems: 'baseline',
     flexDirection: 'row',
     gap: SPACING.sm,
-    marginBottom: 6,
   },
   rank: {
     color: COLORS.restaurantNote,
@@ -215,9 +220,11 @@ const styles = StyleSheet.create({
   meta: {
     ...TYPOGRAPHY.meta,
     color: COLORS.textMuted,
+    flexGrow: 1,
     flexShrink: 1,
     fontSize: 10,
     lineHeight: 14,
+    minWidth: 0,
   },
   metaHighlight: {
     color: COLORS.textSecondary,
@@ -276,7 +283,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: RADIUS.pill,
     flexDirection: 'row',
-    gap: SPACING.sm,
+    gap: MAP_BUTTON_ICON_TEXT_GAP,
     justifyContent: 'center',
     minHeight: 42,
     paddingHorizontal: SPACING.xl,

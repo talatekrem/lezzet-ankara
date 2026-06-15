@@ -16,7 +16,7 @@ export function CategoryCard({ category, onPress }: CategoryCardProps) {
       onPress={() => onPress?.(category)}
       style={({ pressed }) => [styles.card, pressed && styles.cardPressed]}
     >
-      <Text numberOfLines={1} style={styles.name}>
+      <Text allowFontScaling={false} numberOfLines={1} style={styles.name}>
         {category.name}
       </Text>
       <View style={styles.iconWrap}>

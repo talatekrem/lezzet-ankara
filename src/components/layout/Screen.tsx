@@ -63,6 +63,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   padded: {
+    alignSelf: 'center',
+    maxWidth: 430,
     paddingHorizontal: SPACING.xl,
+    width: '100%',
   },
 });

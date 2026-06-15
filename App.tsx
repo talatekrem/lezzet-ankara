@@ -1,8 +1,9 @@
 import { requireOptionalNativeModule } from 'expo';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
+import { AppAlert } from './src/components/ui/AppAlert';
 import { AppNavigator } from './src/navigation/AppNavigator';
 import { FONT_FAMILY } from './src/theme';
 import { validateAppData } from './src/utils/dataValidation';
@@ -16,6 +17,7 @@ if (__DEV__) {
 }
 
 export default function App() {
+  const [attributionVisible, setAttributionVisible] = useState(true);
   const [fontsLoaded, fontError] = useFonts({
     [FONT_FAMILY.interRegular]: require('./assets/fonts/inter/Inter_18pt-Regular.ttf'),
     [FONT_FAMILY.interMedium]: require('./assets/fonts/inter/Inter_18pt-Medium.ttf'),
@@ -45,5 +47,15 @@ export default function App() {
     return null;
   }
 
-  return <AppNavigator />;
+  return (
+    <>
+      <AppNavigator />
+      <AppAlert
+        message="Puan ve yorum verileri Google Haritalar kayıtlarından derlenmiştir."
+        onConfirm={() => setAttributionVisible(false)}
+        title="BİLGİLENDİRME"
+        visible={attributionVisible}
+      />
+    </>
+  );
 }

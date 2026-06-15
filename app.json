@@ -20,6 +20,7 @@
       }
     },
     "android": {
+      "package": "com.ekotan.lezzetankara",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -34,11 +35,7 @@
       [
         "expo-font",
         {
-          "fonts": [
-            "./assets/fonts/inter/Inter_18pt-Regular.ttf",
-            "./assets/fonts/inter/Inter_18pt-Medium.ttf",
-            "./assets/fonts/inter/Inter_18pt-SemiBold.ttf"
-          ]
+          "fonts": ["./assets/fonts/inter/Inter_18pt-Regular.ttf", "./assets/fonts/inter/Inter_18pt-Medium.ttf", "./assets/fonts/inter/Inter_18pt-SemiBold.ttf"]
         }
       ]
     ],

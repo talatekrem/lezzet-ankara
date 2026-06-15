@@ -23,7 +23,7 @@ const MAP_BUTTON_GRADIENT = [
 ] as const;
 
 /** Harita ikonu ile “Haritada Gör” metni arası (genel `sm`’den ayrı). */
-const MAP_BUTTON_ICON_TEXT_GAP = 14;
+const MAP_BUTTON_ICON_TEXT_GAP = 12;
 
 export function RestaurantCard({
   restaurant,
@@ -39,9 +39,11 @@ export function RestaurantCard({
           <View style={styles.headerMain}>
             <View style={styles.titleRow}>
               {rank != null ? (
-                <Text style={styles.rank}>{rank}</Text>
+                <Text allowFontScaling={false} style={styles.rank}>
+                  {rank}
+                </Text>
               ) : null}
-              <Text numberOfLines={1} style={styles.name}>
+              <Text allowFontScaling={false} numberOfLines={1} style={styles.name}>
                 {restaurant.name}
               </Text>
             </View>
@@ -53,7 +55,7 @@ export function RestaurantCard({
         </View>
 
         <View style={styles.metaRow}>
-          <Text numberOfLines={1} style={styles.meta}>
+          <Text allowFontScaling={false} numberOfLines={1} style={styles.meta}>
             {restaurant.district ? (
               <>
                 <Text>{restaurant.district}</Text>
@@ -72,6 +74,7 @@ export function RestaurantCard({
           {restaurant.hours ? (
             <Text
               adjustsFontSizeToFit
+              allowFontScaling={false}
               numberOfLines={1}
               minimumFontScale={0.85}
               style={styles.hoursText}
@@ -82,7 +85,7 @@ export function RestaurantCard({
         </View>
 
         {restaurant.note ? (
-          <Text numberOfLines={1} style={styles.note}>
+          <Text allowFontScaling={false} numberOfLines={1} style={styles.note}>
             {restaurant.note}
           </Text>
         ) : null}
@@ -98,7 +101,15 @@ export function RestaurantCard({
       >
         <LinearGradient colors={MAP_BUTTON_GRADIENT} style={styles.mapButton}>
           <MapIcon height={20} width={20} />
-          <Text style={styles.mapButtonText}>Haritada Gör</Text>
+          <Text
+            adjustsFontSizeToFit
+            allowFontScaling={false}
+            minimumFontScale={0.9}
+            numberOfLines={1}
+            style={styles.mapButtonText}
+          >
+            Haritada Gör
+          </Text>
         </LinearGradient>
       </Pressable>
     </View>
@@ -138,7 +149,10 @@ function getStatusFromHours(hours: string): Restaurant['status'] | undefined {
 function StatusBadge({ status }: Pick<Restaurant, 'status'>) {
   return (
     <View style={[styles.badge, styles[status]]}>
-      <Text style={[styles.badgeText, styles[`${status}Text`]]}>
+      <Text
+        allowFontScaling={false}
+        style={[styles.badgeText, styles[`${status}Text`]]}
+      >
         {STATUS_LABELS[status]}
       </Text>
     </View>
@@ -286,14 +300,15 @@ const styles = StyleSheet.create({
     gap: MAP_BUTTON_ICON_TEXT_GAP,
     justifyContent: 'center',
     minHeight: 42,
-    paddingHorizontal: SPACING.xl,
+    paddingHorizontal: SPACING.lg,
     paddingVertical: 7,
   },
   mapButtonText: {
     ...TYPOGRAPHY.buttonLabel,
-    fontSize: 18,
-    letterSpacing: 4,
-    lineHeight: 22,
+    flexShrink: 1,
+    fontSize: 16,
+    letterSpacing: 3,
+    lineHeight: 20,
   },
   pressed: {
     opacity: 0.82,

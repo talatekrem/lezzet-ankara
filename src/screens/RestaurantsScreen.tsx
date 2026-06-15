@@ -1,10 +1,12 @@
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import RightArrowIcon from '../../assets/icons/right-arrow.svg';
 import { CategoryCard } from '../components/category/CategoryCard';
 import { RestaurantCard } from '../components/restaurant/RestaurantCard';
 import { Screen } from '../components/layout/Screen';
+import { AppAlert } from '../components/ui/AppAlert';
 import { getCategoryById, getRestaurantsByCategoryId } from '../data';
 import type { RootStackParamList } from '../navigation/types';
 import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../theme';
@@ -27,12 +29,32 @@ export function RestaurantsScreen({
   const subcategories = category?.subcategories ?? [];
   const hasSubcategories = subcategories.length > 0;
   const shouldShowRanks = !hasSubcategories && restaurants.length > 4;
+  const [mapReminderVisible, setMapReminderVisible] = useState(false);
+  const [pendingMapQuery, setPendingMapQuery] = useState<string | null>(null);
 
   function handleMapPress(restaurant: Restaurant) {
-    void openRestaurantLocation(restaurant.mapQuery);
+    setPendingMapQuery(restaurant.mapQuery);
+    setMapReminderVisible(true);
+  }
+
+  function handleMapReminderDismiss() {
+    setMapReminderVisible(false);
+    setPendingMapQuery(null);
+  }
+
+  function handleMapReminderConfirm() {
+    const mapQuery = pendingMapQuery;
+
+    setMapReminderVisible(false);
+    setPendingMapQuery(null);
+
+    if (mapQuery) {
+      void openRestaurantLocation(mapQuery);
+    }
   }
 
   return (
+    <>
     <Screen
       scroll
       contentContainerStyle={styles.content}
@@ -52,9 +74,13 @@ export function RestaurantsScreen({
         </Pressable>
 
         <View style={styles.titleWrap}>
-          <Text style={styles.title}>{title}</Text>
+          <Text allowFontScaling={false} style={styles.title}>
+            {title}
+          </Text>
           {category?.description ? (
-            <Text style={styles.subtitle}>{category.description}</Text>
+            <Text allowFontScaling={false} style={styles.subtitle}>
+              {category.description}
+            </Text>
           ) : null}
         </View>
       </View>
@@ -82,6 +108,17 @@ export function RestaurantsScreen({
             ))}
       </View>
     </Screen>
+
+    <AppAlert
+      cancelLabel="Vazgeç"
+      confirmLabel="Haritada Aç"
+      message="Yola çıkmadan önce mekânı arayarak açılış ve kapanış saatlerini teyit etmenizi rica ederiz."
+      onCancel={handleMapReminderDismiss}
+      onConfirm={handleMapReminderConfirm}
+      title="HATIRLATMA"
+      visible={mapReminderVisible}
+    />
+  </>
   );
 }
 

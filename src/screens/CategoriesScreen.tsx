@@ -23,7 +23,9 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
       scrollViewProps={{ showsVerticalScrollIndicator: false }}
     >
       <View style={styles.header}>
-        <Text style={styles.title}>LEZZET ANKARA</Text>
+        <Text allowFontScaling={false} style={styles.title}>
+          LEZZET ANKARA
+        </Text>
         <TitleUnderline height={18} style={styles.underline} width={244} />
       </View>
 

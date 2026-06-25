@@ -11,6 +11,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Masabaşı Balgat Ankara',
     note: 'Alinazik / Beyti / Lahmacun',
+    highlights: ['Alinazik', 'Beyti', 'Lahmacun'],
   },
   'meshur-kebapci-cahit-usta': {
     id: 'meshur-kebapci-cahit-usta',
@@ -22,6 +23,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Meşhur Kebapçı Cahit Usta Balgat Ankara',
     note: 'Alinazik',
+    highlights: ['Alinazik'],
   },
   cukuraga: {
     id: 'cukuraga',
@@ -33,6 +35,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Çukurağa Emek Ankara',
     note: 'Alinazik / Yaprak kebabı / Beyti',
+    highlights: ['Alinazik', 'Yaprak kebabı', 'Beyti'],
   },
   'muslum-kebap': {
     id: 'muslum-kebap',
@@ -44,6 +47,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Müslüm Kebap Çukurambar Ankara',
     note: 'Alinazik / Beyti',
+    highlights: ['Alinazik', 'Beyti'],
   },
   'cigerci-ali-baba': {
     id: 'cigerci-ali-baba',
@@ -55,6 +59,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Ciğerci Ali Baba Ostim Ankara',
     note: 'Beyti / Ciğer',
+    highlights: ['Beyti', 'Ciğer'],
   },
   'yildiz-aspava': {
     id: 'yildiz-aspava',
@@ -66,6 +71,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Yıldız Aspava Emek Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'meshur-ulgerler-aspava': {
     id: 'meshur-ulgerler-aspava',
@@ -77,6 +83,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Meşhur Ülgerler Aspava Çankaya Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'meshur-ata-aspava': {
     id: 'meshur-ata-aspava',
@@ -88,6 +95,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:30',
     mapQuery: 'Meşhur Ata Aspava Kızılay Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'hassas-ozcelik-aspava': {
     id: 'hassas-ozcelik-aspava',
@@ -99,6 +107,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-05:00',
     mapQuery: 'Hassas Özçelik Aspava Çankaya Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'meshur-cengiz-yildirim-aspava': {
     id: 'meshur-cengiz-yildirim-aspava',
@@ -110,6 +119,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-22:00',
     mapQuery: 'Meşhur Cengiz Yıldırım Aspava Balgat Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'meshur-tarihi-aspava': {
     id: 'meshur-tarihi-aspava',
@@ -121,6 +131,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:30',
     mapQuery: 'Meşhur Tarihi Aspava Bağlıca Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'gulcimen-aspava': {
     id: 'gulcimen-aspava',
@@ -132,6 +143,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-05:00',
     mapQuery: 'Gülçimen Aspava Esat Caddesi Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'sahin-aspava': {
     id: 'sahin-aspava',
@@ -143,6 +155,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Şahin Aspava Kızılay Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'orhan-aspava': {
     id: 'orhan-aspava',
@@ -154,6 +167,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:30',
     mapQuery: 'Orhan Aspava Eskişehir Yolu Ankara',
     note: 'Aspava / Lahmacun',
+    highlights: ['Aspava', 'Lahmacun'],
   },
   'meshur-koyuncu-aspava': {
     id: 'meshur-koyuncu-aspava',
@@ -165,6 +179,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Meşhur Koyuncu Aspava Keçiören Ankara',
     note: 'Aspava',
+    highlights: ['Aspava'],
   },
   'efsane-kebapci-selcuk-usta': {
     id: 'efsane-kebapci-selcuk-usta',
@@ -176,6 +191,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:30',
     mapQuery: 'Efsane Kebapçı Selçuk Usta Çukurambar Ankara',
     note: 'Acılı cevizli lahmacun / Adana',
+    highlights: ['Acılı cevizli lahmacun', 'Adana'],
   },
   'urfali-ziya-usta': {
     id: 'urfali-ziya-usta',
@@ -187,6 +203,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-18:00',
     mapQuery: 'Urfalı Ziya Usta Havaalanı Yolu Ankara',
     note: 'Kebap / Çöp şiş / Kuzu şiş',
+    highlights: ['Kebap', 'Çöp şiş', 'Kuzu şiş'],
   },
   'erkan-usta': {
     id: 'erkan-usta',
@@ -198,6 +215,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Erkan Usta Balgat Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'gaziantepli-ziya-usta': {
     id: 'gaziantepli-ziya-usta',
@@ -209,6 +227,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Gaziantepli Ziya Usta Balgat Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'ada-sofrasi': {
     id: 'ada-sofrasi',
@@ -220,6 +239,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Ada Sofrası Çankaya Öveçler Ankara',
     note: 'Eli böğründe / Pide / Lahmacun / Kokoreçli pide',
+    highlights: ['Eli böğründe', 'Pide', 'Lahmacun'],
   },
   anzelha: {
     id: 'anzelha',
@@ -231,6 +251,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:30',
     mapQuery: 'Anzelha Bağlıca Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'sarimsak-izgara': {
     id: 'sarimsak-izgara',
@@ -242,6 +263,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Sarımsak Izgara Dikmen Ankara',
     note: 'Yaprak kebabı / Adana',
+    highlights: ['Yaprak kebabı', 'Adana'],
   },
   'mardin-sofrasi-serif-usta': {
     id: 'mardin-sofrasi-serif-usta',
@@ -253,6 +275,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Mardin Sofrası Şerif Usta Balgat Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'bayram-usta-yaprak-kebap': {
     id: 'bayram-usta-yaprak-kebap',
@@ -264,6 +287,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Bayram Usta Yaprak Kebap Konya Yolu Ankara',
     note: 'Kuzu kaski / Yaprak kebap / Kuzu',
+    highlights: ['Kuzu kaski', 'Yaprak kebap', 'Kuzu'],
   },
   'alaattin-ocakbasi': {
     id: 'alaattin-ocakbasi',
@@ -275,6 +299,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Alaattin Ocakbaşı Alacaatlı Çankaya Ankara',
     note: 'Ocakbaşı',
+    highlights: ['Ocakbaşı'],
   },
   'meshur-koroglu-desti-ve-tandir-kebabi': {
     id: 'meshur-koroglu-desti-ve-tandir-kebabi',
@@ -286,6 +311,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-20:00',
     mapQuery: 'Meşhur Köroğlu Desti ve Tandır Kebabı Yenimahalle Ankara',
     note: 'Desti kebabı / Tandır kebabı',
+    highlights: ['Desti kebabı', 'Tandır kebabı'],
   },
   'urfali-hayragin-yeri': {
     id: 'urfali-hayragin-yeri',
@@ -297,6 +323,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:30',
     mapQuery: 'Urfalı Hayrağın Yeri Kızılay Ankara',
     note: 'Vali kebabı / Haşhaş kebap / Beyti',
+    highlights: ['Vali kebabı', 'Haşhaş kebap', 'Beyti'],
   },
   'zirhci-kebap': {
     id: 'zirhci-kebap',
@@ -308,6 +335,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Zırhçı Kebap Balgat Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'adanali-ismail-usta': {
     id: 'adanali-ismail-usta',
@@ -319,6 +347,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Adanalı İsmail Usta Emek Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'bizim-mahalle': {
     id: 'bizim-mahalle',
@@ -329,6 +358,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Bizim Mahalle Yenimahalle Ankara',
     note: 'Develi cıvıklısı / Tahinli pide / Lokum kebap',
+    highlights: ['Develi cıvıklısı', 'Tahinli pide', 'Lokum kebap'],
   },
   'balgat-tepsi': {
     id: 'balgat-tepsi',
@@ -340,6 +370,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Balgat Tepsi Balgat Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'baklavaci-haci-baba': {
     id: 'baklavaci-haci-baba',
@@ -351,6 +382,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-22:00',
     mapQuery: 'Baklavacı Hacı Baba Konya Yolu Ankara',
     note: 'Beyti; fıstık kebabı',
+    highlights: ['Beyti; fıstık kebabı'],
   },
   'masabasi-kebapcisi': {
     id: 'masabasi-kebapcisi',
@@ -362,6 +394,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:45',
     mapQuery: 'Masabaşı Kebapçısı Kızılay Ankara',
     note: 'Saray usulü sarma beyti',
+    highlights: ['Saray usulü sarma beyti'],
   },
   'celal-et-restoran': {
     id: 'celal-et-restoran',
@@ -373,6 +406,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Celal Et Restoran Öveçler Ankara',
     note: 'Alinazik / Saç kavurma / Yoğurtlu yaprak kebap',
+    highlights: ['Alinazik', 'Saç kavurma', 'Yoğurtlu yaprak kebap'],
   },
   'sehir-kebapcisi': {
     id: 'sehir-kebapcisi',
@@ -384,6 +418,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-01:00',
     mapQuery: 'Şehir Kebapçısı Eskişehir Yolu Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'kesigin-yeri': {
     id: 'kesigin-yeri',
@@ -395,6 +430,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-20:00',
     mapQuery: 'Meşhur Kesiğin Yeri Şaşmaz Ankara',
     note: 'Tereyağlı çürük',
+    highlights: ['Tereyağlı çürük'],
   },
   'kebap-44': {
     id: 'kebap-44',
@@ -406,6 +442,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: 'Kebap 44 Ayrancı Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'dayinin-yeri': {
     id: 'dayinin-yeri',
@@ -417,6 +454,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Dayının Yeri Çayyolu Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'giyma-adana-kebapcisi': {
     id: 'giyma-adana-kebapcisi',
@@ -428,6 +466,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Gıyma Adana Kebapçısı Emek Ankara',
     note: 'Gıyma Adana; ladana',
+    highlights: ['Gıyma Adana; ladana'],
   },
   'doney-usta-63': {
     id: 'doney-usta-63',
@@ -439,6 +478,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Döney Usta 63 Çankaya Ankara',
     note: 'Patlıcan kebabı',
+    highlights: ['Patlıcan kebabı'],
   },
   'kebap-49': {
     id: 'kebap-49',
@@ -450,6 +490,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Kebap 49 Tunalı Hilmi Cad. Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   'gusgana-kebap': {
     id: 'gusgana-kebap',
@@ -461,6 +502,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-02:00',
     mapQuery: 'Gusgana Kebap Ümitköy Ankara',
     note: 'Adana kebap',
+    highlights: ['Adana kebap'],
   },
   'hasan-usta': {
     id: 'hasan-usta',
@@ -472,6 +514,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Hasan Usta Çukurambar Ankara',
     note: 'Kebap',
+    highlights: ['Kebap'],
   },
   duveroglu: {
     id: 'duveroglu',
@@ -483,6 +526,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Düveroğlu Anıttepe Ankara',
     note: 'Beyti / Çöp şiş / Kuzu şiş',
+    highlights: ['Beyti', 'Çöp şiş', 'Kuzu şiş'],
   },
   'nihat-balik': {
     id: 'nihat-balik',
@@ -494,6 +538,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:30',
     mapQuery: 'Nihat Balık Çukurambar Ankara',
     note: 'Kuymak',
+    highlights: ['Kuymak'],
   },
   'kuytu-meze-balik': {
     id: 'kuytu-meze-balik',
@@ -505,6 +550,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '15:00-01:00',
     mapQuery: 'Kuytu Meze Balık Bestekar Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   'tarabya-balik': {
     id: 'tarabya-balik',
@@ -516,6 +562,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Tarabya Balık Çankaya Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   trilye: {
     id: 'trilye',
@@ -527,6 +574,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Trilye Çankaya Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   'sobali-meyhane': {
     id: 'sobali-meyhane',
@@ -538,6 +586,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-02:00',
     mapQuery: 'Sobalı Meyhane Alacaatlı Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   'deli-yengec': {
     id: 'deli-yengec',
@@ -549,6 +598,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '13:00-00:00',
     mapQuery: 'Deli Yengeç Çankaya Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   'plaki-balik': {
     id: 'plaki-balik',
@@ -560,6 +610,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'P’laki Balık Ümitköy Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   'yelken-balik-evi': {
     id: 'yelken-balik-evi',
@@ -571,6 +622,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:00',
     mapQuery: 'Yelken Balık Evi Çankaya Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   'chef-bros': {
     id: 'chef-bros',
@@ -582,6 +634,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Chef Bro’s Çankaya Ankara',
     note: 'Seafood bowl; levrek simit; çıtır jumbo karides',
+    highlights: ['Seafood bowl; levrek simit; çıtır jumbo karides'],
   },
   'ayvaz-egeden': {
     id: 'ayvaz-egeden',
@@ -592,6 +645,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Ayvaz Egeden Tunus Cad. Ankara',
     note: 'Tereyağlı karides / Köpoğlu / Tarator / Levrek marin / Girit ezme / Sıcak atom',
+    highlights: ['Tereyağlı karides', 'Köpoğlu', 'Tarator'],
   },
   'fevzi-hoca-balik-kofte': {
     id: 'fevzi-hoca-balik-kofte',
@@ -603,6 +657,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:00',
     mapQuery: 'Fevzi Hoca Balık Köfte Ümitköy Ankara',
     note: 'Balık köfte',
+    highlights: ['Balık köfte'],
   },
   'kalbur-balik': {
     id: 'kalbur-balik',
@@ -614,6 +669,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:00',
     mapQuery: 'Kalbur Balık Oran Ankara',
     note: 'Balık / Deniz Ürünleri',
+    highlights: ['Balık', 'Deniz Ürünleri'],
   },
   hestia: {
     id: 'hestia',
@@ -625,6 +681,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:00',
     mapQuery: 'Hestia Çankaya Ankara',
     note: 'Bonfileli kase / Izgara dana külbastı kase / Acılı tavuk kase',
+    highlights: ['Bonfileli kase', 'Izgara dana külbastı kase', 'Acılı tavuk kase'],
   },
   'celtik-bowl': {
     id: 'celtik-bowl',
@@ -636,6 +693,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Çeltik Bowl Mamak Ankara',
     note: 'Bowl',
+    highlights: ['Bowl'],
   },
   'vela-bowl': {
     id: 'vela-bowl',
@@ -647,6 +705,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Vela Bowl Bilkent Ankara',
     note: 'Tiftik et bowl / Tiftik tavuk bowl / Somonlu bowl / Soslar tabağı',
+    highlights: ['Tiftik et bowl', 'Tiftik tavuk bowl', 'Somonlu bowl'],
   },
   'chop-n-blend': {
     id: 'chop-n-blend',
@@ -658,6 +717,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Chop N Blend Bahçelievler Ankara',
     note: 'Bowl',
+    highlights: ['Bowl'],
   },
   'la-gems': {
     id: 'la-gems',
@@ -669,6 +729,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'La Gems Ümitköy Ankara',
     note: 'Tavuk bowl / Bazlama tavuk sandviç',
+    highlights: ['Tavuk bowl', 'Bazlama tavuk sandviç'],
   },
   basil: {
     id: 'basil',
@@ -680,6 +741,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-21:30',
     mapQuery: 'Basil Bilkent Ankara',
     note: 'Bowl',
+    highlights: ['Bowl'],
   },
   'espresso-check': {
     id: 'espresso-check',
@@ -691,6 +753,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-01:00',
     mapQuery: 'Espresso Check Bahçelievler Ankara',
     note: 'Bowl',
+    highlights: ['Bowl'],
   },
   'meal-up': {
     id: 'meal-up',
@@ -702,6 +765,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-20:30',
     mapQuery: 'Meal Up Kentpark Ankara',
     note: 'Bowl',
+    highlights: ['Bowl'],
   },
   'meetime-yda-center': {
     id: 'meetime-yda-center',
@@ -713,6 +777,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Meetime YDA Center Çankaya Ankara',
     note: 'Bowl',
+    highlights: ['Bowl'],
   },
   huhu: {
     id: 'huhu',
@@ -724,6 +789,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: 'Huhu Bowl Burrito Ümitköy Ankara',
     note: 'Bowl / Burrito',
+    highlights: ['Bowl', 'Burrito'],
   },
   'rota-cag-kebap': {
     id: 'rota-cag-kebap',
@@ -735,6 +801,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Rota Cağ Kebap Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'dadas-cag-kebap': {
     id: 'dadas-cag-kebap',
@@ -746,6 +813,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Dadaş Cağ Kebap Etimesgut Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'candaslar-cag-kebap': {
     id: 'candaslar-cag-kebap',
@@ -757,6 +825,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:30',
     mapQuery: 'Candaşlar Cağ Kebap Etimesgut Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'cag-kebap-muhendisi': {
     id: 'cag-kebap-muhendisi',
@@ -768,6 +837,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Cağ Kebap Mühendisi Balgat Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'emrah-usta-cag-kebap': {
     id: 'emrah-usta-cag-kebap',
@@ -779,6 +849,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'Emrah Usta Cağ Kebap Etimesgut Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'kuzeydogu-cag-kebap': {
     id: 'kuzeydogu-cag-kebap',
@@ -790,6 +861,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Kuzeydoğu Cağ Kebap Yenimahalle Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'dede-cag-kebap': {
     id: 'dede-cag-kebap',
@@ -801,6 +873,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-18:00',
     mapQuery: 'Dede Cağ Kebap Gölbaşı Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'polatlar-cag-kebap': {
     id: 'polatlar-cag-kebap',
@@ -812,6 +885,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Polatlar Cağ Kebap Etimesgut Ankara',
     note: 'Küşleme',
+    highlights: ['Küşleme'],
   },
   'gunduz-usta-oltu-cag-kebap': {
     id: 'gunduz-usta-oltu-cag-kebap',
@@ -823,6 +897,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:00',
     mapQuery: 'Gündüz Usta Oltu Cağ Kebap Altındağ Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'kok-cag-kebap': {
     id: 'kok-cag-kebap',
@@ -834,6 +909,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Kök Cağ Kebap Yenimahalle Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'muammer-usta': {
     id: 'muammer-usta',
@@ -845,6 +921,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Muammer Usta İncek Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'koc-cag-kebap': {
     id: 'koc-cag-kebap',
@@ -856,6 +933,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Koç Cağ Kebap Kazım Karabekir Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'metin-usta': {
     id: 'metin-usta',
@@ -867,6 +945,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Metin Usta Emek Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'can-dadas': {
     id: 'can-dadas',
@@ -878,6 +957,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Can Dadaş Bağlıca Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'pasa-cag-kebap': {
     id: 'pasa-cag-kebap',
@@ -889,6 +969,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-18:00',
     mapQuery: 'Paşa Cağ Kebap Gölbaşı Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'dilmaclar-oltu-kebap': {
     id: 'dilmaclar-oltu-kebap',
@@ -900,6 +981,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-20:30',
     mapQuery: 'Dilmaçlar Oltu Kebap Siteler Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'cag-kebabin-ustasi-lokman-usta': {
     id: 'cag-kebabin-ustasi-lokman-usta',
@@ -911,6 +993,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:30',
     mapQuery: 'Cağ Kebabın Ustası Lokman Usta Etimesgut Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'nizam-usta-oltu-kebap': {
     id: 'nizam-usta-oltu-kebap',
@@ -922,6 +1005,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-20:00',
     mapQuery: 'Nizam Usta Oltu Kebap Siteler Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'oltu-cag-kebap-cumhur-usta': {
     id: 'oltu-cag-kebap-cumhur-usta',
@@ -933,6 +1017,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: 'Oltu Cağ Kebap Cumhur Usta Etimesgut Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'meshur-erzurum-oltu-kebap': {
     id: 'meshur-erzurum-oltu-kebap',
@@ -944,6 +1029,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Meşhur Erzurum Oltu Kebap Mamak Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'erzurum-oltu-dadaslar': {
     id: 'erzurum-oltu-dadaslar',
@@ -955,6 +1041,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Erzurum Oltu Dadaşlar Öveçler Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'sadik-usta': {
     id: 'sadik-usta',
@@ -966,6 +1053,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:30',
     mapQuery: 'Sadık Usta Ulus Kale Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'livane-cag-kebap': {
     id: 'livane-cag-kebap',
@@ -977,6 +1065,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Livane Cağ Kebap Yenimahalle Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'bizim-oltu-cag-kebap': {
     id: 'bizim-oltu-cag-kebap',
@@ -988,6 +1077,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Bizim Oltu Cağ Kebap Balgat Ankara',
     note: 'Cağ kebap',
+    highlights: ['Cağ kebap'],
   },
   'diyarbakir-cigeri-21': {
     id: 'diyarbakir-cigeri-21',
@@ -999,6 +1089,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Diyarbakır Ciğeri 21 Balgat Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'surkent-cartlak-kebabi': {
     id: 'surkent-cartlak-kebabi',
@@ -1010,6 +1101,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-19:00',
     mapQuery: 'Surkent Cartlak Kebabı Konur Sok Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'cigerci-ridvan-usta': {
     id: 'cigerci-ridvan-usta',
@@ -1021,6 +1113,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Ciğerci Rıdvan Usta Bahçelievler Ankara',
     note: 'Ciğer lahmacun',
+    highlights: ['Ciğer lahmacun'],
   },
   'cigerci-sadi': {
     id: 'cigerci-sadi',
@@ -1032,6 +1125,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-17:00',
     mapQuery: 'Ciğerci Sadi İskitler Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'cigerle': {
     id: 'cigerle',
@@ -1043,6 +1137,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Ciğerle Bağlıca Ankara',
     note: 'Edirne tava ciğeri',
+    highlights: ['Edirne tava ciğeri'],
   },
   'urfali-cigerci-muslim': {
     id: 'urfali-cigerci-muslim',
@@ -1054,6 +1149,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Urfalı Ciğerci Müslim Kızılay Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'cigerim-ahmet-usta': {
     id: 'cigerim-ahmet-usta',
@@ -1065,6 +1161,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:30',
     mapQuery: 'Ciğerim Ahmet Usta Kızılay Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'mersinli-cigerci-apo': {
     id: 'mersinli-cigerci-apo',
@@ -1076,6 +1173,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-02:00',
     mapQuery: 'Mersinli Ciğerci Apo Balgat Ankara',
     note: 'Ciğer / Çöp şiş / Kuzu şiş',
+    highlights: ['Ciğer', 'Çöp şiş', 'Kuzu şiş'],
   },
   'keko-babanin-yeri': {
     id: 'keko-babanin-yeri',
@@ -1087,6 +1185,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Keko Babanın Yeri İskitler Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   '52-ciger-kebap': {
     id: '52-ciger-kebap',
@@ -1098,6 +1197,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: '52 Ciğer Kebap Emek Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'cigerci-bahattin': {
     id: 'cigerci-bahattin',
@@ -1109,6 +1209,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-02:00',
     mapQuery: 'Ciğerci Bahattin Balgat Ankara',
     note: 'Ciğer / Çöp şiş / Kuzu şiş',
+    highlights: ['Ciğer', 'Çöp şiş', 'Kuzu şiş'],
   },
   'ali-usta-cop-sis': {
     id: 'ali-usta-cop-sis',
@@ -1120,6 +1221,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-18:00',
     mapQuery: 'Ali Usta Çöp Şiş Yenimahalle Ankara',
     note: 'Çöp şiş / Kuzu şiş',
+    highlights: ['Çöp şiş', 'Kuzu şiş'],
   },
   'sisci-vehbi-cop-sis': {
     id: 'sisci-vehbi-cop-sis',
@@ -1131,6 +1233,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Şişçi Vehbi Çöp Şiş Yenimahalle Ankara',
     note: 'Çöp şiş / Kuzu şiş',
+    highlights: ['Çöp şiş', 'Kuzu şiş'],
   },
   'koseoglu-cop-sis': {
     id: 'koseoglu-cop-sis',
@@ -1142,6 +1245,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-20:00',
     mapQuery: 'Köseoğlu Çöp Şiş Yenimahalle Ankara',
     note: 'Çöp şiş / Kuzu şiş',
+    highlights: ['Çöp şiş', 'Kuzu şiş'],
   },
   'meshur-cop-sisci-omer-usta': {
     id: 'meshur-cop-sisci-omer-usta',
@@ -1153,6 +1257,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Meşhur Çöp Şişçi Ömer Usta İskitler Memur-Sen Ankara',
     note: 'Çöp şiş / Kuzu şiş',
+    highlights: ['Çöp şiş', 'Kuzu şiş'],
   },
   'garaciger': {
     id: 'garaciger',
@@ -1164,6 +1269,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-19:00',
     mapQuery: 'Garaciğer Etimesgut Şaşmaz Ankara',
     note: 'Ciğer',
+    highlights: ['Ciğer'],
   },
   'erbap-geleneksel-cigkofte': {
     id: 'erbap-geleneksel-cigkofte',
@@ -1175,6 +1281,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:30',
     mapQuery: 'Erbap Geleneksel Çiğköfte Küçükesat Ankara',
     note: 'Çiğ köfte',
+    highlights: ['Çiğ köfte'],
   },
   'cigkofteci-bey': {
     id: 'cigkofteci-bey',
@@ -1186,6 +1293,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:30',
     mapQuery: 'Çiğköfteci Bey Bahçelievler Ankara',
     note: 'Çiğ köfte',
+    highlights: ['Çiğ köfte'],
   },
   'aspuzu': {
     id: 'aspuzu',
@@ -1197,6 +1305,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Aspuzu Kızılay Ankara',
     note: 'Kral sarma',
+    highlights: ['Kral sarma'],
   },
   'professor-kelle-sogus': {
     id: 'professor-kelle-sogus',
@@ -1208,6 +1317,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-03:00',
     mapQuery: 'Profesör Kelle Söğüş Gençlik Caddesi Ankara',
     note: 'Çorba',
+    highlights: ['Çorba'],
   },
   'kolajen-corba': {
     id: 'kolajen-corba',
@@ -1219,6 +1329,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-04:00',
     mapQuery: 'Kolajen Çorba Bahçelievler Ankara',
     note: 'Çorba',
+    highlights: ['Çorba'],
   },
   'corbaci-nevzat-dayi': {
     id: 'corbaci-nevzat-dayi',
@@ -1230,6 +1341,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Çorbacı Nevzat Dayı Mamak Mimar Sinan Ankara',
     note: 'Çorba / 24 saat',
+    highlights: ['Çorba', '24 saat'],
   },
   'kazan-dede-corba': {
     id: 'kazan-dede-corba',
@@ -1241,6 +1353,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Kazan Dede Çorba Yenimahalle Ankara',
     note: 'Etli şifa çorbası, acılı dana, dana kavurma, mısır unlu labne çörek / Kahvaltı',
+    highlights: ['Etli şifa çorbası, acılı dana, dana kavurma, mısır unlu labne çörek', 'Kahvaltı'],
   },
   'antep-corba-dunyasi': {
     id: 'antep-corba-dunyasi',
@@ -1252,6 +1365,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Antep Çorba Dünyası Çankaya Ankara',
     note: 'Çorba / 24 saat',
+    highlights: ['Çorba', '24 saat'],
   },
   beykoz: {
     id: 'beykoz',
@@ -1263,6 +1377,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Beykoz Hoşdere Ümitköy Ankara',
     note: '24 saat',
+    highlights: ['24 saat'],
   },
   'kelleci-cihan-usta': {
     id: 'kelleci-cihan-usta',
@@ -1274,6 +1389,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:00',
     mapQuery: 'Kelleci Cihan Usta Yenimahalle Ankara',
     note: 'Tandır kelle, tandır pöç',
+    highlights: ['Tandır kelle, tandır pöç'],
   },
   'sehri-polatli-corbacisi': {
     id: 'sehri-polatli-corbacisi',
@@ -1285,6 +1401,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Şehri Polatlı Çorbacısı Çukurambar Ankara',
     note: 'Çorba / 24 saat',
+    highlights: ['Çorba', '24 saat'],
   },
   'kasikhan-corba': {
     id: 'kasikhan-corba',
@@ -1296,6 +1413,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Kaşıkhan Çorba Emek Ankara',
     note: 'Çorba / 24 saat',
+    highlights: ['Çorba', '24 saat'],
   },
   devrez: {
     id: 'devrez',
@@ -1307,6 +1425,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-06:00',
     mapQuery: 'Devrez Küçükesat Ankara',
     note: 'Çorba',
+    highlights: ['Çorba'],
   },
   'rumeli-iskembecisi': {
     id: 'rumeli-iskembecisi',
@@ -1318,6 +1437,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Rumeli İşkembecisi Kızılay Ankara',
     note: 'Kelle paça, tuzlama',
+    highlights: ['Kelle paça, tuzlama'],
   },
   'musher-pacaci-keyvan-lokantasi': {
     id: 'musher-pacaci-keyvan-lokantasi',
@@ -1329,6 +1449,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '05:30-19:30',
     mapQuery: 'Musher Paçacı Keyvan Lokantası Ulus Ankara',
     note: 'Çorba / Lokanta',
+    highlights: ['Çorba', 'Lokanta'],
   },
   'eze-kelle-paca': {
     id: 'eze-kelle-paca',
@@ -1340,6 +1461,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Eze Kelle Paça Çankaya Ankara',
     note: 'Çorba',
+    highlights: ['Çorba'],
   },
   'antik-sirdan': {
     id: 'antik-sirdan',
@@ -1351,6 +1473,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Antik Şırdan Balgat Ankara',
     note: 'Çorba / 24 saat',
+    highlights: ['Çorba', '24 saat'],
   },
   'corbaci-hasan-usta': {
     id: 'corbaci-hasan-usta',
@@ -1362,6 +1485,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Çorbacı Hasan Usta Balgat Hoşdere Ulucanlar Ankara',
     note: 'Beyran / 24 saat',
+    highlights: ['Beyran', '24 saat'],
   },
   'koroglu-iskembecisi': {
     id: 'koroglu-iskembecisi',
@@ -1373,6 +1497,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Köroğlu İşkembecisi Çayyolu Ankara',
     note: '24 saat',
+    highlights: ['24 saat'],
   },
   'sehir-donercisi': {
     id: 'sehir-donercisi',
@@ -1384,6 +1509,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:45-21:00',
     mapQuery: 'Şehir Dönercisi Balgat Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'meydan-doner': {
     id: 'meydan-doner',
@@ -1395,6 +1521,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Meydan Döner Kızılay Ankara',
     note: 'Et döner / Tavuk döner',
+    highlights: ['Et döner', 'Tavuk döner'],
   },
   'adanali-volkan-bolkes-doner': {
     id: 'adanali-volkan-bolkes-doner',
@@ -1406,6 +1533,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:30',
     mapQuery: 'Adanalı Volkan Bölkeş Döner Balgat Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'ateshan-et-doner': {
     id: 'ateshan-et-doner',
@@ -1417,6 +1545,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Ateşhan Et Döner Yenimahalle Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'tiryakioglu-donerci': {
     id: 'tiryakioglu-donerci',
@@ -1428,6 +1557,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-18:00',
     mapQuery: 'Tiryakioğlu Dönerci Siteler Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'karagedik-lokantasi': {
     id: 'karagedik-lokantasi',
@@ -1439,6 +1569,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:30-19:00',
     mapQuery: 'Karagedik Lokantası Ulus Ankara',
     note: 'Döner / Lokanta',
+    highlights: ['Döner', 'Lokanta'],
   },
   'meydan-1957': {
     id: 'meydan-1957',
@@ -1450,6 +1581,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-18:30',
     mapQuery: 'Meydan 1957 Kale Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'altinkoz-doner': {
     id: 'altinkoz-doner',
@@ -1461,6 +1593,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Altınköz Döner Altındağ Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'pecenek-doner': {
     id: 'pecenek-doner',
@@ -1472,6 +1605,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Peçenek Döner İskitler Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'azim-besiktas-doner': {
     id: 'azim-besiktas-doner',
@@ -1483,6 +1617,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-18:30',
     mapQuery: 'Azim Beşiktaş Döner Ulus Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'kebapci-canbolat': {
     id: 'kebapci-canbolat',
@@ -1494,6 +1629,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-16:00',
     mapQuery: 'Kebapçı Canbolat Ulus Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'onur-kuzu-doner': {
     id: 'onur-kuzu-doner',
@@ -1505,6 +1641,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Onur Kuzu Döner Etlik Ankara',
     note: 'Döner; sütlac',
+    highlights: ['Döner; sütlac'],
   },
   'cankaya-lokantasi': {
     id: 'cankaya-lokantasi',
@@ -1516,6 +1653,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-18:00',
     mapQuery: 'Çankaya Lokantası Hoşdere Caddesi Ankara',
     note: 'Döner, patlıcan musakka',
+    highlights: ['Döner, patlıcan musakka'],
   },
   'develi-doner-pide': {
     id: 'develi-doner-pide',
@@ -1527,6 +1665,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-20:30',
     mapQuery: 'Develi Döner Pide Hacıbayram Ulus Ankara',
     note: 'Çöpüş (çavlak); cıvıklı, döner, lahmacun, cevizli pide, Develi tahinli',
+    highlights: ['Çöpüş (çavlak); cıvıklı, döner, lahmacun, cevizli pide, Develi tahinli'],
   },
   'kavas-usta': {
     id: 'kavas-usta',
@@ -1538,6 +1677,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: 'Kavaş Usta Çankaya Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'cagri-canbolat': {
     id: 'cagri-canbolat',
@@ -1549,6 +1689,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Çağrı Canbolat Balgat Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'cici-piknik': {
     id: 'cici-piknik',
@@ -1560,6 +1701,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-19:30',
     mapQuery: 'Cici Piknik Kızılay Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'umut-doner-lahmacun': {
     id: 'umut-doner-lahmacun',
@@ -1571,6 +1713,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Umut Döner Lahmacun Etçi Mahmut Kazım Karabekir Ankara',
     note: 'Perde döner, ilik çorbası, lahmacun (Etçi Mahmut)',
+    highlights: ['Perde döner, ilik çorbası, lahmacun (Etçi Mahmut)'],
   },
   'mazali-doner': {
     id: 'mazali-doner',
@@ -1582,6 +1725,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Mazalı Döner Yenimahalle Ankara',
     note: 'Döner / Kahvaltı; kuru fasulye',
+    highlights: ['Döner', 'Kahvaltı; kuru fasulye'],
   },
   'ozlem-doner': {
     id: 'ozlem-doner',
@@ -1593,6 +1737,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Özlem Döner Balgat Ankara',
     note: 'Döner',
+    highlights: ['Döner'],
   },
   'meshur-dursun-usta': {
     id: 'meshur-dursun-usta',
@@ -1604,6 +1749,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-17:30',
     mapQuery: 'Meşhur Dursun Usta Samanpazarı Ankara',
     note: 'Kuzu döner / Köfte',
+    highlights: ['Kuzu döner', 'Köfte'],
   },
   'castello-doner': {
     id: 'castello-doner',
@@ -1615,6 +1761,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:45',
     mapQuery: 'Castello Döner Bahçelievler Ankara',
     note: 'Shawarma',
+    highlights: ['Shawarma'],
   },
   'zeliha-bosnak-mutfagi': {
     id: 'zeliha-bosnak-mutfagi',
@@ -1626,6 +1773,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-19:30',
     mapQuery: 'Zeliha Boşnak Mutfağı Balgat Ankara',
     note: 'Boşnak börek; dana kaburga, ilikli dana kavurma',
+    highlights: ['Boşnak börek; dana kaburga, ilikli dana kavurma'],
   },
   'private-hot-pot-asya': {
     id: 'private-hot-pot-asya',
@@ -1637,6 +1785,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: 'Private Hot Pot Asya Çankaya Ankara',
     note: 'Çin',
+    highlights: ['Çin'],
   },
   'city-wok': {
     id: 'city-wok',
@@ -1648,6 +1797,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'City Wok Ayrancı Çankaya Ankara',
     note: 'Çin / Hint',
+    highlights: ['Çin', 'Hint'],
   },
   'quick-china': {
     id: 'quick-china',
@@ -1659,6 +1809,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Quick China Çankaya Ankara',
     note: 'Crunchy, Philadelphia roll',
+    highlights: ['Crunchy, Philadelphia roll'],
   },
   'guangzhou-wuyang': {
     id: 'guangzhou-wuyang',
@@ -1670,6 +1821,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Guangzhou Wuyang Bestekar Sok Ankara',
     note: 'Çin',
+    highlights: ['Çin'],
   },
   chinabloom: {
     id: 'chinabloom',
@@ -1681,6 +1833,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:30',
     mapQuery: 'Chinabloom Ümitköy Ankara',
     note: 'Çin',
+    highlights: ['Çin'],
   },
   'cin-seddi': {
     id: 'cin-seddi',
@@ -1692,6 +1845,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Çin Seddi Çankaya Ankara',
     note: 'Çin',
+    highlights: ['Çin'],
   },
   'cafe-kucuk-seyler': {
     id: 'cafe-kucuk-seyler',
@@ -1703,6 +1857,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-19:30',
     mapQuery: 'Cafe Küçük Şeyler Ayrancı Ankara',
     note: 'Patlıcanlı dana külbastı, mac n cheese, Maogol çıtır mantı',
+    highlights: ['Patlıcanlı dana külbastı, mac n cheese, Maogol çıtır mantı'],
   },
   'a-la-lune': {
     id: 'a-la-lune',
@@ -1714,6 +1869,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'A La Lune Bahçelievler Ankara',
     note: 'Strawberry kruvasan, füme rose beef kruvasan',
+    highlights: ['Strawberry kruvasan, füme rose beef kruvasan'],
   },
   'hippo-french-tacos': {
     id: 'hippo-french-tacos',
@@ -1725,6 +1881,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Hippo French Tacos Bahçelievler Ankara',
     note: 'Burrito, tiftik taco',
+    highlights: ['Burrito, tiftik taco'],
   },
   'rice-spice': {
     id: 'rice-spice',
@@ -1736,6 +1893,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:45-22:00',
     mapQuery: 'Rice & Spice Beşevler Ankara',
     note: 'Hint',
+    highlights: ['Hint'],
   },
   'puzzle-barbeku': {
     id: 'puzzle-barbeku',
@@ -1747,6 +1905,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Puzzle Barbekü Büyükesat Ankara',
     note: 'İran',
+    highlights: ['İran'],
   },
   'sushi-shot': {
     id: 'sushi-shot',
@@ -1758,6 +1917,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:00',
     mapQuery: 'Sushi Shot Bahçelievler Ankara',
     note: 'Japon',
+    highlights: ['Japon'],
   },
   'yume-roll': {
     id: 'yume-roll',
@@ -1769,6 +1929,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Yume Roll Çankaya Ankara',
     note: 'Japon',
+    highlights: ['Japon'],
   },
   'mikado-ramen': {
     id: 'mikado-ramen',
@@ -1780,6 +1941,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Mikado Ramen Bahçelievler Ankara',
     note: 'Japon',
+    highlights: ['Japon'],
   },
   'misi-ramen': {
     id: 'misi-ramen',
@@ -1791,6 +1953,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Misi Ramen Çankaya Ankara',
     note: 'Japon',
+    highlights: ['Japon'],
   },
   'raion-sushi': {
     id: 'raion-sushi',
@@ -1802,6 +1965,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Raion Sushi Çankaya Ankara',
     note: 'Japon',
+    highlights: ['Japon'],
   },
   korelee: {
     id: 'korelee',
@@ -1813,6 +1977,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Korelee Kızılay Ankara',
     note: 'Kore',
+    highlights: ['Kore'],
   },
   'cafe-korean': {
     id: 'cafe-korean',
@@ -1824,6 +1989,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: "Cafe Kore'an Kızılay Ankara",
     note: 'Kore tatlıları, matcha latte',
+    highlights: ['Kore tatlıları, matcha latte'],
   },
   oppa: {
     id: 'oppa',
@@ -1835,6 +2001,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-00:00',
     mapQuery: 'Oppa Tunalı Ankara',
     note: 'Kore',
+    highlights: ['Kore'],
   },
   'mogo-korean-food': {
     id: 'mogo-korean-food',
@@ -1846,6 +2013,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Mogo Korean Food Kentpark Ankara',
     note: 'Kore',
+    highlights: ['Kore'],
   },
   'sopung-kore': {
     id: 'sopung-kore',
@@ -1857,6 +2025,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Sopung Kore Kızılay Ankara',
     note: 'Kore',
+    highlights: ['Kore'],
   },
   'la-taqueria': {
     id: 'la-taqueria',
@@ -1868,6 +2037,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: 'La Taqueria Çankaya Ankara',
     note: 'Meksika',
+    highlights: ['Meksika'],
   },
   'el-paso-taurus': {
     id: 'el-paso-taurus',
@@ -1879,6 +2049,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-01:00',
     mapQuery: 'El Paso Taurus Ankara',
     note: 'Steak; meksika',
+    highlights: ['Steak; meksika'],
   },
   'la-fiesta': {
     id: 'la-fiesta',
@@ -1890,6 +2061,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'La Fiesta Bahçelievler Ankara',
     note: 'Meksika',
+    highlights: ['Meksika'],
   },
   'ranchero-maidan': {
     id: 'ranchero-maidan',
@@ -1901,6 +2073,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Ranchero Maidan Çankaya Ankara',
     note: 'Meksika',
+    highlights: ['Meksika'],
   },
   'zaytung-zone': {
     id: 'zaytung-zone',
@@ -1912,6 +2085,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'Zaytung Zone Meşrutiyet Caddesi Ankara',
     note: 'Meksika',
+    highlights: ['Meksika'],
   },
   'el-paso': {
     id: 'el-paso',
@@ -1923,6 +2097,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-01:00',
     mapQuery: 'El Paso Bestekar Ankara',
     note: 'Meksika',
+    highlights: ['Meksika'],
   },
   'budak-town': {
     id: 'budak-town',
@@ -1934,6 +2109,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Budak Town İncek Ankara',
     note: 'Burrito',
+    highlights: ['Burrito'],
   },
   'kemun-falafel-humus': {
     id: 'kemun-falafel-humus',
@@ -1945,6 +2121,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Kemun Falafel Humus Emek Ankara',
     note: 'Falafel tabak, falafel dürüm, biberli ekmek, çıtır kabak tatlısı',
+    highlights: ['Falafel tabak, falafel dürüm, biberli ekmek, çıtır kabak tatlısı'],
   },
   'dr-falafel': {
     id: 'dr-falafel',
@@ -1956,6 +2133,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Dr Falafel Kızılay Ankara',
     note: 'Falafel',
+    highlights: ['Falafel'],
   },
   'harzem-restaurant': {
     id: 'harzem-restaurant',
@@ -1967,6 +2145,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:30',
     mapQuery: 'Harzem Restaurant Çukurambar Ankara',
     note: '12-4 arası beylik sofrası',
+    highlights: ['12-4 arası beylik sofrası'],
   },
   'ozbek-sofrasi': {
     id: 'ozbek-sofrasi',
@@ -1978,6 +2157,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'Özbek Sofrası Keçiören Ankara',
     note: 'Özbek',
+    highlights: ['Özbek'],
   },
   'delights-for-fiesta': {
     id: 'delights-for-fiesta',
@@ -1989,6 +2169,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:30',
     mapQuery: 'Delights for Fiesta Kızılay Ankara',
     note: 'Pakistan',
+    highlights: ['Pakistan'],
   },
   'wok-and-fish': {
     id: 'wok-and-fish',
@@ -2000,6 +2181,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:30',
     mapQuery: 'Wok and Fish Çankaya Ankara',
     note: 'Thai',
+    highlights: ['Thai'],
   },
   'kardesler-uygur-mutfagi': {
     id: 'kardesler-uygur-mutfagi',
@@ -2011,6 +2193,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Kardeşler Uygur Mutfağı Bahçelievler Ankara',
     note: 'Uygur',
+    highlights: ['Uygur'],
   },
   'urumci-uygur': {
     id: 'urumci-uygur',
@@ -2022,6 +2205,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Urumçi Uygur Çankaya Ankara',
     note: 'Makarna kavurması',
+    highlights: ['Makarna kavurması'],
   },
   'asya-noodle': {
     id: 'asya-noodle',
@@ -2033,6 +2217,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: 'Asya Noodle Kızılay Ankara',
     note: 'Uygur',
+    highlights: ['Uygur'],
   },
   'arca-burger': {
     id: 'arca-burger',
@@ -2044,6 +2229,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Arca Burger Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'brand-burger': {
     id: 'brand-burger',
@@ -2055,6 +2241,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-03:00',
     mapQuery: 'Brand Burger Ümitköy Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'periperi-burger': {
     id: 'periperi-burger',
@@ -2066,6 +2253,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '14:00-20:00',
     mapQuery: 'Periperi Burger Bahçelievler Ankara',
     note: 'Smash burger',
+    highlights: ['Smash burger'],
   },
   'kasa-burger': {
     id: 'kasa-burger',
@@ -2077,6 +2265,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Kasa Burger İncek Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'bunbro-burger': {
     id: 'bunbro-burger',
@@ -2088,6 +2277,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Bunbro Burger Gölbaşı Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'hoop-burger': {
     id: 'hoop-burger',
@@ -2099,6 +2289,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Hoop Burger Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'etoile-burger': {
     id: 'etoile-burger',
@@ -2110,6 +2301,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:00',
     mapQuery: 'Etoile Burger Keçiören Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'farm-burger': {
     id: 'farm-burger',
@@ -2121,6 +2313,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:30',
     mapQuery: 'Farm Burger Çukurambar Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'aynen-street-food': {
     id: 'aynen-street-food',
@@ -2132,6 +2325,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:30',
     mapQuery: 'Aynen Street Food Emek Ankara',
     note: 'Hamburger; sandwich',
+    highlights: ['Hamburger; sandwich'],
   },
   'tezgah-burger': {
     id: 'tezgah-burger',
@@ -2143,6 +2337,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:00',
     mapQuery: 'Tezgah Burger İncek Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'mamas-burger': {
     id: 'mamas-burger',
@@ -2154,6 +2349,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:45',
     mapQuery: "Mama's Burger Ümitköy Ankara",
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'red-et-burger': {
     id: 'red-et-burger',
@@ -2165,6 +2361,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Red Et Burger Tunalı Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'balat-burger': {
     id: 'balat-burger',
@@ -2176,6 +2373,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Balat Burger Emek Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'volkies-burger': {
     id: 'volkies-burger',
@@ -2187,6 +2385,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:15-21:15',
     mapQuery: 'Volkies Burger Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'the-log': {
     id: 'the-log',
@@ -2198,6 +2397,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'The Log Esat Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'thats-burger': {
     id: 'thats-burger',
@@ -2209,6 +2409,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:45',
     mapQuery: "That's Burger Yenimahalle Ankara",
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'un-sausage-club': {
     id: 'un-sausage-club',
@@ -2220,6 +2421,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Un Sausage Club Çankaya Ankara',
     note: 'Sosili, hotdog; hamburger',
+    highlights: ['Sosili, hotdog; hamburger'],
   },
   '100-burger': {
     id: '100-burger',
@@ -2231,6 +2433,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: '100 Burger Emek Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'ora-steak-burger': {
     id: 'ora-steak-burger',
@@ -2242,6 +2445,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Ora Steak Burger Etimesgut Ankara',
     note: 'Julius burger, eritilmiş cheddar, mangalda pişen burger',
+    highlights: ['Julius burger, eritilmiş cheddar, mangalda pişen burger'],
   },
   'no-fork-burger': {
     id: 'no-fork-burger',
@@ -2253,6 +2457,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'No Fork Burger Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'salz-burger': {
     id: 'salz-burger',
@@ -2264,6 +2469,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Salz Burger Küçükesat Ankara',
     note: 'Truffle burger, simple smash mx2, smash cheese',
+    highlights: ['Truffle burger, simple smash mx2, smash cheese'],
   },
   'unique-burgers': {
     id: 'unique-burgers',
@@ -2275,6 +2481,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:45-21:00',
     mapQuery: 'Unique Burgers Bahçelievler Ankara',
     note: 'Unique, smoothie',
+    highlights: ['Unique, smoothie'],
   },
   etmanyak: {
     id: 'etmanyak',
@@ -2286,6 +2493,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:45-21:15',
     mapQuery: 'Etmanyak Çankaya Ankara',
     note: 'Ayoli burger',
+    highlights: ['Ayoli burger'],
   },
   'burgasm-burger': {
     id: 'burgasm-burger',
@@ -2297,6 +2505,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-05:00',
     mapQuery: 'Burgasm Burger Beytepe Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   burgerdinho: {
     id: 'burgerdinho',
@@ -2308,6 +2517,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:45',
     mapQuery: 'Burgerdinho Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'herds-bbq': {
     id: 'herds-bbq',
@@ -2319,6 +2529,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: "Herd's BBQ Bilkent Ankara",
     note: 'Dana brisket, pastrami, creme brulee',
+    highlights: ['Dana brisket, pastrami, creme brulee'],
   },
   'aloha-burger': {
     id: 'aloha-burger',
@@ -2330,6 +2541,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Aloha Burger Çankaya Ankara',
     note: 'Alaskam state',
+    highlights: ['Alaskam state'],
   },
   'gog-munchie': {
     id: 'gog-munchie',
@@ -2341,6 +2553,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:00',
     mapQuery: 'Gog Munchie Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'jeremy-gourmet': {
     id: 'jeremy-gourmet',
@@ -2352,6 +2565,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:30',
     mapQuery: 'Jeremy Gourmet Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'find-burger': {
     id: 'find-burger',
@@ -2363,6 +2577,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:45-21:30',
     mapQuery: 'Find Burger Bahçelievler Ankara',
     note: 'Lokmalık tavuk, sosili',
+    highlights: ['Lokmalık tavuk, sosili'],
   },
   'beefalo-doner-burger': {
     id: 'beefalo-doner-burger',
@@ -2374,6 +2589,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-03:00',
     mapQuery: 'Beefalo Döner Burger Keçiören Ankara',
     note: 'Dev burger kasası',
+    highlights: ['Dev burger kasası'],
   },
   'the-ochi': {
     id: 'the-ochi',
@@ -2385,6 +2601,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-03:00',
     mapQuery: 'The Ochi Çankaya Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'il-pollo-del-capo': {
     id: 'il-pollo-del-capo',
@@ -2396,6 +2613,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Il Pollo Del Capo Bahçelievler Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'good-beef': {
     id: 'good-beef',
@@ -2407,6 +2625,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-06:00',
     mapQuery: 'Good Beef Beşevler Ankara',
     note: 'Steak; hamburger',
+    highlights: ['Steak; hamburger'],
   },
   'bahceli-falan': {
     id: 'bahceli-falan',
@@ -2418,6 +2637,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Bahçeli Falan Bahçelievler Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'piel-roja': {
     id: 'piel-roja',
@@ -2429,6 +2649,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-01:00',
     mapQuery: 'Piel Roja Ankuva AVM Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'big-baker': {
     id: 'big-baker',
@@ -2440,6 +2661,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Big Baker Bahçelievler Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'sofa-burger': {
     id: 'sofa-burger',
@@ -2451,6 +2673,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Sofa Burger Ümitköy Ankara',
     note: 'Truffle burger',
+    highlights: ['Truffle burger'],
   },
   'fried-meister': {
     id: 'fried-meister',
@@ -2462,6 +2685,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Fried Meister Bahçelievler Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'akali-burger': {
     id: 'akali-burger',
@@ -2473,6 +2697,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Akali Burger Eskişehir Yolu Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'white-burger': {
     id: 'white-burger',
@@ -2484,6 +2709,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'White Burger Kızılay Ankara',
     note: 'Hamburger',
+    highlights: ['Hamburger'],
   },
   'nitka-coffee': {
     id: 'nitka-coffee',
@@ -2495,6 +2721,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-21:00',
     mapQuery: 'Nitka Coffee Ayrancı Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'suns-furry-coffee': {
     id: 'suns-furry-coffee',
@@ -2506,6 +2733,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: "Sun's Furry Coffee Çankaya Ankara",
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'der-roster-roastery': {
     id: 'der-roster-roastery',
@@ -2517,6 +2745,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Der Röster Roastery Ayrancı Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'click-coffee': {
     id: 'click-coffee',
@@ -2528,6 +2757,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-01:00',
     mapQuery: 'Click Coffee Kızılay Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   pacas: {
     id: 'pacas',
@@ -2539,6 +2769,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:00',
     mapQuery: 'Pacas Yaşamkent Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'ada-miel-coffee': {
     id: 'ada-miel-coffee',
@@ -2550,6 +2781,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-00:00',
     mapQuery: 'Ada Miel Coffee Çankaya Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'dharma-coffee': {
     id: 'dharma-coffee',
@@ -2561,6 +2793,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Dharma Coffee Kızılay Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'oze-kahve': {
     id: 'oze-kahve',
@@ -2572,6 +2805,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:30',
     mapQuery: 'Oze Kahve Çankaya Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   lagetom: {
     id: 'lagetom',
@@ -2583,6 +2817,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Lagetom Bahçelievler Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'rubber-soul': {
     id: 'rubber-soul',
@@ -2594,6 +2829,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Rubber Soul Çankaya Ankara',
     note: 'Kahve / Espresso / Latte; tiramisu; sarımsaklı çörek',
+    highlights: ['Kahve', 'Espresso', 'Latte; tiramisu; sarımsaklı çörek'],
   },
   'coffee-code': {
     id: 'coffee-code',
@@ -2605,6 +2841,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Coffee Code Ayrancı Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'a4-kahve': {
     id: 'a4-kahve',
@@ -2616,6 +2853,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'A4 Kahve Ümitköy Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'a4-kahve-tunali': {
     id: 'a4-kahve-tunali',
@@ -2627,6 +2865,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-00:00',
     mapQuery: 'A4 Kahve Tunalı Ankara',
     note: 'Haşhaşlı portakallı kek',
+    highlights: ['Haşhaşlı portakallı kek'],
   },
   'the-stock': {
     id: 'the-stock',
@@ -2638,6 +2877,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'The Stock Arjantin Ankara',
     note: 'Kahve / Matcha',
+    highlights: ['Kahve', 'Matcha'],
   },
   'tetra-n-roastery': {
     id: 'tetra-n-roastery',
@@ -2649,6 +2889,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-17:00',
     mapQuery: 'Tetra N Roastery Çankaya Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'faust-coffee': {
     id: 'faust-coffee',
@@ -2660,6 +2901,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Faust Coffee Bahçelievler Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'grano-coffee': {
     id: 'grano-coffee',
@@ -2671,6 +2913,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-19:00',
     mapQuery: 'Grano Coffee Çankaya Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'austin-kaffeerosterei': {
     id: 'austin-kaffeerosterei',
@@ -2682,6 +2925,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Austin Kaffeerosterei Kızılay Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'kakule-kahve': {
     id: 'kakule-kahve',
@@ -2693,6 +2937,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Kakule Kahve Çankaya Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'coffee-craft-town': {
     id: 'coffee-craft-town',
@@ -2704,6 +2949,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-23:30',
     mapQuery: 'Coffee Craft Town Mutlukent Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   'paper-roasting': {
     id: 'paper-roasting',
@@ -2715,6 +2961,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-19:00',
     mapQuery: 'Paper Roasting Çankaya Ankara',
     note: 'Kahve / Espresso / Latte',
+    highlights: ['Kahve', 'Espresso', 'Latte'],
   },
   moltobene: {
     id: 'moltobene',
@@ -2726,6 +2973,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Moltobene Çukurambar Ankara',
     note: 'Limonata; makarna',
+    highlights: ['Limonata; makarna'],
   },
   'tunali-vitamin': {
     id: 'tunali-vitamin',
@@ -2737,6 +2985,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-19:00',
     mapQuery: 'Tunalı Vitamin Tunalı Ankara',
     note: 'Limonata / Portakal suyu / Atom',
+    highlights: ['Limonata', 'Portakal suyu', 'Atom'],
   },
   flamingo: {
     id: 'flamingo',
@@ -2748,6 +2997,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Flamingo Kızılay Ankara',
     note: 'Limonata / Pastane (New York)',
+    highlights: ['Limonata', 'Pastane (New York)'],
   },
   'vitamin-bufe': {
     id: 'vitamin-bufe',
@@ -2759,6 +3009,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Vitamin Büfe Yenimahalle Ankara',
     note: 'Padişah atom',
+    highlights: ['Padişah atom'],
   },
   whisk: {
     id: 'whisk',
@@ -2770,6 +3021,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Whisk Ümitköy Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'cha-cha': {
     id: 'cha-cha',
@@ -2781,6 +3033,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'Cha Cha Emek Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'velo-cafe': {
     id: 'velo-cafe',
@@ -2792,6 +3045,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Velo Cafe Beytepe Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'amelias-garden': {
     id: 'amelias-garden',
@@ -2803,6 +3057,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-00:00',
     mapQuery: "Amelia's Garden Çankaya Ankara",
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   hoopoe: {
     id: 'hoopoe',
@@ -2814,6 +3069,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-23:30',
     mapQuery: 'Hoopoe Bahçelievler Ankara',
     note: 'Limon dolgulu matchalı çikolata',
+    highlights: ['Limon dolgulu matchalı çikolata'],
   },
   cremama: {
     id: 'cremama',
@@ -2825,6 +3081,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Cremama Mutlukent Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   latifes: {
     id: 'latifes',
@@ -2836,6 +3093,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:30',
     mapQuery: "Latife's Ümitköy Ankara",
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'ro-coffee-matcha': {
     id: 'ro-coffee-matcha',
@@ -2847,6 +3105,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Ro Coffee Matcha Emek Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   hound: {
     id: 'hound',
@@ -2858,6 +3117,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Hound Çankaya Ankara',
     note: 'Çilekli matcha',
+    highlights: ['Çilekli matcha'],
   },
   'bake-joy': {
     id: 'bake-joy',
@@ -2869,6 +3129,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-19:00',
     mapQuery: 'Bake Joy Ayrancı Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'kyo-matcha': {
     id: 'kyo-matcha',
@@ -2880,6 +3141,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Kyo Matcha Kızılay Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'clinic-coffee': {
     id: 'clinic-coffee',
@@ -2891,6 +3153,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:30',
     mapQuery: 'Clinic Coffee Panora Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'sun-co': {
     id: 'sun-co',
@@ -2902,6 +3165,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:30',
     mapQuery: 'Sun Co Ümitköy Ankara',
     note: 'Sandwich; matcha',
+    highlights: ['Sandwich; matcha'],
   },
   walkers: {
     id: 'walkers',
@@ -2913,6 +3177,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: "Walker's Bahçelievler Ankara",
     note: 'Nata (sade, fıstıklı); matcha',
+    highlights: ['Nata (sade, fıstıklı); matcha'],
   },
   'bento-gri': {
     id: 'bento-gri',
@@ -2924,6 +3189,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-19:00',
     mapQuery: 'Bento Gri Bilkent Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'fav-ie': {
     id: 'fav-ie',
@@ -2935,6 +3201,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-20:00',
     mapQuery: 'Fav Ie İncek Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   touyou: {
     id: 'touyou',
@@ -2946,6 +3213,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:30',
     mapQuery: 'Touyou Ümitköy Ankara',
     note: 'Japon pankek; matcha',
+    highlights: ['Japon pankek; matcha'],
   },
   'the-japanese': {
     id: 'the-japanese',
@@ -2957,6 +3225,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-20:00',
     mapQuery: 'The Japanese Bahçelievler Ankara',
     note: 'Matcha',
+    highlights: ['Matcha'],
   },
   'last-penny': {
     id: 'last-penny',
@@ -2968,6 +3237,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:00',
     mapQuery: 'Last Penny Kızılay Ankara',
     note: 'Salep',
+    highlights: ['Salep'],
   },
   'dondurmaci-serdar-usta': {
     id: 'dondurmaci-serdar-usta',
@@ -2979,6 +3249,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Dondurmacı Serdar Usta Bahçelievler Ankara',
     note: 'Dondurma; salep',
+    highlights: ['Dondurma; salep'],
   },
   'timboo-cafe': {
     id: 'timboo-cafe',
@@ -2990,6 +3261,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Timboo Cafe Armada Ankara',
     note: 'Salep',
+    highlights: ['Salep'],
   },
   'faralya-kafe': {
     id: 'faralya-kafe',
@@ -3001,6 +3273,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Faralya Kafe Hacettepe Ankara',
     note: 'Salep',
+    highlights: ['Salep'],
   },
   miniera: {
     id: 'miniera',
@@ -3012,6 +3285,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Miniera Bahçelievler Ankara',
     note: 'Frozen / Milkshake / Smoothie',
+    highlights: ['Frozen', 'Milkshake', 'Smoothie'],
   },
   gaveci: {
     id: 'gaveci',
@@ -3023,6 +3297,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-19:00',
     mapQuery: 'Gaveci Kale Ankara',
     note: 'Türk kahvesi',
+    highlights: ['Türk kahvesi'],
   },
   'kahveci-muco': {
     id: 'kahveci-muco',
@@ -3034,6 +3309,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Kahveci Muco Kale Ankara',
     note: 'Türk kahvesi',
+    highlights: ['Türk kahvesi'],
   },
   'uludag-kebap': {
     id: 'uludag-kebap',
@@ -3045,6 +3321,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:00',
     mapQuery: 'Uludağ Kebap Ulus Ankara',
     note: 'İskender',
+    highlights: ['İskender'],
   },
   'bursa-park-iskender': {
     id: 'bursa-park-iskender',
@@ -3056,6 +3333,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:15',
     mapQuery: 'Bursa Park İskender Keçiören Ankara',
     note: 'İskender',
+    highlights: ['İskender'],
   },
   'mehmet-bey-iskender': {
     id: 'mehmet-bey-iskender',
@@ -3067,6 +3345,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-06:00',
     mapQuery: 'Mehmet Bey İskender Çukurambar Ankara',
     note: 'İskender',
+    highlights: ['İskender'],
   },
   'hadi-bey-kukla-kebap': {
     id: 'hadi-bey-kukla-kebap',
@@ -3078,6 +3357,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'Hadi Bey Kukla Kebap Cebeci Ankara',
     note: 'İskender',
+    highlights: ['İskender'],
   },
   'meshur-bursa-hacibey-kebapcisi': {
     id: 'meshur-bursa-hacibey-kebapcisi',
@@ -3089,6 +3369,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Meşhur Bursa HacıBey Kebapçısı Balgat Ankara',
     note: 'İskender',
+    highlights: ['İskender'],
   },
   'ozhanedan-iskender': {
     id: 'ozhanedan-iskender',
@@ -3100,6 +3381,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:30',
     mapQuery: 'Özhanedan İskender Maltepe Ankara',
     note: 'İskender',
+    highlights: ['İskender'],
   },
   'kaburgaci-hakan-usta': {
     id: 'kaburgaci-hakan-usta',
@@ -3111,6 +3393,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Kaburgacı Hakan Usta Hacı Bayram Çukurambar Ankara',
     note: 'Kuzu kaburga, küşleme, zırhta Adana, kuzu sırt, tablacı salatası',
+    highlights: ['Kuzu kaburga, küşleme, zırhta Adana, kuzu sırt, tablacı salatası'],
   },
   'tavaci-recep-usta': {
     id: 'tavaci-recep-usta',
@@ -3122,6 +3405,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Tavacı Recep Usta Ümitköy Ankara',
     note: 'Kaburga, kuzu incik, saç tava, kuzu tandır',
+    highlights: ['Kaburga, kuzu incik, saç tava, kuzu tandır'],
   },
   'kaburgaci-cemal': {
     id: 'kaburgaci-cemal',
@@ -3133,6 +3417,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-20:00',
     mapQuery: 'Kaburgacı Cemal Şaşmaz Ankara',
     note: 'Kc kaburga, taş kadayıf, cila kaburga, tırşik',
+    highlights: ['Kc kaburga, taş kadayıf, cila kaburga, tırşik'],
   },
   'sutlu-kavurma': {
     id: 'sutlu-kavurma',
@@ -3144,6 +3429,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-20:00',
     mapQuery: 'Sütlü Kavurma Bahçelievler Ankara',
     note: 'Hatay; taş kadayıf; kavurma; Siirt helvası',
+    highlights: ['Hatay; taş kadayıf; kavurma; Siirt helvası'],
   },
   'koce-kavurma': {
     id: 'koce-kavurma',
@@ -3155,6 +3441,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Köçe Kavurma Balgat Ankara',
     note: 'Rize usulü kavurma; Kavurger',
+    highlights: ['Rize usulü kavurma; Kavurger'],
   },
   'angara-gece-kavurmacisi': {
     id: 'angara-gece-kavurmacisi',
@@ -3166,6 +3453,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-03:00',
     mapQuery: 'Angara Gece Kavurmacısı Etimesgut Ankara',
     note: 'Kavurma',
+    highlights: ['Kavurma'],
   },
   'cayda-cira-ev-yemekleri': {
     id: 'cayda-cira-ev-yemekleri',
@@ -3177,6 +3465,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-19:00',
     mapQuery: 'Çayda Çıra Ev Yemekleri Maltepe Ankara',
     note: 'Elazığ ev yemekleri',
+    highlights: ['Elazığ ev yemekleri'],
   },
   'meshur-bii-kavurmaci': {
     id: 'meshur-bii-kavurmaci',
@@ -3188,6 +3477,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-19:00',
     mapQuery: 'Meşhur Bii Kavurmacı Şaşmaz Ankara',
     note: 'Kavurma',
+    highlights: ['Kavurma'],
   },
   'meshur-kavurmaci': {
     id: 'meshur-kavurmaci',
@@ -3199,6 +3489,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-20:30',
     mapQuery: 'Meşhur Kavurmacı İskitler Ankara',
     note: 'Kavurma',
+    highlights: ['Kavurma'],
   },
   'barbar-kavurma': {
     id: 'barbar-kavurma',
@@ -3210,6 +3501,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-20:00',
     mapQuery: 'Barbar Kavurma Konutkent Ankara',
     note: 'Kavurma',
+    highlights: ['Kavurma'],
   },
   'pirzolaci-yusuf-usta': {
     id: 'pirzolaci-yusuf-usta',
@@ -3221,6 +3513,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:00',
     mapQuery: 'Pirzolacı Yusuf Usta Çukurambar Ankara',
     note: 'Pirzola, yoğurtlu kebap, küşleme, lokum kuşbaşı, Harput, soslu fileto şiş',
+    highlights: ['Pirzola, yoğurtlu kebap, küşleme, lokum kuşbaşı, Harput, soslu fileto şiş'],
   },
   'et-ye-kasap': {
     id: 'et-ye-kasap',
@@ -3232,6 +3525,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: 'Et Ye Kasap Aydınlıkevler Ankara',
     note: 'Pirzola',
+    highlights: ['Pirzola'],
   },
   'et-i-ala-cukurambar': {
     id: 'et-i-ala-cukurambar',
@@ -3243,6 +3537,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:30',
     mapQuery: 'Et-i Ala Çukurambar Ankara',
     note: 'Dil altı — etlere fön çeken adam',
+    highlights: ['Dil altı — etlere fön çeken adam'],
   },
   'dolmaci-dukkani-ayranci': {
     id: 'dolmaci-dukkani-ayranci',
@@ -3254,6 +3549,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Dolmacı Dükkanı Ayrancı Ankara',
     note: 'Dolma',
+    highlights: ['Dolma'],
   },
   'oscar-coffee': {
     id: 'oscar-coffee',
@@ -3265,6 +3561,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-23:00',
     mapQuery: 'Oscar Coffee Balgat Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'han-corba': {
     id: 'han-corba',
@@ -3276,6 +3573,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-00:30',
     mapQuery: 'Han Çorba Batıkent Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'ancyra-coffee': {
     id: 'ancyra-coffee',
@@ -3287,6 +3585,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Ancyra Coffee İncek Ankara',
     note: 'Açık hava kahvaltı',
+    highlights: ['Açık hava kahvaltı'],
   },
   'yorguns-cafe': {
     id: 'yorguns-cafe',
@@ -3298,6 +3597,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-18:00',
     mapQuery: "Yorgun's Cafe Çankaya Ankara",
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'le-pain': {
     id: 'le-pain',
@@ -3309,6 +3609,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-20:00',
     mapQuery: 'Le Pain Çankaya Ankara',
     note: 'Kahvaltı; güllaç',
+    highlights: ['Kahvaltı; güllaç'],
   },
   brechdan: {
     id: 'brechdan',
@@ -3320,6 +3621,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-17:00',
     mapQuery: 'Brechdan Bahçelievler Ankara',
     note: 'Avokadolu sandviç, hindi füme sandviç',
+    highlights: ['Avokadolu sandviç, hindi füme sandviç'],
   },
   'farro-bakery': {
     id: 'farro-bakery',
@@ -3331,6 +3633,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-18:00',
     mapQuery: 'Farro Bakery Ümitköy Ankara',
     note: 'Kahvaltı; kruvasan',
+    highlights: ['Kahvaltı; kruvasan'],
   },
   'otto-filotto': {
     id: 'otto-filotto',
@@ -3342,6 +3645,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Otto Filotto Çukurambar Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   koy: {
     id: 'koy',
@@ -3353,6 +3657,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-16:30',
     mapQuery: 'Köy Çayyolu Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'gurkan-chef-steakfood': {
     id: 'gurkan-chef-steakfood',
@@ -3364,6 +3669,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Gürkan Chef Steakfood Kuzu AVM Ankara',
     note: 'Steak; kahvaltı',
+    highlights: ['Steak; kahvaltı'],
   },
   hamlakit: {
     id: 'hamlakit',
@@ -3375,6 +3681,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-22:00',
     mapQuery: 'Hamlakit Gölbaşı Ankara',
     note: 'Karadeniz pidesi, mıhlama, kahvaltı, kavurmalı pide, etli ekmek',
+    highlights: ['Karadeniz pidesi, mıhlama, kahvaltı, kavurmalı pide, etli ekmek'],
   },
   'lets-bake-artisan-bakery': {
     id: 'lets-bake-artisan-bakery',
@@ -3386,6 +3693,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-21:00',
     mapQuery: 'Lets Bake Artisan Bakery Çankaya Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'un-bakery-breakfast-club': {
     id: 'un-bakery-breakfast-club',
@@ -3397,6 +3705,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-17:00',
     mapQuery: 'Un Bakery Breakfast Club Çankaya Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'sobali-kosk': {
     id: 'sobali-kosk',
@@ -3408,6 +3717,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-17:00',
     mapQuery: 'Sobalı Köşk Esat Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'safari-garden': {
     id: 'safari-garden',
@@ -3419,6 +3729,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:30',
     mapQuery: 'Safari Garden Yenimahalle Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'zeytuni-ege-yoresel-urunleri': {
     id: 'zeytuni-ege-yoresel-urunleri',
@@ -3430,6 +3741,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-21:00',
     mapQuery: 'Zeytuni Ege Yöresel Ürünleri Çankaya Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'urfa-citir-lahmacun': {
     id: 'urfa-citir-lahmacun',
@@ -3441,6 +3753,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-02:00',
     mapQuery: 'Urfa Çıtır Lahmacun Etimesgut Ankara',
     note: 'Kahvaltı / Lahmacun',
+    highlights: ['Kahvaltı', 'Lahmacun'],
   },
   'ayme-karadeniz': {
     id: 'ayme-karadeniz',
@@ -3452,6 +3765,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-21:00',
     mapQuery: 'Ayme Karadeniz Çukurambar Ankara',
     note: 'Kahvaltı',
+    highlights: ['Kahvaltı'],
   },
   'eksi-maya': {
     id: 'eksi-maya',
@@ -3463,6 +3777,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-22:00',
     mapQuery: 'Ekşi Maya Tunalı Ankara',
     note: 'Sandwich; kahvaltı',
+    highlights: ['Sandwich; kahvaltı'],
   },
   'walkers-beytepe': {
     id: 'walkers-beytepe',
@@ -3474,6 +3789,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-00:00',
     mapQuery: "Walker's Beytepe Ankara",
     note: 'Sando',
+    highlights: ['Sando'],
   },
   'kanatci-turan': {
     id: 'kanatci-turan',
@@ -3485,6 +3801,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Kanatçı Turan Mamak Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'kanatci-ugur': {
     id: 'kanatci-ugur',
@@ -3496,6 +3813,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Kanatçı Uğur Keçiören Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'meshur-kanatci-yayla-piknik': {
     id: 'meshur-kanatci-yayla-piknik',
@@ -3507,6 +3825,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-18:30',
     mapQuery: 'Meşhur Kanatçı Yayla Piknik Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'ankara-kanatcisi': {
     id: 'ankara-kanatcisi',
@@ -3518,6 +3837,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-03:00',
     mapQuery: 'Ankara Kanatçısı Yenimahalle Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'kanatci-tarik': {
     id: 'kanatci-tarik',
@@ -3529,6 +3849,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Kanatçı Tarık Şaşmaz Ankara',
     note: 'Kanat, armut',
+    highlights: ['Kanat, armut'],
   },
   'kanatci-sari': {
     id: 'kanatci-sari',
@@ -3540,6 +3861,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:00',
     mapQuery: 'Kanatçı Sarı Balgat Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   kanatcibeyi: {
     id: 'kanatcibeyi',
@@ -3551,6 +3873,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:00',
     mapQuery: 'KanatçıBeyi Çankaya Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'kanatci-emek': {
     id: 'kanatci-emek',
@@ -3562,6 +3885,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Kanatçı Emek Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'kanatci-sungur': {
     id: 'kanatci-sungur',
@@ -3573,6 +3897,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:00',
     mapQuery: 'Kanatçı Sungur Yenimahalle Ankara',
     note: 'Çıtır kanat, topkapı',
+    highlights: ['Çıtır kanat, topkapı'],
   },
   'bi-dunya-kanat': {
     id: 'bi-dunya-kanat',
@@ -3584,6 +3909,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Bi Dünya Kanat Balgat Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   'kanatci-ayaz': {
     id: 'kanatci-ayaz',
@@ -3595,6 +3921,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-22:30',
     mapQuery: 'Kanatçı Ayaz Yenimahalle Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   kanathane: {
     id: 'kanathane',
@@ -3606,6 +3933,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Kanathane Şaşmaz Ankara',
     note: 'Kanat',
+    highlights: ['Kanat'],
   },
   cajuto: {
     id: 'cajuto',
@@ -3617,6 +3945,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:45',
     mapQuery: 'Cajuto Keçiören Ankara',
     note: 'Tavuk',
+    highlights: ['Tavuk'],
   },
   '4chickn': {
     id: '4chickn',
@@ -3628,6 +3957,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: "4Chick'n İncek Ankara",
     note: 'Tavuk',
+    highlights: ['Tavuk'],
   },
   durum500: {
     id: 'durum500',
@@ -3639,6 +3969,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:30',
     mapQuery: 'Dürüm500 Emek Ankara',
     note: 'Tavuk',
+    highlights: ['Tavuk'],
   },
   'mustafa-besler': {
     id: 'mustafa-besler',
@@ -3650,6 +3981,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Mustafa Beşler Yenimahalle Ankara',
     note: 'Tavuk',
+    highlights: ['Tavuk'],
   },
   'germec-pilic': {
     id: 'germec-pilic',
@@ -3661,6 +3993,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Germeç Piliç Çankaya Ankara',
     note: 'Tavuk',
+    highlights: ['Tavuk'],
   },
   'sivas-kofte': {
     id: 'sivas-kofte',
@@ -3672,6 +4005,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Sivas Köfte Kızılay Ankara',
     note: 'Köfte, etli ekmek',
+    highlights: ['Köfte, etli ekmek'],
   },
   kofteras: {
     id: 'kofteras',
@@ -3683,6 +4017,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-19:00',
     mapQuery: 'Köfteras Kale Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'mutlu-cakir-sokak-lezzetleri': {
     id: 'mutlu-cakir-sokak-lezzetleri',
@@ -3693,6 +4028,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Mutlu Çakır Sokak Lezzetleri Balgat Ankara',
     note: 'Köfte; kavurma; sucuk ekmek (akşam sokak, ~21:30)',
+    highlights: ['Köfte; kavurma; sucuk ekmek (akşam sokak, ~21:30)'],
   },
   'sirff-et-gece-koftecisi': {
     id: 'sirff-et-gece-koftecisi',
@@ -3704,6 +4040,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '19:00-02:00',
     mapQuery: 'Sirff Et Gece Köftecisi Yenimahalle Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'tarihi-lezzet-inegol': {
     id: 'tarihi-lezzet-inegol',
@@ -3715,6 +4052,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Tarihi Lezzet İnegöl Ayrancı Ankara',
     note: 'İnegöl köfte, piyaz',
+    highlights: ['İnegöl köfte, piyaz'],
   },
   'kofteci-bekir': {
     id: 'kofteci-bekir',
@@ -3726,6 +4064,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Köfteci Bekir Anafartalar Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'noyanca-kofte': {
     id: 'noyanca-kofte',
@@ -3737,6 +4076,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Noyanca Köfte Esat Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'koftecim-budak': {
     id: 'koftecim-budak',
@@ -3748,6 +4088,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-16:00',
     mapQuery: 'Köftecim Budak Dikmen Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'bizim-kofteci': {
     id: 'bizim-kofteci',
@@ -3759,6 +4100,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:00',
     mapQuery: 'Bizim Köfteci İskitler Ankara',
     note: 'Köfte, kavurma',
+    highlights: ['Köfte, kavurma'],
   },
   'ustunel-koftecisi': {
     id: 'ustunel-koftecisi',
@@ -3770,6 +4112,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-19:00',
     mapQuery: 'Üstünel Köftecisi Yeni Sanayi Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'bizim-kofteci-nurettin-usta': {
     id: 'bizim-kofteci-nurettin-usta',
@@ -3781,6 +4124,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-20:00',
     mapQuery: 'Bizim Köfteci Nurettin Usta Şaşmaz Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'meshur-rumeli-koftecisi-mustafa': {
     id: 'meshur-rumeli-koftecisi-mustafa',
@@ -3792,6 +4136,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Meşhur Rumeli Köftecisi Mustafa Ulus Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'meshur-rumeli-koftecisi': {
     id: 'meshur-rumeli-koftecisi',
@@ -3803,6 +4148,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Meşhur Rumeli Köftecisi Kazım Karabekir Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'kebapci-kofteci-emin-usta': {
     id: 'kebapci-kofteci-emin-usta',
@@ -3814,6 +4160,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-19:00',
     mapQuery: 'Kebapçı Köfteci Emin Usta Kale Ankara',
     note: 'Köfte; kuru fasulye',
+    highlights: ['Köfte; kuru fasulye'],
   },
   'haci-seyfullah': {
     id: 'haci-seyfullah',
@@ -3825,6 +4172,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-04:00',
     mapQuery: 'Hacı Seyfullah İskitler Ankara',
     note: 'Köfte; kokoreç',
+    highlights: ['Köfte; kokoreç'],
   },
   'meshur-inegol-koftecisi-1966': {
     id: 'meshur-inegol-koftecisi-1966',
@@ -3836,6 +4184,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-21:00',
     mapQuery: 'Meşhur İnegöl Köftecisi 1966 Yenimahalle Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'vefali-kofteci': {
     id: 'vefali-kofteci',
@@ -3847,6 +4196,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Vefalı Köfteci Çukurambar Ankara',
     note: 'Balaban kebabı; Agria patatesli lokum, Burdur şiş köfte, lokum ızgara, antrikot köfte, yoğurtlu yağlama, süt helvası',
+    highlights: ['Balaban kebabı; Agria patatesli lokum, Burdur şiş köfte, lokum ızgara, antrikot köfte, yoğurtlu yağlama, süt helvası'],
   },
   'kazim-karabekir-koftecisi': {
     id: 'kazim-karabekir-koftecisi',
@@ -3858,6 +4208,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Kazım Karabekir Köftecisi Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'tarihi-inegol-koftecisi-nevzat-usta': {
     id: 'tarihi-inegol-koftecisi-nevzat-usta',
@@ -3869,6 +4220,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Tarihi İnegöl Köftecisi Nevzat Usta Emek Ankara',
     note: 'Köfte',
+    highlights: ['Köfte'],
   },
   'kofteci-haci': {
     id: 'kofteci-haci',
@@ -3880,6 +4232,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-20:00',
     mapQuery: 'Köfteci Hacı Ostim Ankara',
     note: 'Karışık tabak',
+    highlights: ['Karışık tabak'],
   },
   'vampir-sokak-lezzetleri': {
     id: 'vampir-sokak-lezzetleri',
@@ -3891,6 +4244,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '21:45-02:30',
     mapQuery: 'Vampir Sokak Lezzetleri Çayyolu Ankara',
     note: 'Antrikot, merhem, sosisli, köfte',
+    highlights: ['Antrikot, merhem, sosisli, köfte'],
   },
   lagania: {
     id: 'lagania',
@@ -3902,6 +4256,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-02:00',
     mapQuery: 'Lagania Çiftlik Ankara',
     note: 'Kokoreç, köfte',
+    highlights: ['Kokoreç, köfte'],
   },
   'efsane-kofteci': {
     id: 'efsane-kofteci',
@@ -3913,6 +4268,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-02:00',
     mapQuery: 'Efsane Köfteci Kazım Karabekir Ankara',
     note: 'Köfte / Etli ekmek; sütlac (Hamsiköy)',
+    highlights: ['Köfte', 'Etli ekmek; sütlac (Hamsiköy)'],
   },
   'antik-kunefe': {
     id: 'antik-kunefe',
@@ -3924,6 +4280,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '13:00-02:00',
     mapQuery: 'Antik Künefe Keçiören Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'dayi-kunefe-ve-katmer': {
     id: 'dayi-kunefe-ve-katmer',
@@ -3935,6 +4292,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-01:00',
     mapQuery: 'Dayı Künefe ve Katmer Balgat Ankara',
     note: 'Künefe / Katmer',
+    highlights: ['Künefe', 'Katmer'],
   },
   'karabulut-ayintap-kunefe': {
     id: 'karabulut-ayintap-kunefe',
@@ -3946,6 +4304,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Karabulut Ayıntap Künefe Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   kunefekatmerzade: {
     id: 'kunefekatmerzade',
@@ -3957,6 +4316,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-01:30',
     mapQuery: 'KünefeKatmerZade Keçiören Ankara',
     note: 'Künefe / Katmer',
+    highlights: ['Künefe', 'Katmer'],
   },
   'antakiye-kunefe': {
     id: 'antakiye-kunefe',
@@ -3968,6 +4328,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-02:00',
     mapQuery: 'Antakiye Künefe Aşağı Eğlence Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'hafiz-ahmet': {
     id: 'hafiz-ahmet',
@@ -3979,6 +4340,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Hafız Ahmet Eryaman Ankara',
     note: 'Çikolatalı simit katmer; künefe',
+    highlights: ['Çikolatalı simit katmer; künefe'],
   },
   'gaziantepli-erol-usta': {
     id: 'gaziantepli-erol-usta',
@@ -3990,6 +4352,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:30',
     mapQuery: 'Gaziantepli Erol Usta Dikmen Ankara',
     note: 'Katmer, künefe',
+    highlights: ['Katmer, künefe'],
   },
   'belkishan-kunefe': {
     id: 'belkishan-kunefe',
@@ -4001,6 +4364,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:30-00:30',
     mapQuery: 'Belkışhan Künefe Etimesgut Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'muallim-kunefe': {
     id: 'muallim-kunefe',
@@ -4012,6 +4376,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '17:00-23:45',
     mapQuery: 'Muallim Künefe Sincan Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'sarayli-tatlicizadem': {
     id: 'sarayli-tatlicizadem',
@@ -4023,6 +4388,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Saraylı Tatlıcızadem Bağlıca Ankara',
     note: 'Saray bohçası',
+    highlights: ['Saray bohçası'],
   },
   'ozikizler-kunefe': {
     id: 'ozikizler-kunefe',
@@ -4034,6 +4400,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-02:00',
     mapQuery: 'Özikizler Künefe Çukurambar Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'sitki-usta': {
     id: 'sitki-usta',
@@ -4045,6 +4412,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-02:00',
     mapQuery: 'Sıtkı Usta Çukurambar Ankara',
     note: 'Kare baklava, soğuk baklava, küçük baklava; künefe',
+    highlights: ['Kare baklava, soğuk baklava, küçük baklava; künefe'],
   },
   'durdu-usta': {
     id: 'durdu-usta',
@@ -4056,6 +4424,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-02:00',
     mapQuery: 'Durdu Usta Emek Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   antebia: {
     id: 'antebia',
@@ -4067,6 +4436,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Antebia Yenimahalle Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'hanzade-kunefe': {
     id: 'hanzade-kunefe',
@@ -4078,6 +4448,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-02:30',
     mapQuery: 'Hanzade Künefe Balgat Ankara',
     note: 'Billuriye',
+    highlights: ['Billuriye'],
   },
   hisaronu: {
     id: 'hisaronu',
@@ -4089,6 +4460,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-00:00',
     mapQuery: 'Hisarönü Bahçelievler Ankara',
     note: 'Fıstıklı kazandibi',
+    highlights: ['Fıstıklı kazandibi'],
   },
   'urfali-hocanin-yeri': {
     id: 'urfali-hocanin-yeri',
@@ -4100,6 +4472,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Urfalı Hocanın Yeri Keçiören Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   kunefecadde: {
     id: 'kunefecadde',
@@ -4111,6 +4484,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'KünefeCadde Batıkent Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'firik-antakya-kunefe': {
     id: 'firik-antakya-kunefe',
@@ -4122,6 +4496,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Firik Antakya Künefe Kızılay Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'asi-kunefeleri': {
     id: 'asi-kunefeleri',
@@ -4133,6 +4508,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-02:00',
     mapQuery: 'Asi Künefeleri Çiftlik Ankara',
     note: 'Künefe',
+    highlights: ['Künefe'],
   },
   'dedem-kofte-kebap': {
     id: 'dedem-kofte-kebap',
@@ -4144,6 +4520,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-21:00',
     mapQuery: 'Dedem Köfte Kebap Cebeci Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'ridvan-usta-emek': {
     id: 'ridvan-usta-emek',
@@ -4155,6 +4532,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Rıdvan Usta Emek Ankara',
     note: 'Lahmacun; büryan kebabı, küşlemeli etli lahmacun, kemikli kuzu güveç',
+    highlights: ['Lahmacun; büryan kebabı, küşlemeli etli lahmacun, kemikli kuzu güveç'],
   },
   'bilal-usta': {
     id: 'bilal-usta',
@@ -4166,6 +4544,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Bilal Usta Etimesgut Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   kahramanca: {
     id: 'kahramanca',
@@ -4177,6 +4556,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Kahramanca Yenimahalle Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'annem-kebap': {
     id: 'annem-kebap',
@@ -4188,6 +4568,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Annem Kebap Eskişehir Yolu Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'carsihan-lahmacun': {
     id: 'carsihan-lahmacun',
@@ -4199,6 +4580,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:30',
     mapQuery: 'Çarşıhan Lahmacun Ümitköy Ankara',
     note: 'Balcan kebabı',
+    highlights: ['Balcan kebabı'],
   },
   'fettah-usta-doner': {
     id: 'fettah-usta-doner',
@@ -4210,6 +4592,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Fettah Usta Döner İskitler Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'sirali-kebap': {
     id: 'sirali-kebap',
@@ -4221,6 +4604,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Sıralı Kebap Eskişehir Yolu Ankara',
     note: 'Lahmacun; Adana dolama',
+    highlights: ['Lahmacun; Adana dolama'],
   },
   'silan-pide-kebap': {
     id: 'silan-pide-kebap',
@@ -4232,6 +4616,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Şilan Pide Kebap Yenimahalle Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'gaziantep-harli-firin': {
     id: 'gaziantep-harli-firin',
@@ -4243,6 +4628,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Gaziantep Harlı Fırın Hamamönü Ankara',
     note: 'Lahmacun; nohut',
+    highlights: ['Lahmacun; nohut'],
   },
   tepsici: {
     id: 'tepsici',
@@ -4254,6 +4640,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Tepsici Balgat Ankara',
     note: 'Lahmacun, tepsi kebap',
+    highlights: ['Lahmacun, tepsi kebap'],
   },
   'esto-lahmacun': {
     id: 'esto-lahmacun',
@@ -4265,6 +4652,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Esto Lahmacun Eryaman Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'vasfi-usta': {
     id: 'vasfi-usta',
@@ -4276,6 +4664,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-22:00',
     mapQuery: 'Vasfi Usta Balgat Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'cennetkusu-kebap': {
     id: 'cennetkusu-kebap',
@@ -4287,6 +4676,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Cennetkuşu Kebap Çukurambar Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'urfali-haci-mehmet': {
     id: 'urfali-haci-mehmet',
@@ -4298,6 +4688,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Urfalı Hacı Mehmet Ulus Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'dede-cinili-kebap-lahmacun': {
     id: 'dede-cinili-kebap-lahmacun',
@@ -4309,6 +4700,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-22:00',
     mapQuery: 'Dede Çinili Kebap Lahmacun Emek Ankara',
     note: 'Lahmacun; patlıcan tepsi, soğan kebabı, Siverek tava',
+    highlights: ['Lahmacun; patlıcan tepsi, soğan kebabı, Siverek tava'],
   },
   'etis-lahmacun-pide': {
     id: 'etis-lahmacun-pide',
@@ -4320,6 +4712,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:45',
     mapQuery: 'Etiş Lahmacun Pide Ümitköy Ankara',
     note: 'Diyarbakır usulü',
+    highlights: ['Diyarbakır usulü'],
   },
   'cihan-kebap': {
     id: 'cihan-kebap',
@@ -4331,6 +4724,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Cihan Kebap Yıldız Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'dicle-kebap': {
     id: 'dicle-kebap',
@@ -4342,6 +4736,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Dicle Kebap Dikmen Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'kebap-9': {
     id: 'kebap-9',
@@ -4353,6 +4748,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-23:00',
     mapQuery: 'Kebap 9 Çankaya Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'duveroglu-umitkoy': {
     id: 'duveroglu-umitkoy',
@@ -4364,6 +4760,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:30',
     mapQuery: 'Düveroğlu Ümitköy Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'evla-kebap': {
     id: 'evla-kebap',
@@ -4375,6 +4772,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Evla Kebap Keçiören Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'urfali-kebapci-keko': {
     id: 'urfali-kebapci-keko',
@@ -4386,6 +4784,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-03:00',
     mapQuery: 'Urfalı Kebapçı Keko Kazım Karabekir Ankara',
     note: 'Lahmacun',
+    highlights: ['Lahmacun'],
   },
   'gorele-karadeniz-pide': {
     id: 'gorele-karadeniz-pide',
@@ -4397,6 +4796,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-20:00',
     mapQuery: 'Görele Karadeniz Pide Esat Caddesi Ankara',
     note: 'Kapalı pide, Görele pidesi, kavurmalı, pastırmalı pide',
+    highlights: ['Kapalı pide, Görele pidesi, kavurmalı, pastırmalı pide'],
   },
   avsaroglu: {
     id: 'avsaroglu',
@@ -4408,6 +4808,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:30',
     mapQuery: 'Avşaroğlu Çankaya Ankara',
     note: 'Pide',
+    highlights: ['Pide'],
   },
   'karadeniz-pidem': {
     id: 'karadeniz-pidem',
@@ -4419,6 +4820,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: "Karadeniz Pide'm Yenimahalle Ankara",
     note: 'Pide',
+    highlights: ['Pide'],
   },
   'ye-an-pide': {
     id: 'ye-an-pide',
@@ -4430,6 +4832,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Ye An Pide Ümitköy Ankara',
     note: 'Cıvıklı pide',
+    highlights: ['Cıvıklı pide'],
   },
   'everek-develi-pide': {
     id: 'everek-develi-pide',
@@ -4441,6 +4844,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-19:00',
     mapQuery: 'Everek Develi Pide Kızılay Ankara',
     note: 'Pide; peynirli börek',
+    highlights: ['Pide; peynirli börek'],
   },
   'gozde-2-pide-kebap': {
     id: 'gozde-2-pide-kebap',
@@ -4452,6 +4856,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Gözde 2 Pide Kebap Etimesgut Ankara',
     note: 'Pide',
+    highlights: ['Pide'],
   },
   'niyazi-kesim-bafra-pidesi': {
     id: 'niyazi-kesim-bafra-pidesi',
@@ -4463,6 +4868,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:00',
     mapQuery: 'Niyazi Kesim Bafra Pidesi Balgat Ankara',
     note: 'Pide',
+    highlights: ['Pide'],
   },
   'zigana-pide': {
     id: 'zigana-pide',
@@ -4474,6 +4880,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Zigana Pide Emek Ankara',
     note: 'Çiğ kıymalı, kavurmalı',
+    highlights: ['Çiğ kıymalı, kavurmalı'],
   },
   'emir-bey-konya-sofrasi': {
     id: 'emir-bey-konya-sofrasi',
@@ -4485,6 +4892,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Emir Bey Konya Sofrası Yenimahalle Ankara',
     note: 'Tandır kebap, etli ekmek',
+    highlights: ['Tandır kebap, etli ekmek'],
   },
   'konyali-etli-ekmek': {
     id: 'konyali-etli-ekmek',
@@ -4495,6 +4903,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Konyalı Etli Ekmek Gölbaşı Ankara',
     note: 'Pastırmalı küflü yağ somonu, etli ekmek, bıçak arası, recai, bamya çorbası',
+    highlights: ['Pastırmalı küflü yağ somonu, etli ekmek, bıçak arası, recai, bamya çorbası'],
   },
   'kazancim-hizmet': {
     id: 'kazancim-hizmet',
@@ -4506,6 +4915,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Kazancım Hizmet Gölbaşı Ankara',
     note: 'Etli ekmek',
+    highlights: ['Etli ekmek'],
   },
   'konyali-ahmet-usta': {
     id: 'konyali-ahmet-usta',
@@ -4517,6 +4927,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Konyalı Ahmet Usta Emek Ankara',
     note: 'Tandır, etli ekmek, tirit',
+    highlights: ['Tandır, etli ekmek, tirit'],
   },
   'site2-lokantasi': {
     id: 'site2-lokantasi',
@@ -4529,6 +4940,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     mapQuery: 'Site2 Lokantası Siteler Ankara',
     note:
       'Kuzu tandır; kuzu sarma; kavunlu süt helvası; aşçı tabağı, kaburga dolması',
+    highlights: ['Kuzu tandır', 'kuzu sarma', 'kavunlu süt helvası'],
   },
   'sofra-7': {
     id: 'sofra-7',
@@ -4540,6 +4952,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Sofra 7 Bahçelievler Ankara',
     note: 'Lokanta / Ev yemekleri',
+    highlights: ['Lokanta', 'Ev yemekleri'],
   },
   'mutlu-lokantasi': {
     id: 'mutlu-lokantasi',
@@ -4551,6 +4964,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-16:30',
     mapQuery: 'Mutlu Lokantası Ayrancı Ankara',
     note: 'Döner, musakka',
+    highlights: ['Döner, musakka'],
   },
   'sevki-usta': {
     id: 'sevki-usta',
@@ -4562,6 +4976,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-17:00',
     mapQuery: 'Şevki Usta Siteler Ankara',
     note: 'Lokanta / Ev yemekleri',
+    highlights: ['Lokanta', 'Ev yemekleri'],
   },
   'eda-et-lokantasi': {
     id: 'eda-et-lokantasi',
@@ -4573,6 +4988,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-17:00',
     mapQuery: 'Eda Et Lokantası İskitler Ankara',
     note: 'Lokanta / Ev yemekleri',
+    highlights: ['Lokanta', 'Ev yemekleri'],
   },
   'iclal-ev-yemekleri': {
     id: 'iclal-ev-yemekleri',
@@ -4584,6 +5000,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:00',
     mapQuery: 'İclal Ev Yemekleri Ayrancı Ankara',
     note: 'Ev yemekleri; sütlac',
+    highlights: ['Ev yemekleri; sütlac'],
   },
   ugrak: {
     id: 'ugrak',
@@ -4595,6 +5012,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-22:00',
     mapQuery: 'Uğrak Gimat Ankara',
     note: 'Kabak tatlısı; kadınbudu köfte, orman kebabı, nohutlu işkembe; Balaban kebabı',
+    highlights: ['Kabak tatlısı; kadınbudu köfte, orman kebabı, nohutlu işkembe; Balaban kebabı'],
   },
   'cicek-lokantasi': {
     id: 'cicek-lokantasi',
@@ -4606,6 +5024,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Çiçek Lokantası Söğütözü Ankara',
     note: 'Lokanta / Ev yemekleri; bamya çorbası',
+    highlights: ['Lokanta', 'Ev yemekleri; bamya çorbası'],
   },
   'bolu-akin-lokantasi': {
     id: 'bolu-akin-lokantasi',
@@ -4617,6 +5036,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-21:00',
     mapQuery: 'Bolu Akın Lokantası Yenimahalle Ankara',
     note: 'Lokanta / Ev yemekleri',
+    highlights: ['Lokanta', 'Ev yemekleri'],
   },
   'tarihi-mutfak-lokantasi': {
     id: 'tarihi-mutfak-lokantasi',
@@ -4628,6 +5048,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-22:30',
     mapQuery: 'Tarihi Mutfak Lokantası Kızılay Ankara',
     note: 'Kuzu tandır',
+    highlights: ['Kuzu tandır'],
   },
   'burak-et-lokantasi': {
     id: 'burak-et-lokantasi',
@@ -4639,6 +5060,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-17:00',
     mapQuery: 'Burak Et Lokantası Siteler Ankara',
     note: 'Pide, döner, sulu yemek',
+    highlights: ['Pide, döner, sulu yemek'],
   },
   'bogazici-lokantasi': {
     id: 'bogazici-lokantasi',
@@ -4650,6 +5072,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-21:00',
     mapQuery: 'Boğaziçi Lokantası Ulus Ankara',
     note: 'Ankara tava; aşure; kuru fasulye',
+    highlights: ['Ankara tava; aşure; kuru fasulye'],
   },
   'gustoso-pasta': {
     id: 'gustoso-pasta',
@@ -4661,6 +5084,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:00',
     mapQuery: 'Gustoso Pasta Çankaya Ankara',
     note: 'Panna cotta',
+    highlights: ['Panna cotta'],
   },
   'kuzeyin-incisi-sinop-manti': {
     id: 'kuzeyin-incisi-sinop-manti',
@@ -4672,6 +5096,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Kuzeyin İncisi Sinop Mantı Küçükesat Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'urga-manti': {
     id: 'urga-manti',
@@ -4683,6 +5108,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Urga Mantı Yenimahalle Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   konakbay: {
     id: 'konakbay',
@@ -4694,6 +5120,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Konakbay Balgat Ankara',
     note: 'Mantı; çibörek',
+    highlights: ['Mantı; çibörek'],
   },
   'hatca-ana-manti': {
     id: 'hatca-ana-manti',
@@ -4705,6 +5132,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Hatça Ana Mantı İncek Ankara',
     note: 'Sütlü şifa mantı, çıtır mantı',
+    highlights: ['Sütlü şifa mantı, çıtır mantı'],
   },
   'sinemis-manti-evi': {
     id: 'sinemis-manti-evi',
@@ -4716,6 +5144,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Sinemis Mantı Evi Bahçelievler Ankara',
     note: 'Yağlama, Çerkez mantısı, tepsi mantı',
+    highlights: ['Yağlama, Çerkez mantısı, tepsi mantı'],
   },
   'elmer-yufka-manti': {
     id: 'elmer-yufka-manti',
@@ -4727,6 +5156,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-19:30',
     mapQuery: 'Elmer Yufka Mantı İncek Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'maharet-manti': {
     id: 'maharet-manti',
@@ -4738,6 +5168,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Maharet Mantı Çankaya Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   cumcuk: {
     id: 'cumcuk',
@@ -4749,6 +5180,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-20:30',
     mapQuery: 'Cümcük Birlik Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'manti-yiyelim': {
     id: 'manti-yiyelim',
@@ -4760,6 +5192,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:30',
     mapQuery: 'Mantı Yiyelim Balgat Ankara',
     note: 'Yağlama',
+    highlights: ['Yağlama'],
   },
   'doyum-manti': {
     id: 'doyum-manti',
@@ -4771,6 +5204,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:30',
     mapQuery: 'Doyum Mantı Çankaya Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   '1071-manti': {
     id: '1071-manti',
@@ -4782,6 +5216,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: '1071 Mantı Çukurambar Ankara',
     note: 'Mantı, yağlama, sini mantı',
+    highlights: ['Mantı, yağlama, sini mantı'],
   },
   'bodrum-manti': {
     id: 'bodrum-manti',
@@ -4793,6 +5228,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Bodrum Mantı Eskişehir Yolu Ankara',
     note: "Bihter'in Behlül'ü, kremalı mantı",
+    highlights: ["Bihter'in Behlül'ü", 'kremalı mantı'],
   },
   'gadasini-aldigim-manti': {
     id: 'gadasini-aldigim-manti',
@@ -4804,6 +5240,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: 'Gadasını Aldığım Mantı Bahçelievler Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'gonulalan-mantievi': {
     id: 'gonulalan-mantievi',
@@ -4815,6 +5252,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:00',
     mapQuery: 'Gönülalan Mantıevi Altındağ Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'dostlar-manti': {
     id: 'dostlar-manti',
@@ -4826,6 +5264,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:30',
     mapQuery: 'Dostlar Mantı Balgat Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'bal-manti': {
     id: 'bal-manti',
@@ -4837,6 +5276,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Bal Mantı Çukurambar Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'damak-tadi': {
     id: 'damak-tadi',
@@ -4848,6 +5288,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-20:00',
     mapQuery: 'Damak Tadı Cebeci Ankara',
     note: 'Tatlı imam sarığı ve köstebek',
+    highlights: ['Tatlı imam sarığı ve köstebek'],
   },
   'oz-kafeterya': {
     id: 'oz-kafeterya',
@@ -4859,6 +5300,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-20:00',
     mapQuery: 'Öz Kafeterya Kızılay Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   dimanti: {
     id: 'dimanti',
@@ -4870,6 +5312,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-20:30',
     mapQuery: 'Dimanti Bilkent Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'meshur-kayseri-tepsi': {
     id: 'meshur-kayseri-tepsi',
@@ -4880,6 +5323,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Meşhur Kayseri Tepsi Çankaya Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'meshur-tepsi-mantici': {
     id: 'meshur-tepsi-mantici',
@@ -4891,6 +5335,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Meşhur Tepsi Mantıcı Mustafa Kemal Paşa Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   ziyafe: {
     id: 'ziyafe',
@@ -4902,6 +5347,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Ziyafe Bahçelievler Ankara',
     note: 'Mantı',
+    highlights: ['Mantı'],
   },
   'pazar-bakery': {
     id: 'pazar-bakery',
@@ -4913,6 +5359,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-19:00',
     mapQuery: 'Pazar Bakery Ayrancı Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'sahinogullari-pastane': {
     id: 'sahinogullari-pastane',
@@ -4924,6 +5371,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Şahinoğulları Pastane Keçiören Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'hatun-pastanesi': {
     id: 'hatun-pastanesi',
@@ -4935,6 +5383,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Hatun Pastanesi Çankaya Ankara',
     note: 'Petifür; Alman pastası, laz böreği, limonata, limonlu dondurma',
+    highlights: ['Petifür; Alman pastası, laz böreği, limonata, limonlu dondurma'],
   },
   'ekol-pastanesi': {
     id: 'ekol-pastanesi',
@@ -4946,6 +5395,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '05:30-00:30',
     mapQuery: 'Ekol Pastanesi Sokullu Ankara',
     note: 'Pastane; yaş pasta siparişi',
+    highlights: ['Pastane; yaş pasta siparişi'],
   },
   'sezgice-bakery': {
     id: 'sezgice-bakery',
@@ -4957,6 +5407,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-19:00',
     mapQuery: 'Sezgice Bakery Çankaya Ankara',
     note: 'Focaccia ekmeği',
+    highlights: ['Focaccia ekmeği'],
   },
   zahire: {
     id: 'zahire',
@@ -4968,6 +5419,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-23:00',
     mapQuery: 'Zahire Ümitköy Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'damla-pastanesi': {
     id: 'damla-pastanesi',
@@ -4979,6 +5431,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-23:00',
     mapQuery: 'Damla Pastanesi Anıttepe Ankara',
     note: 'Supangle, ay çöreği, milföy, Ankara sarma',
+    highlights: ['Supangle, ay çöreği, milföy, Ankara sarma'],
   },
   'gencler-pastanesi': {
     id: 'gencler-pastanesi',
@@ -4990,6 +5443,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-00:00',
     mapQuery: 'Gençler Pastanesi Yenimahalle Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'figen-pastanesi': {
     id: 'figen-pastanesi',
@@ -5001,6 +5455,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:30-23:30',
     mapQuery: 'Figen Pastanesi Çankaya Ankara',
     note: 'Dökme profiterol',
+    highlights: ['Dökme profiterol'],
   },
   'inka-pastane': {
     id: 'inka-pastane',
@@ -5012,6 +5467,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-23:00',
     mapQuery: 'Inka Çankaya Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   victoria: {
     id: 'victoria',
@@ -5023,6 +5479,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Victoria Öveçler Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'zerdali-pastane': {
     id: 'zerdali-pastane',
@@ -5034,6 +5491,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:30',
     mapQuery: 'Zerdali Pastane Bestepe Ankara',
     note: 'Profiterol',
+    highlights: ['Profiterol'],
   },
   'gozde-ademoglu': {
     id: 'gozde-ademoglu',
@@ -5045,6 +5503,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-00:00',
     mapQuery: 'Gözde Ademoğlu Balgat Ankara',
     note: 'Baklava; sütlü nuriye; güllaç',
+    highlights: ['Baklava; sütlü nuriye; güllaç'],
   },
   'gokkusagi-pastanesi': {
     id: 'gokkusagi-pastanesi',
@@ -5056,6 +5515,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:30-22:30',
     mapQuery: 'Gökkuşağı Pastanesi Konya Yolu Ankara',
     note: 'Su böreği',
+    highlights: ['Su böreği'],
   },
   'maya-pastanesi': {
     id: 'maya-pastanesi',
@@ -5067,6 +5527,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Maya Pastanesi Yenimahalle Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'pelit-pastanesi': {
     id: 'pelit-pastanesi',
@@ -5078,6 +5539,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:30',
     mapQuery: 'Pelit Pastanesi Çukurambar Ankara',
     note: 'Petifür, Boğaziçi pastası',
+    highlights: ['Petifür, Boğaziçi pastası'],
   },
   'dere-pastanesi': {
     id: 'dere-pastanesi',
@@ -5089,6 +5551,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-21:00',
     mapQuery: 'Dere Pastanesi Küçükesat Ankara',
     note: 'Alman pastası, rulo pasta, çıtır milföy, Ankara sarması',
+    highlights: ['Alman pastası, rulo pasta, çıtır milföy, Ankara sarması'],
   },
   'oskar-pastanesi': {
     id: 'oskar-pastanesi',
@@ -5100,6 +5563,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:30-00:00',
     mapQuery: 'Oskar Pastanesi Yenimahalle Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'filiz-pastanesi': {
     id: 'filiz-pastanesi',
@@ -5111,6 +5575,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '05:00-22:00',
     mapQuery: 'Filiz Pastanesi Kızılay Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'angora-pastanesi': {
     id: 'angora-pastanesi',
@@ -5122,6 +5587,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:00',
     mapQuery: 'Angora Pastanesi Yıldız Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   elizinn: {
     id: 'elizinn',
@@ -5133,6 +5599,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-23:00',
     mapQuery: 'Elizinn Tunalı Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'c-viz-pastane': {
     id: 'c-viz-pastane',
@@ -5144,6 +5611,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: "C'viz Tunalı Ankara",
     note: 'Pastane; tiramisu',
+    highlights: ['Pastane; tiramisu'],
   },
   'zurih-pastane': {
     id: 'zurih-pastane',
@@ -5155,6 +5623,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-23:00',
     mapQuery: 'Zürih Çayyolu Ankara',
     note: 'Pastane',
+    highlights: ['Pastane'],
   },
   'kakule-firin': {
     id: 'kakule-firin',
@@ -5166,6 +5635,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Kakule Esat Ankara',
     note: 'Fırın',
+    highlights: ['Fırın'],
   },
   'bambino-firin': {
     id: 'bambino-firin',
@@ -5177,6 +5647,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:30-20:30',
     mapQuery: 'Bambino Fırın Çankaya Ankara',
     note: 'Pişi, çiğ börek',
+    highlights: ['Pişi, çiğ börek'],
   },
   'zorlu-firin': {
     id: 'zorlu-firin',
@@ -5188,6 +5659,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Zorlu Fırın Kurtuluş Ankara',
     note: '24 saat',
+    highlights: ['24 saat'],
   },
   'kafes-firin': {
     id: 'kafes-firin',
@@ -5199,6 +5671,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-21:00',
     mapQuery: 'Kafes Fırın Söğütözü Ankara',
     note: 'Fırın',
+    highlights: ['Fırın'],
   },
   'bakerman-firin': {
     id: 'bakerman-firin',
@@ -5210,6 +5683,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Bakerman Fırın Etimesgut Ankara',
     note: 'Fırın; çay saati',
+    highlights: ['Fırın; çay saati'],
   },
   'eyupoglu-firin': {
     id: 'eyupoglu-firin',
@@ -5221,6 +5695,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'Eyüpoğlu Fırın Çankaya Ankara',
     note: 'Fırın',
+    highlights: ['Fırın'],
   },
   'unfesta-firin': {
     id: 'unfesta-firin',
@@ -5232,6 +5707,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:30-02:30',
     mapQuery: 'Unfesta Fırın Emek Ankara',
     note: 'Fransız sütlacı; sarımsaklı ekmek, ciabatta',
+    highlights: ['Fransız sütlacı; sarımsaklı ekmek, ciabatta'],
   },
   'kubbe-firin': {
     id: 'kubbe-firin',
@@ -5243,6 +5719,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Kubbe Fırın Mamak Ankara',
     note: '24 saat',
+    highlights: ['24 saat'],
   },
   pilavita: {
     id: 'pilavita',
@@ -5254,6 +5731,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Pilavita 1071 Ankara',
     note: 'Pilav',
+    highlights: ['Pilav'],
   },
   pilavin: {
     id: 'pilavin',
@@ -5265,6 +5743,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Pilavin Yaşamkent Ankara',
     note: 'Pilav',
+    highlights: ['Pilav'],
   },
   'meshur-istanbul-pilavcisi': {
     id: 'meshur-istanbul-pilavcisi',
@@ -5276,6 +5755,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Meşhur İstanbul Pilavcısı Bahçelievler Ankara',
     note: 'Pilav',
+    highlights: ['Pilav'],
   },
   'pilavci-ozcan': {
     id: 'pilavci-ozcan',
@@ -5287,6 +5767,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:30-00:00',
     mapQuery: 'Pilavcı Özcan Bahçelievler Ankara',
     note: 'Pilav',
+    highlights: ['Pilav'],
   },
   'pilavci-bekir-usta': {
     id: 'pilavci-bekir-usta',
@@ -5298,6 +5779,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Pilavcı Bekir Usta Bestekar Ankara',
     note: 'Pilav',
+    highlights: ['Pilav'],
   },
   'cuf-cuf-pilavci': {
     id: 'cuf-cuf-pilavci',
@@ -5308,6 +5790,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Cuf Cuf Pilavcı Sincan Ankara',
     note: 'Pilav',
+    highlights: ['Pilav'],
   },
   '8dil-pizza': {
     id: '8dil-pizza',
@@ -5319,6 +5802,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: '8 Dil Pizza Bahçelievler Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'union-pizza': {
     id: 'union-pizza',
@@ -5330,6 +5814,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Union Pizza Emek Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'limoncello-italyan': {
     id: 'limoncello-italyan',
@@ -5341,6 +5826,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Limoncello İtalyan Çankaya Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'aperto-italian-pizza': {
     id: 'aperto-italian-pizza',
@@ -5352,6 +5838,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:30',
     mapQuery: 'Aperto Italian Pizza Sincan Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'origano-pizza-pasta': {
     id: 'origano-pizza-pasta',
@@ -5363,6 +5850,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:30',
     mapQuery: 'Origano Pizza Pasta Çankaya Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'lavare-sokak': {
     id: 'lavare-sokak',
@@ -5374,6 +5862,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '17:00-01:00',
     mapQuery: "L'avare Sokak Çankaya Ankara",
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'double-zero-pizzeria': {
     id: 'double-zero-pizzeria',
@@ -5385,6 +5874,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:00',
     mapQuery: 'Double Zero Pizzeria Büyükesat Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'farvale-pizza': {
     id: 'farvale-pizza',
@@ -5396,6 +5886,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:15-22:00',
     mapQuery: 'Farvale Pizza Tunalı Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'unica-pizza': {
     id: 'unica-pizza',
@@ -5407,6 +5898,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Unica Pizza Tunalı Ankara',
     note: 'Kuzu etli fıstıklı, kuzu etli pizza',
+    highlights: ['Kuzu etli fıstıklı, kuzu etli pizza'],
   },
   'nico-la-pizza': {
     id: 'nico-la-pizza',
@@ -5418,6 +5910,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Nico La Pizza Çankaya Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'naya-dreamland': {
     id: 'naya-dreamland',
@@ -5429,6 +5922,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-00:00',
     mapQuery: 'Naya Dreamland Çankaya Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'italian-di-pizza': {
     id: 'italian-di-pizza',
@@ -5440,6 +5934,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-02:00',
     mapQuery: 'Italian Di Pizza Bahçelievler Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'the-italian-cut': {
     id: 'the-italian-cut',
@@ -5451,6 +5946,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:50',
     mapQuery: 'The Italian Cut Bahçelievler Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'pizzaria-alla-torre': {
     id: 'pizzaria-alla-torre',
@@ -5462,6 +5958,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Pizzaria Alla Torre Atakule Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'giotto-restaurant': {
     id: 'giotto-restaurant',
@@ -5473,6 +5970,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Giotto Restaurant Kuzu AVM Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'mordo-cuisine-italiano': {
     id: 'mordo-cuisine-italiano',
@@ -5484,6 +5982,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-22:00',
     mapQuery: 'Mordo Cuisine Italiano İncek Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   vinozza: {
     id: 'vinozza',
@@ -5495,6 +5994,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:00',
     mapQuery: 'Vinozza Çukurambar Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'la-gioia': {
     id: 'la-gioia',
@@ -5506,6 +6006,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'La Gioia Çankaya Ankara',
     note: 'Pizza; crème brûlée, tiramisu',
+    highlights: ['Pizza; crème brûlée, tiramisu'],
   },
   'luigis-ristorante-bar': {
     id: 'luigis-ristorante-bar',
@@ -5517,6 +6018,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: "Luigi's Ristorante Bar Atakule Ankara",
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'studyo-pizza': {
     id: 'studyo-pizza',
@@ -5528,6 +6030,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:30',
     mapQuery: 'Studyo Pizza Çankaya Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   mezzaluna: {
     id: 'mezzaluna',
@@ -5539,6 +6042,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-23:00',
     mapQuery: 'Mezzaluna Bilkent Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   'pizza-locale': {
     id: 'pizza-locale',
@@ -5550,6 +6054,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-01:00',
     mapQuery: 'Pizza Locale Balgat Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   jula: {
     id: 'jula',
@@ -5561,6 +6066,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Jula Beytepe Ankara',
     note: 'Quattro formaggi, Jula 2.0',
+    highlights: ['Quattro formaggi, Jula 2.0'],
   },
   'vento-italiano-ristorante': {
     id: 'vento-italiano-ristorante',
@@ -5572,6 +6078,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Vento Italiano Ristorante Çankaya Ankara',
     note: 'Pizza',
+    highlights: ['Pizza'],
   },
   ramencity: {
     id: 'ramencity',
@@ -5583,6 +6090,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:00',
     mapQuery: 'Ramencity Bahçelievler Ankara',
     note: 'Kalamar sandwich',
+    highlights: ['Kalamar sandwich'],
   },
   'japon-shoku-sandwichbar': {
     id: 'japon-shoku-sandwichbar',
@@ -5594,6 +6102,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-23:00',
     mapQuery: 'Japon Shoku Sandwich Bar Ümitköy Ankara',
     note: 'Sandwich, tiramisu',
+    highlights: ['Sandwich, tiramisu'],
   },
   poche: {
     id: 'poche',
@@ -5605,6 +6114,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Poche Ayrancı Ankara',
     note: 'Deli Delisman; fake lazanya; sütlac',
+    highlights: ['Deli Delisman; fake lazanya; sütlac'],
   },
   strada: {
     id: 'strada',
@@ -5616,6 +6126,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-20:00',
     mapQuery: 'Strada İncek Ankara',
     note: 'Sandwich',
+    highlights: ['Sandwich'],
   },
   'hoagy-sandwich': {
     id: 'hoagy-sandwich',
@@ -5627,6 +6138,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Hoagy Sandwich Emek Ankara',
     note: 'Romano garlico',
+    highlights: ['Romano garlico'],
   },
   'batch-coffee': {
     id: 'batch-coffee',
@@ -5638,6 +6150,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-19:00',
     mapQuery: 'Batch Coffee Altındağ Ankara',
     note: 'Sandwich',
+    highlights: ['Sandwich'],
   },
   'sebo-dede-ekmek-arasi': {
     id: 'sebo-dede-ekmek-arasi',
@@ -5648,6 +6161,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Sebo Dede Ekmek Arası Çankaya Ankara',
     note: 'Sandwich',
+    highlights: ['Sandwich'],
   },
   magiare: {
     id: 'magiare',
@@ -5659,6 +6173,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Magiare Ayrancı Ankara',
     note: 'Sandwich',
+    highlights: ['Sandwich'],
   },
   arome: {
     id: 'arome',
@@ -5670,6 +6185,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-20:00',
     mapQuery: 'Arome Ümitköy Ankara',
     note: 'Sandwich; kruvasan; Lotuslu cinnamon roll, Antep fıstıklı cinnamon',
+    highlights: ['Sandwich; kruvasan; Lotuslu cinnamon roll, Antep fıstıklı cinnamon'],
   },
   'das-almans': {
     id: 'das-almans',
@@ -5681,6 +6197,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: "Das Alman's Bahçelievler Ankara",
     note: 'Göbit ekmeğinde döner',
+    highlights: ['Göbit ekmeğinde döner'],
   },
   '326-antakya-durum': {
     id: '326-antakya-durum',
@@ -5692,6 +6209,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:45',
     mapQuery: '326 Antakya Dürüm Esat Ankara',
     note: 'Antakya dürüm',
+    highlights: ['Antakya dürüm'],
   },
   'd-dose-bahcelievler': {
     id: 'd-dose-bahcelievler',
@@ -5703,6 +6221,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'D-Dose Bahçelievler Ankara',
     note: 'Lotuslu cinnamon roll, Antep fıstıklı cinnamon',
+    highlights: ['Lotuslu cinnamon roll, Antep fıstıklı cinnamon'],
   },
   'cadin-nin-yeri-beytepe': {
     id: 'cadin-nin-yeri-beytepe',
@@ -5714,6 +6233,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Cadi’nin Yeri Beytepe Ankara',
     note: 'Çikolata kasa (Alltogether)',
+    highlights: ['Çikolata kasa (Alltogether)'],
   },
   'pazar-bakery-cankaya': {
     id: 'pazar-bakery-cankaya',
@@ -5725,6 +6245,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-19:00',
     mapQuery: 'Pazar Bakery Çankaya Ankara',
     note: 'Focaccia, ciabatta',
+    highlights: ['Focaccia, ciabatta'],
   },
   'tunali-koftecisi-tunali-hilmi': {
     id: 'tunali-koftecisi-tunali-hilmi',
@@ -5736,6 +6257,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Tunalı Köftecisi Tunalı Hilmi Cd. Ankara',
     note: 'Antrikot',
+    highlights: ['Antrikot'],
   },
   'karakoz-incek': {
     id: 'karakoz-incek',
@@ -5747,6 +6269,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '17:00-02:00',
     mapQuery: 'Karaköz İncek Ankara',
     note: 'Yaprak bonfile; kavurma; sucuk ekmek',
+    highlights: ['Yaprak bonfile; kavurma; sucuk ekmek'],
   },
   'cukurambar-greenpark-yaprak-bonfile': {
     id: 'cukurambar-greenpark-yaprak-bonfile',
@@ -5757,6 +6280,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Greenpark otel yakını Çukurambar Ankara taksi bonfile',
     note: 'Sokak: yaprak bonfile',
+    highlights: ['Sokak: yaprak bonfile'],
   },
   'incek-sandvic': {
     id: 'incek-sandvic',
@@ -5768,6 +6292,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'İncek Sandviç İncek Ayvalık tostu Ankara',
     note: 'Ayvalık tostu',
+    highlights: ['Ayvalık tostu'],
   },
   'kadikoy-islak-hamburger': {
     id: 'kadikoy-islak-hamburger',
@@ -5779,6 +6304,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-02:00',
     mapQuery: 'Kadıköy Islak Hamburger Çankaya Ankara',
     note: 'Islak hamburger',
+    highlights: ['Islak hamburger'],
   },
   'tunus-islak-hamburger-kizilay': {
     id: 'tunus-islak-hamburger-kizilay',
@@ -5790,6 +6316,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-03:00',
     mapQuery: 'Tunus Islak Hamburger Kızılay Ankara',
     note: 'Islak hamburger',
+    highlights: ['Islak hamburger'],
   },
   'gece-kahvalticisi-yunus-usta': {
     id: 'gece-kahvalticisi-yunus-usta',
@@ -5801,6 +6328,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-15:00',
     mapQuery: 'Gece Kahvaltıcısı Yunus Usta Yenimahalle Ankara',
     note: 'Ekmek arası kahvaltı',
+    highlights: ['Ekmek arası kahvaltı'],
   },
   'kuyu-kokorec-recep-usta': {
     id: 'kuyu-kokorec-recep-usta',
@@ -5812,6 +6340,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-03:00',
     mapQuery: 'Kuyu Kokoreç Recep Usta Ümitköy Ankara',
     note: 'Kokoreç; sucuk ekmek',
+    highlights: ['Kokoreç; sucuk ekmek'],
   },
   'ayakustu-kokorec-incek': {
     id: 'ayakustu-kokorec-incek',
@@ -5823,6 +6352,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '18:00-02:00',
     mapQuery: 'Ayaküstü Kokoreç İncek Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'ankaraguclu-bora': {
     id: 'ankaraguclu-bora',
@@ -5834,6 +6364,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:30',
     mapQuery: 'Ankaragüçlü Bora Kokoreç Yenimahalle Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'tarihi-kokorecci-haci-ulus': {
     id: 'tarihi-kokorecci-haci-ulus',
@@ -5845,6 +6376,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '14:00-21:00',
     mapQuery: 'Tarihi Kokoreççi Hacı Ulus Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'berlin-kokorec-umitkoy': {
     id: 'berlin-kokorec-umitkoy',
@@ -5856,6 +6388,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '18:00-04:00',
     mapQuery: 'Berlin Kokoreç Ümitköy Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'kocak-firin-kokorec-yenimahalle': {
     id: 'kocak-firin-kokorec-yenimahalle',
@@ -5867,6 +6400,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-02:00',
     mapQuery: 'Koçak Fırın Kokoreç Yenimahalle Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'kokomet-yasamkent': {
     id: 'kokomet-yasamkent',
@@ -5878,6 +6412,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-02:00',
     mapQuery: 'Kokomet Yaşamkent Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'kokorecci-berat-usta-cankaya': {
     id: 'kokorecci-berat-usta-cankaya',
@@ -5889,6 +6424,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-03:00',
     mapQuery: 'Kokoreççi Berat Usta Çankaya Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'kokorecci-haci-cukurambar': {
     id: 'kokorecci-haci-cukurambar',
@@ -5900,6 +6436,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-01:00',
     mapQuery: 'Kokoreççi Hacı Çukurambar Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'filiz-kumpir-waffle': {
     id: 'filiz-kumpir-waffle',
@@ -5911,6 +6448,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:30',
     mapQuery: 'Filiz Kumpir Waffle Çankaya Ankara',
     note: 'Çıtır tavuklu kumpir, kavurmalı kumpir',
+    highlights: ['Çıtır tavuklu kumpir, kavurmalı kumpir'],
   },
   'meshur-kumrucu-cebeci': {
     id: 'meshur-kumrucu-cebeci',
@@ -5922,6 +6460,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-21:40',
     mapQuery: 'Meşhur Kumrucu ve Ayvalık Tostcu Çebeci Ankara',
     note: 'Kumru; Ayvalık tostu',
+    highlights: ['Kumru; Ayvalık tostu'],
   },
   'meshur-mardin-marzade-midyecisi-balgat': {
     id: 'meshur-mardin-marzade-midyecisi-balgat',
@@ -5933,6 +6472,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-04:00',
     mapQuery: 'Meşhur Mardin Marzade Midyecisi Balgat Ankara',
     note: 'Midye',
+    highlights: ['Midye'],
   },
   'simit-center': {
     id: 'simit-center',
@@ -5944,6 +6484,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Simit Center Tunalı Ankara',
     note: 'Simit',
+    highlights: ['Simit'],
   },
   'dogus-simit-firini-kale': {
     id: 'dogus-simit-firini-kale',
@@ -5955,6 +6496,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '05:30-18:00',
     mapQuery: 'Doğuş Simit Fırını Kale Ankara',
     note: 'Ankara\'nın en eski simit fırını',
+    highlights: ['Ankara\'nın en eski simit fırını'],
   },
   'ucler-simit-pide-sasmaz': {
     id: 'ucler-simit-pide-sasmaz',
@@ -5966,6 +6508,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:00',
     mapQuery: 'Üçler Simit Pide Şaşmaz Ankara',
     note: 'Simit',
+    highlights: ['Simit'],
   },
   'mack-house': {
     id: 'mack-house',
@@ -5977,6 +6520,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Mack House Eskişehir Yolu Ankara',
     note: 'Sosili',
+    highlights: ['Sosili'],
   },
   'fries-and-more': {
     id: 'fries-and-more',
@@ -5988,6 +6532,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-01:00',
     mapQuery: 'Fries and More Emek Ankara',
     note: 'Cheddar hotdog, samurai hotdog',
+    highlights: ['Cheddar hotdog, samurai hotdog'],
   },
   frydam: {
     id: 'frydam',
@@ -5999,6 +6544,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:45-21:00',
     mapQuery: 'Frydam Esat Ankara',
     note: 'Hollanda patatesi; sosisli',
+    highlights: ['Hollanda patatesi; sosisli'],
   },
   'pikolet-maltepe': {
     id: 'pikolet-maltepe',
@@ -6010,6 +6556,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-03:30',
     mapQuery: 'Pikolet Maltepe Ankara',
     note: 'Kokoreç',
+    highlights: ['Kokoreç'],
   },
   'tostcu-ziver-sasmaz': {
     id: 'tostcu-ziver-sasmaz',
@@ -6021,6 +6568,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-19:00',
     mapQuery: 'Tostcu Ziver Şaşmaz Ankara',
     note: 'Tost',
+    highlights: ['Tost'],
   },
   'tostcu-mahmut-mesrutiyet': {
     id: 'tostcu-mahmut-mesrutiyet',
@@ -6032,6 +6580,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'Tostcu Mahmut Meşrutiyet Cad. Ankara',
     note: 'Tost',
+    highlights: ['Tost'],
   },
   'duman-market': {
     id: 'duman-market',
@@ -6043,6 +6592,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'Duman Market İskitler Ankara',
     note: 'Tost',
+    highlights: ['Tost'],
   },
   'volkan-piknik': {
     id: 'volkan-piknik',
@@ -6053,6 +6603,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Volkan Piknik Kızılay Ankara',
     note: 'Tost',
+    highlights: ['Tost'],
   },
   'tostpoint-bahcelievler': {
     id: 'tostpoint-bahcelievler',
@@ -6064,6 +6615,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:00',
     mapQuery: 'Tostpoint Bahçelievler Ankara',
     note: 'kore tostuk',
+    highlights: ['kore tostuk'],
   },
   'tostcu-ali-ostim': {
     id: 'tostcu-ali-ostim',
@@ -6075,6 +6627,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-20:30',
     mapQuery: 'Tostcu Ali Ostim Ankara',
     note: 'Tost',
+    highlights: ['Tost'],
   },
   'cafe-az-sekerli': {
     id: 'cafe-az-sekerli',
@@ -6086,6 +6639,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:00',
     mapQuery: 'Cafe Az Şekerli Ayrancı Ankara',
     note: 'Tost',
+    highlights: ['Tost'],
   },
   'kasap-izgara-emek': {
     id: 'kasap-izgara-emek',
@@ -6097,6 +6651,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:55-21:45',
     mapQuery: 'Kasap Izgara Emek Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'redrex-umitkoy': {
     id: 'redrex-umitkoy',
@@ -6108,6 +6663,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:00',
     mapQuery: 'Redrex Ümitköy Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'cezaar-steakhouse-umitkoy': {
     id: 'cezaar-steakhouse-umitkoy',
@@ -6119,6 +6675,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Cezaar Steakhouse Ümitköy Ankara',
     note: 'Küçük hamburger, Dallas',
+    highlights: ['Küçük hamburger, Dallas'],
   },
   'bybull-steakhouse-cukurambar': {
     id: 'bybull-steakhouse-cukurambar',
@@ -6130,6 +6687,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Bybull Steakhouse Çukurambar Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   tiftik: {
     id: 'tiftik',
@@ -6141,6 +6699,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Tiftik Konutkent Ankara',
     note: 'Steak; tiramisu',
+    highlights: ['Steak; tiramisu'],
   },
   'kapi-steakhouse-umitkoy': {
     id: 'kapi-steakhouse-umitkoy',
@@ -6152,6 +6711,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Kapi Steakhouse Ümitköy Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'isli-bbq-cankaya': {
     id: 'isli-bbq-cankaya',
@@ -6163,6 +6723,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-02:00',
     mapQuery: 'İşlı BBQ Çankaya Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'black-butcher-steakhouse-kizilay': {
     id: 'black-butcher-steakhouse-kizilay',
@@ -6173,6 +6734,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Black Butcher Steakhouse Kızılay Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'jw-steakhouse-cukurambar': {
     id: 'jw-steakhouse-cukurambar',
@@ -6184,6 +6746,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-23:30',
     mapQuery: 'JW Steakhouse Çukurambar Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'sirff-et-yenimahalle': {
     id: 'sirff-et-yenimahalle',
@@ -6195,6 +6758,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Sırrf Et Yenimahalle Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'gunaydin-kebap-steakhouse-cayyolu': {
     id: 'gunaydin-kebap-steakhouse-cayyolu',
@@ -6206,6 +6770,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Günaydın Kebap Steakhouse Çayyolu Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'ferfene-steakhouse-kizilay': {
     id: 'ferfene-steakhouse-kizilay',
@@ -6217,6 +6782,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-23:00',
     mapQuery: 'Ferfene Steakhouse Kızılay Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'butcha-steakhouse-ankara-tepe': {
     id: 'butcha-steakhouse-ankara-tepe',
@@ -6228,6 +6794,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-00:00',
     mapQuery: 'Butcha Steakhouse Ankara Tepe Çankaya Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'inci-steak-umitkoy': {
     id: 'inci-steak-umitkoy',
@@ -6239,6 +6806,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'İnci Steak Ümitköy Ankara',
     note: 'Steak',
+    highlights: ['Steak'],
   },
   'tandir-but-yasamkent': {
     id: 'tandir-but-yasamkent',
@@ -6250,6 +6818,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-22:00',
     mapQuery: 'Tandır But Yaşamkent Ankara',
     note: 'Tandır',
+    highlights: ['Tandır'],
   },
   'keremzade-restoran-kecioren': {
     id: 'keremzade-restoran-kecioren',
@@ -6261,6 +6830,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:30',
     mapQuery: 'Keremzade Restoran Keçiören Ankara',
     note: 'Tandır',
+    highlights: ['Tandır'],
   },
   'kar-et-lokantasi-cukurambar': {
     id: 'kar-et-lokantasi-cukurambar',
@@ -6272,6 +6842,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Kar Et Lokantası Çukurambar Ankara',
     note: 'Tandır; padişah sucuğu',
+    highlights: ['Tandır; padişah sucuğu'],
   },
   'beykoz-golbasi': {
     id: 'beykoz-golbasi',
@@ -6283,6 +6854,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'Beykoz Restoran Gölbaşı Ankara',
     note: 'Tandır',
+    highlights: ['Tandır'],
   },
   'ulucay-tantuni-balgat': {
     id: 'ulucay-tantuni-balgat',
@@ -6294,6 +6866,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-22:00',
     mapQuery: 'Ulucay Tantuni Balgat Ankara',
     note: 'Tantuni',
+    highlights: ['Tantuni'],
   },
   'ozkan-tantuni-balgat': {
     id: 'ozkan-tantuni-balgat',
@@ -6305,6 +6878,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:30',
     mapQuery: 'Özkan Tantuni Balgat Ankara',
     note: 'Tantuni',
+    highlights: ['Tantuni'],
   },
   '324-mersin-tantuni-demetevler': {
     id: '324-mersin-tantuni-demetevler',
@@ -6316,6 +6890,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-02:00',
     mapQuery: '324 Mersin Tantuni Demetevler Ankara',
     note: 'Tantuni',
+    highlights: ['Tantuni'],
   },
   'usta-tantuni-cankaya': {
     id: 'usta-tantuni-cankaya',
@@ -6327,6 +6902,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Usta Tantuni Çankaya Ankara',
     note: 'Tantuni',
+    highlights: ['Tantuni'],
   },
   'korykos-tantuni-tandogan': {
     id: 'korykos-tantuni-tandogan',
@@ -6338,6 +6914,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:45-04:00',
     mapQuery: 'Korykos Tantuni Tandoğan Ankara',
     note: 'Yoğurtlu tantuni',
+    highlights: ['Yoğurtlu tantuni'],
   },
   'hacibaba-gaziantep-konya-yolu': {
     id: 'hacibaba-gaziantep-konya-yolu',
@@ -6349,6 +6926,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-22:00',
     mapQuery: 'Hacıbaba Gaziantep Baklava Konya Yolu Ankara',
     note: 'Baklava',
+    highlights: ['Baklava'],
   },
   'isler-baklava-beytepe': {
     id: 'isler-baklava-beytepe',
@@ -6360,6 +6938,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:30',
     mapQuery: 'İşler Baklava Beytepe Ankara',
     note: 'Baklava',
+    highlights: ['Baklava'],
   },
   'fistikcioglu-emek': {
     id: 'fistikcioglu-emek',
@@ -6371,6 +6950,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Fıstıkçıoğlu Baklava Emek Ankara',
     note: 'Baklava',
+    highlights: ['Baklava'],
   },
   'zeugma-kunefe-katmer-balgat': {
     id: 'zeugma-kunefe-katmer-balgat',
@@ -6382,6 +6962,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-02:00',
     mapQuery: 'Zeugma Künefe Katmer Balgat Ankara',
     note: 'Zeugma özel baklava',
+    highlights: ['Zeugma özel baklava'],
   },
   'baklavaci-karagoz-kizilay': {
     id: 'baklavaci-karagoz-kizilay',
@@ -6393,6 +6974,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:15',
     mapQuery: 'Baklavacı Karagöz Kızılay Ankara',
     note: 'Baklava; sütlü nuriye',
+    highlights: ['Baklava; sütlü nuriye'],
   },
   'bosco-cankaya': {
     id: 'bosco-cankaya',
@@ -6404,6 +6986,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-00:00',
     mapQuery: 'Bosco Çankaya Ankara',
     note: 'Bigne; tiramisu',
+    highlights: ['Bigne; tiramisu'],
   },
   'rispetto-bahcelievler': {
     id: 'rispetto-bahcelievler',
@@ -6415,6 +6998,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-22:30',
     mapQuery: 'Rispetto Bahçelievler Ankara',
     note: 'Vişneli portakallı brownie',
+    highlights: ['Vişneli portakallı brownie'],
   },
   'bonapple-cankaya': {
     id: 'bonapple-cankaya',
@@ -6426,6 +7010,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-21:00',
     mapQuery: 'Bonapple Çankaya Ankara',
     note: 'Apple crumble pie',
+    highlights: ['Apple crumble pie'],
   },
   'turta-home-cafe-umitkoy': {
     id: 'turta-home-cafe-umitkoy',
@@ -6437,6 +7022,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:00',
     mapQuery: 'Turta Home Cafe Ümitköy Ankara',
     note: 'Cheesecake; bademli portakallı pasta, çikolatalı bademli pasta',
+    highlights: ['Cheesecake; bademli portakallı pasta, çikolatalı bademli pasta'],
   },
   'kuzgundokuz-ayranci': {
     id: 'kuzgundokuz-ayranci',
@@ -6448,6 +7034,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Kuzgundokuz Ayrancı Ankara',
     note: 'Cheesecake',
+    highlights: ['Cheesecake'],
   },
   'piaf-cafe-kumru-avm': {
     id: 'piaf-cafe-kumru-avm',
@@ -6459,6 +7046,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Piaf Cafe Kumru AVM Ankara',
     note: 'Crème brûlée',
+    highlights: ['Crème brûlée'],
   },
   'louisse-cafe-cankaya': {
     id: 'louisse-cafe-cankaya',
@@ -6470,6 +7058,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Louisse Cafe Çankaya Ankara',
     note: 'Crème brûlée',
+    highlights: ['Crème brûlée'],
   },
   'miskervan-dikmen': {
     id: 'miskervan-dikmen',
@@ -6481,6 +7070,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Miskervan Dondurma Dikmen Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'arzen-factory-incek': {
     id: 'arzen-factory-incek',
@@ -6492,6 +7082,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Arzen Factory İncek Ankara',
     note: 'Profiterol; dondurma',
+    highlights: ['Profiterol; dondurma'],
   },
   'mannda-baba-yasamkent': {
     id: 'mannda-baba-yasamkent',
@@ -6503,6 +7094,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-20:00',
     mapQuery: 'Mannda Baba Yaşamkent Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'meto-sokullu': {
     id: 'meto-sokullu',
@@ -6514,6 +7106,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Meto Dondurma Sokullu Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'sim-dondurma-cankaya': {
     id: 'sim-dondurma-cankaya',
@@ -6525,6 +7118,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-00:00',
     mapQuery: 'Sim Dondurma Çankaya Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'marsi-coffee-incek': {
     id: 'marsi-coffee-incek',
@@ -6536,6 +7130,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:30',
     mapQuery: 'Marsi Coffee İncek Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'toris-dondurma-golbasi': {
     id: 'toris-dondurma-golbasi',
@@ -6547,6 +7142,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-01:00',
     mapQuery: 'Toris Dondurma Gölbaşı Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'gelatiamo-umitkoy': {
     id: 'gelatiamo-umitkoy',
@@ -6558,6 +7154,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-01:00',
     mapQuery: 'Gelatiamo Ümitköy Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'lucca-kecioren': {
     id: 'lucca-kecioren',
@@ -6569,6 +7166,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Lucca Dondurma Keçiören Ankara',
     note: 'Dondurma',
+    highlights: ['Dondurma'],
   },
   'eklerci-murat-ovecler': {
     id: 'eklerci-murat-ovecler',
@@ -6580,6 +7178,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Eklerci Murat Öveçler Ankara',
     note: 'Ekler',
+    highlights: ['Ekler'],
   },
   'mommy-made-yasamkent': {
     id: 'mommy-made-yasamkent',
@@ -6591,6 +7190,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-20:00',
     mapQuery: 'Mommy Made Yaşamkent Ankara',
     note: 'Meze odaklı; güllaç',
+    highlights: ['Meze odaklı; güllaç'],
   },
   'helvaci-ali-bahcelievler': {
     id: 'helvaci-ali-bahcelievler',
@@ -6602,6 +7202,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Helvacı Ali Bahçelievler Ankara',
     note: 'Cennet çamuru, lotuslu helva',
+    highlights: ['Cennet çamuru, lotuslu helva'],
   },
   'site2-lokantasi-iskitler': {
     id: 'site2-lokantasi-iskitler',
@@ -6613,6 +7214,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-20:30',
     mapQuery: 'Site2 Lokantası İskitler Ankara',
     note: 'Kavunda süt helvası',
+    highlights: ['Kavunda süt helvası'],
   },
   'happy-friday-bahcelievler': {
     id: 'happy-friday-bahcelievler',
@@ -6624,6 +7226,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Happy Friday Bahçelievler Ankara',
     note: 'Japon pankek; maritozzo',
+    highlights: ['Japon pankek; maritozzo'],
   },
   'seyhmus-ato-kadayif-yenimahalle': {
     id: 'seyhmus-ato-kadayif-yenimahalle',
@@ -6635,6 +7238,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-00:00',
     mapQuery: 'Şeyhmus Ato Kadayıf Yenimahalle Ankara',
     note: 'Kadayıf',
+    highlights: ['Kadayıf'],
   },
   'sutluce-kadayif-baglica': {
     id: 'sutluce-kadayif-baglica',
@@ -6646,6 +7250,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:30',
     mapQuery: 'Sütlüce Kadayıf Bağlıca Ankara',
     note: 'Fıstıklı, frambuazlı kadayıf',
+    highlights: ['Fıstıklı, frambuazlı kadayıf'],
   },
   'sanli-burma-kadayif-emek': {
     id: 'sanli-burma-kadayif-emek',
@@ -6657,6 +7262,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Şanlı Burma Kadayıf Emek Ankara',
     note: 'Burma kadayıf',
+    highlights: ['Burma kadayıf'],
   },
   'bas-asci-yenimahalle': {
     id: 'bas-asci-yenimahalle',
@@ -6668,6 +7274,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Baş Usta Kadayıf Yenimahalle Ankara',
     note: 'Vişneli kaymaklı ekmek kadayıfı',
+    highlights: ['Vişneli kaymaklı ekmek kadayıfı'],
   },
   'bolulu-hasan-tunali': {
     id: 'bolulu-hasan-tunali',
@@ -6679,6 +7286,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-01:00',
     mapQuery: 'Bolulu Hasan Usta Tunalı Ankara',
     note: 'Kazandibi, keşkül, krem karamel',
+    highlights: ['Kazandibi, keşkül, krem karamel'],
   },
   'sekerci-habib-emek': {
     id: 'sekerci-habib-emek',
@@ -6691,6 +7299,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     mapQuery: 'Şekerci Habib Emek Ankara',
     note:
       'Antep fıstıklı, incirli, portakallı, Dubai çikolata, badem, fıstık rüyası kazandibi; sambalı şerbet; profiterol, tiramisu',
+    highlights: ['Antep fıstıklı', 'Dubai çikolata', 'kazandibi'],
   },
   'zeynel-cilli-odtu': {
     id: 'zeynel-cilli-odtu',
@@ -6702,6 +7311,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Zeynel Cilli ODTÜ Ankara',
     note: 'Kazandibi, tavuk göğsü',
+    highlights: ['Kazandibi, tavuk göğsü'],
   },
   'firinci-orhan-istanbul-yolu': {
     id: 'firinci-orhan-istanbul-yolu',
@@ -6713,6 +7323,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '00:00-00:00',
     mapQuery: 'Fırıncı Orhan İstanbul Yolu Ankara',
     note: 'Fıstıklı kazandibi',
+    highlights: ['Fıstıklı kazandibi'],
   },
   'emirgan-sutis-cukurambar': {
     id: 'emirgan-sutis-cukurambar',
@@ -6724,6 +7335,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-01:00',
     mapQuery: 'Emirgan Sütiş Çukurambar Ankara',
     note: 'Kazandibi; keşkül; sütlac',
+    highlights: ['Kazandibi; keşkül; sütlac'],
   },
   'cookshop-kentpark-avm': {
     id: 'cookshop-kentpark-avm',
@@ -6735,6 +7347,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Cookshop Kentpark AVM Çankaya Ankara',
     note: 'Magnolia',
+    highlights: ['Magnolia'],
   },
   'cicek-penceresi': {
     id: 'cicek-penceresi',
@@ -6746,6 +7359,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Çiçek Penceresi Pankek Çankaya Ankara',
     note: 'Pankek',
+    highlights: ['Pankek'],
   },
   'bageli-manyak': {
     id: 'bageli-manyak',
@@ -6757,6 +7371,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'Bageli Manyak Pankek Kulesi Ayrancı Ankara',
     note: 'Kore pankek, profiterol (pankek kulesi)',
+    highlights: ['Kore pankek, profiterol (pankek kulesi)'],
   },
   'omer-chef-profiterol-yenimahalle': {
     id: 'omer-chef-profiterol-yenimahalle',
@@ -6768,6 +7383,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:30',
     mapQuery: 'Ömer Chef Profiterol Yenimahalle Ankara',
     note: 'Profiterol',
+    highlights: ['Profiterol'],
   },
   'mis-profiterol-dikmen': {
     id: 'mis-profiterol-dikmen',
@@ -6779,6 +7395,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:30',
     mapQuery: 'Mis Profiterol Dikmen Ankara',
     note: 'Profiterol',
+    highlights: ['Profiterol'],
   },
   'kumo-coffee-ayranci': {
     id: 'kumo-coffee-ayranci',
@@ -6790,6 +7407,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-23:00',
     mapQuery: 'Kumo Coffee Ayrancı Ankara',
     note: 'Çatlak profiterol; sarımsaklı çörek',
+    highlights: ['Çatlak profiterol; sarımsaklı çörek'],
   },
   'goksu-lokantasi-nene-hatun': {
     id: 'goksu-lokantasi-nene-hatun',
@@ -6801,6 +7419,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:00',
     mapQuery: 'Göksü Lokantası Nenehatun Keçiören Ankara',
     note: 'Sufle',
+    highlights: ['Sufle'],
   },
   'suflabs-bahcelievler': {
     id: 'suflabs-bahcelievler',
@@ -6811,6 +7430,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Süflab Bahçelievler Ankara',
     note: 'Sufle',
+    highlights: ['Sufle'],
   },
   'cremahal-etimesgut': {
     id: 'cremahal-etimesgut',
@@ -6822,6 +7442,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'CremaHal Etimesgut Ankara',
     note: 'Supangle',
+    highlights: ['Supangle'],
   },
   'fethi-pasa-yenimahalle': {
     id: 'fethi-pasa-yenimahalle',
@@ -6833,6 +7454,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:30-00:00',
     mapQuery: 'Fethi Paşa Yenimahalle Ankara',
     note: 'Sütlac (Hamsiköy)',
+    highlights: ['Sütlac (Hamsiköy)'],
   },
   'gatto-mio-bahcelievler': {
     id: 'gatto-mio-bahcelievler',
@@ -6844,6 +7466,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:30',
     mapQuery: 'Gatto Mio Bahçelievler Ankara',
     note: 'Tiramisu',
+    highlights: ['Tiramisu'],
   },
   'sunco-umitkoy': {
     id: 'sunco-umitkoy',
@@ -6855,6 +7478,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:30',
     mapQuery: 'Sunco Ümitköy Ankara',
     note: 'Tiramisu',
+    highlights: ['Tiramisu'],
   },
   'coco-clavis-beytepe': {
     id: 'coco-clavis-beytepe',
@@ -6866,6 +7490,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-00:00',
     mapQuery: 'Coco Clavis Beytepe Ankara',
     note: 'Tiramisu',
+    highlights: ['Tiramisu'],
   },
   'callatte-coffee-beysukent': {
     id: 'callatte-coffee-beysukent',
@@ -6877,6 +7502,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-23:30',
     mapQuery: 'Callatte Coffee Beysukent Ankara',
     note: 'Bardak tiramisu; matcha tiramisu',
+    highlights: ['Bardak tiramisu; matcha tiramisu'],
   },
   'baskent-trilece-balgat': {
     id: 'baskent-trilece-balgat',
@@ -6888,6 +7514,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-20:30',
     mapQuery: 'Başkent Trileçe Balgat Ankara',
     note: 'Trileçe',
+    highlights: ['Trileçe'],
   },
   'milklac-arasta-avm': {
     id: 'milklac-arasta-avm',
@@ -6899,6 +7526,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-01:00',
     mapQuery: 'Milklac Arasta AVM Çankaya Ankara',
     note: 'Trileçe; balkabaklı tiramisu',
+    highlights: ['Trileçe; balkabaklı tiramisu'],
   },
   'waffle-levent-bahcelievler': {
     id: 'waffle-levent-bahcelievler',
@@ -6910,6 +7538,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Waffle Levent Bahçelievler Ankara',
     note: 'Waffle',
+    highlights: ['Waffle'],
   },
   'muslum-waffle-kizilay': {
     id: 'muslum-waffle-kizilay',
@@ -6921,6 +7550,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:30-23:30',
     mapQuery: 'Müslüm Waffle Kızılay Ankara',
     note: 'Waffle',
+    highlights: ['Waffle'],
   },
   'waffle-corner-cankaya': {
     id: 'waffle-corner-cankaya',
@@ -6932,6 +7562,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:30',
     mapQuery: 'Waffle Corner Çankaya Ankara',
     note: 'Waffle',
+    highlights: ['Waffle'],
   },
   'waffleberry-yenimahalle': {
     id: 'waffleberry-yenimahalle',
@@ -6943,6 +7574,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Waffleberry Yenimahalle Ankara',
     note: 'Waffle',
+    highlights: ['Waffle'],
   },
   'versando-bahcelievler': {
     id: 'versando-bahcelievler',
@@ -6954,6 +7586,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-00:00',
     mapQuery: 'Versando Bahçelievler Ankara',
     note: 'Everest waffle; Versando waffle; Ayers; Gusto',
+    highlights: ['Everest waffle; Versando waffle; Ayers; Gusto'],
   },
   'cito-waffle-balgat': {
     id: 'cito-waffle-balgat',
@@ -6965,6 +7598,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '15:00-00:00',
     mapQuery: 'Cito Waffle Balgat Ankara',
     note: 'Waffle',
+    highlights: ['Waffle'],
   },
   'a-la-luna-bahcelievler': {
     id: 'a-la-luna-bahcelievler',
@@ -6976,6 +7610,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-00:00',
     mapQuery: 'A la Luna Bahçelievler Ankara',
     note: 'Yaş pasta siparişi',
+    highlights: ['Yaş pasta siparişi'],
   },
   'vina-bakery-cankaya': {
     id: 'vina-bakery-cankaya',
@@ -6987,6 +7622,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-19:00',
     mapQuery: 'Vina Bakery Çankaya Ankara',
     note: 'Yaş pasta siparişi',
+    highlights: ['Yaş pasta siparişi'],
   },
   'pilita-pasta-evi-maltepe': {
     id: 'pilita-pasta-evi-maltepe',
@@ -6998,6 +7634,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-22:00',
     mapQuery: 'Pilita Pasta Evi Maltepe Ankara',
     note: 'Yaş pasta siparişi',
+    highlights: ['Yaş pasta siparişi'],
   },
   'example-kofte': {
     id: 'example-kofte',
@@ -7008,6 +7645,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Example Kofte Ankara',
     note: 'Izgara kofte odakli klasik lezzetler',
+    highlights: ['Izgara kofte odakli klasik lezzetler'],
   },
   'example-lahmacun': {
     id: 'example-lahmacun',
@@ -7018,6 +7656,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'closed',
     mapQuery: 'Example Lahmacun Ankara',
     note: 'Tas firin lahmacun ve pide',
+    highlights: ['Tas firin lahmacun ve pide'],
   },
   'yeni-firin-et-lokantasi': {
     id: 'yeni-firin-et-lokantasi',
@@ -7029,6 +7668,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:30',
     mapQuery: 'Yeni Fırın Et Lokantası Balgat Ankara',
     note: 'Elazığ güveç',
+    highlights: ['Elazığ güveç'],
   },
   'hatayli-rifat-usta': {
     id: 'hatayli-rifat-usta',
@@ -7040,6 +7680,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-20:30',
     mapQuery: 'Hataylı Rıfat Usta Öveçler Ankara',
     note: 'Hatay mutfağı',
+    highlights: ['Hatay mutfağı'],
   },
   'hatay-antakya-sofrasi': {
     id: 'hatay-antakya-sofrasi',
@@ -7051,6 +7692,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-21:00',
     mapQuery: 'Hatay Antakya Sofrası Etimesgut Ankara',
     note: 'Hatay mutfağı',
+    highlights: ['Hatay mutfağı'],
   },
   hattena: {
     id: 'hattena',
@@ -7062,6 +7704,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-22:00',
     mapQuery: 'Hattena Çankaya Ankara',
     note: 'Hatay mutfağı',
+    highlights: ['Hatay mutfağı'],
   },
   'kuzey-yildizi-pide': {
     id: 'kuzey-yildizi-pide',
@@ -7072,6 +7715,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Kuzey Yıldızı Pide Çankaya Ankara',
     note: 'Karadeniz pidesi',
+    highlights: ['Karadeniz pidesi'],
   },
   'guzel-karadeniz': {
     id: 'guzel-karadeniz',
@@ -7083,6 +7727,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Güzel Karadeniz Kızılay Ankara',
     note: 'Karadeniz pidesi',
+    highlights: ['Karadeniz pidesi'],
   },
   kardens: {
     id: 'kardens',
@@ -7094,6 +7739,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-21:30',
     mapQuery: 'Kardens Kızılay Ankara',
     note: 'Karadeniz pidesi',
+    highlights: ['Karadeniz pidesi'],
   },
   'izgar-yenimahalle': {
     id: 'izgar-yenimahalle',
@@ -7105,6 +7751,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-22:00',
     mapQuery: 'İzgar İskender Yenimahalle Ankara',
     note: 'İskender kavurma ve köfte',
+    highlights: ['İskender kavurma ve köfte'],
   },
   'hanimeli-sulu-yemek-iskitler': {
     id: 'hanimeli-sulu-yemek-iskitler',
@@ -7115,6 +7762,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     status: 'unknown',
     mapQuery: 'Hanımeli Sulu Yemek İskitler Ankara',
     note: 'Işıkilip dolması',
+    highlights: ['Işıkilip dolması'],
   },
   'yildiz-kestane-sekeri-cebeci': {
     id: 'yildiz-kestane-sekeri-cebeci',
@@ -7126,6 +7774,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-18:00',
     mapQuery: 'Yıldız Kestane Şekeri Cebeci Ankara',
     note: 'Kestane şekeri',
+    highlights: ['Kestane şekeri'],
   },
   'hum-ayranci': {
     id: 'hum-ayranci',
@@ -7137,6 +7786,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-19:00',
     mapQuery: 'Hum Ayrancı Ankara',
     note: 'Hamburger; Kore tostu (pastırmalı)',
+    highlights: ['Hamburger; Kore tostu (pastırmalı)'],
   },
   'harikulade-yasamkent': {
     id: 'harikulade-yasamkent',
@@ -7148,6 +7798,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-18:45',
     mapQuery: 'Harikulade Yaşamkent Ankara',
     note: 'Perde pilav',
+    highlights: ['Perde pilav'],
   },
   'simple-chocolate-kizilay': {
     id: 'simple-chocolate-kizilay',
@@ -7159,6 +7810,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Simple Chocolate Kızılay Ankara',
     note: 'Saksi tatlısı',
+    highlights: ['Saksi tatlısı'],
   },
   'bala-bake-house-mutlukent': {
     id: 'bala-bake-house-mutlukent',
@@ -7170,6 +7822,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-23:00',
     mapQuery: 'Bala Bake House Mutlukent Ankara',
     note: 'Sıcak çikolata',
+    highlights: ['Sıcak çikolata'],
   },
   'touyou-cayyolu': {
     id: 'touyou-cayyolu',
@@ -7181,6 +7834,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:30',
     mapQuery: 'Touyou Çayyolu Ankara',
     note: 'Susurluk tostu',
+    highlights: ['Susurluk tostu'],
   },
   'sayrem-tava-lezzetleri-kizilay': {
     id: 'sayrem-tava-lezzetleri-kizilay',
@@ -7192,6 +7846,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Sayrem Tava Lezzetleri Kızılay Ankara',
     note: 'Tava yemekleri',
+    highlights: ['Tava yemekleri'],
   },
   'lokanta-hatti-kizilay': {
     id: 'lokanta-hatti-kizilay',
@@ -7203,6 +7858,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Lokanta Hattı Kızılay Ankara',
     note: 'Vişneli köfte',
+    highlights: ['Vişneli köfte'],
   },
   'ankara-basasci-restoran-yenimahalle': {
     id: 'ankara-basasci-restoran-yenimahalle',
@@ -7214,6 +7870,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Ankara Başaşçı Restoran Yenimahalle Ankara',
     note: 'Yağlama',
+    highlights: ['Yağlama'],
   },
   'adiguzel-meyhane-cankaya': {
     id: 'adiguzel-meyhane-cankaya',
@@ -7225,6 +7882,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Adıgüzel Meyhane Çankaya Ankara',
     note: 'Yağlı kara',
+    highlights: ['Yağlı kara'],
   },
   'bizim-ev-mardinden': {
     id: 'bizim-ev-mardinden',
@@ -7236,6 +7894,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-21:00',
     mapQuery: 'Bizim Ev Mardinden Ümitköy Ankara',
     note: 'İşkembe dolması',
+    highlights: ['İşkembe dolması'],
   },
   'mardin-konagi': {
     id: 'mardin-konagi',
@@ -7247,6 +7906,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-00:30',
     mapQuery: 'Mardin Konağı Çankaya Ankara',
     note: 'Mardin sofrası',
+    highlights: ['Mardin sofrası'],
   },
   'bento-bagel-bilkent': {
     id: 'bento-bagel-bilkent',
@@ -7258,6 +7918,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-19:00',
     mapQuery: 'Bento Bilkent Ankara',
     note: 'Hardal bagel, incir bagel',
+    highlights: ['Hardal bagel, incir bagel'],
   },
   'borekci-huseyin-usta-altindag': {
     id: 'borekci-huseyin-usta-altindag',
@@ -7269,6 +7930,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-17:00',
     mapQuery: 'Börekçi Hüseyin Usta Altındağ Ankara',
     note: 'Börek',
+    highlights: ['Börek'],
   },
   'tarihi-han-borekcisi-ostim': {
     id: 'tarihi-han-borekcisi-ostim',
@@ -7280,6 +7942,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '04:00-20:00',
     mapQuery: 'Tarihi Han Börekçisi Ostim Ankara',
     note: 'Börek',
+    highlights: ['Börek'],
   },
   'durumcu-esnaf-cebeci': {
     id: 'durumcu-esnaf-cebeci',
@@ -7291,6 +7954,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:00',
     mapQuery: 'Dürümcü Esnaf Çebeci Ankara',
     note: 'Dürüm',
+    highlights: ['Dürüm'],
   },
   'durumcu-hanifi-baba-yenimahalle': {
     id: 'durumcu-hanifi-baba-yenimahalle',
@@ -7302,6 +7966,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-21:00',
     mapQuery: 'Dürümcü Hanifi Baba Yenimahalle Ankara',
     note: 'Dürüm',
+    highlights: ['Dürüm'],
   },
   'durumtek-iskitler': {
     id: 'durumtek-iskitler',
@@ -7313,6 +7978,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:00',
     mapQuery: 'Dürümtek İskitler Ankara',
     note: 'Dürüm',
+    highlights: ['Dürüm'],
   },
   'hatay-doner-mamak': {
     id: 'hatay-doner-mamak',
@@ -7324,6 +7990,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Hatay Döner Mamak Ankara',
     note: 'Dürüm',
+    highlights: ['Dürüm'],
   },
   'durumcu-ceto-yenimahalle': {
     id: 'durumcu-ceto-yenimahalle',
@@ -7335,6 +8002,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-02:00',
     mapQuery: 'Dürümcü Çeto Yenimahalle Ankara',
     note: 'Dürüm',
+    highlights: ['Dürüm'],
   },
   'kebo-bahcelievler': {
     id: 'kebo-bahcelievler',
@@ -7346,6 +8014,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:30',
     mapQuery: 'Kebo Bahçelievler Ankara',
     note: 'Dürüm',
+    highlights: ['Dürüm'],
   },
   'agah-cafe-bahcelievler': {
     id: 'agah-cafe-bahcelievler',
@@ -7357,6 +8026,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '06:00-19:00',
     mapQuery: 'Ağah Cafe Bahçelievler Ankara',
     note: 'Gözleme',
+    highlights: ['Gözleme'],
   },
   'cicek-gozleme-evi-cebeci': {
     id: 'cicek-gozleme-evi-cebeci',
@@ -7368,6 +8038,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-23:30',
     mapQuery: 'Çiçek Gözleme Evi Çebeci Ankara',
     note: 'Gözleme',
+    highlights: ['Gözleme'],
   },
   'kirik-okkava-fakulteler': {
     id: 'kirik-okkava-fakulteler',
@@ -7379,6 +8050,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-22:30',
     mapQuery: 'Kırık Okkava Fakülteler Ankara',
     note: 'Gözleme',
+    highlights: ['Gözleme'],
   },
   'sarwizan-cankaya': {
     id: 'sarwizan-cankaya',
@@ -7390,6 +8062,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-19:00',
     mapQuery: 'Sarwizan Çankaya Ankara',
     note: 'Kuru fasulye; kete',
+    highlights: ['Kuru fasulye; kete'],
   },
   'meshur-karadenizli-dursun-usta-siteler': {
     id: 'meshur-karadenizli-dursun-usta-siteler',
@@ -7401,6 +8074,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-19:00',
     mapQuery: 'Meşhur Karadenizli Dursun Usta Siteler Ankara',
     note: 'Kuru fasulye',
+    highlights: ['Kuru fasulye'],
   },
   'taka-restorant-yenimahalle': {
     id: 'taka-restorant-yenimahalle',
@@ -7412,6 +8086,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:00-22:30',
     mapQuery: 'Taka Restorant Yenimahalle Ankara',
     note: 'Kuru fasulye',
+    highlights: ['Kuru fasulye'],
   },
   'husrev-balgat': {
     id: 'husrev-balgat',
@@ -7423,6 +8098,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-22:00',
     mapQuery: 'Hüsrev Balgat Ankara',
     note: 'Kuru fasulye',
+    highlights: ['Kuru fasulye'],
   },
   'cruffin-bahcelievler': {
     id: 'cruffin-bahcelievler',
@@ -7434,6 +8110,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-23:00',
     mapQuery: 'Cruffin Bahçelievler Ankara',
     note: 'Çilek limon danish, limoncello cruffin, ekler',
+    highlights: ['Çilek limon danish, limoncello cruffin, ekler'],
   },
   'kruvasante-umitkoy': {
     id: 'kruvasante-umitkoy',
@@ -7445,6 +8122,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:30-22:30',
     mapQuery: 'Kruvasante Ümitköy Ankara',
     note: 'Kruvasan',
+    highlights: ['Kruvasan'],
   },
   'zemhery-umitkoy': {
     id: 'zemhery-umitkoy',
@@ -7456,6 +8134,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:00-23:00',
     mapQuery: 'Zemhery Ümitköy Ankara',
     note: 'Kruvasan',
+    highlights: ['Kruvasan'],
   },
   'ravi-bahcelievler': {
     id: 'ravi-bahcelievler',
@@ -7467,6 +8146,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-21:45',
     mapQuery: 'Ravi Bahçelievler Ankara',
     note: 'Makarna',
+    highlights: ['Makarna'],
   },
   'pastini-balgat': {
     id: 'pastini-balgat',
@@ -7478,6 +8158,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:00',
     mapQuery: 'Pastini Balgat Ankara',
     note: 'Acı mandalinalı tavuk',
+    highlights: ['Acı mandalinalı tavuk'],
   },
   'prm-cheese-eryaman': {
     id: 'prm-cheese-eryaman',
@@ -7489,6 +8170,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-21:30',
     mapQuery: 'Prm Cheese Eryaman Ankara',
     note: 'Makarna',
+    highlights: ['Makarna'],
   },
   'meze-kulubu-eryaman': {
     id: 'meze-kulubu-eryaman',
@@ -7500,6 +8182,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '13:00-21:30',
     mapQuery: 'Meze Kulübü Eryaman Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'meze-yesek-beysukent': {
     id: 'meze-yesek-beysukent',
@@ -7511,6 +8194,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Meze Yeşek Beysukent Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'hatay-meze-evi-emek': {
     id: 'hatay-meze-evi-emek',
@@ -7522,6 +8206,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Hatay Meze Evi Emek Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'ata-meze-evi-yenimahalle': {
     id: 'ata-meze-evi-yenimahalle',
@@ -7533,6 +8218,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:30-23:30',
     mapQuery: 'Ata Meze Evi Yenimahalle Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'villa-meze-incek': {
     id: 'villa-meze-incek',
@@ -7544,6 +8230,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '10:00-22:00',
     mapQuery: 'Villa Meze İncek Ankara',
     note: 'Sultan ezme, levrek mantı, Arnavut ciğeri',
+    highlights: ['Sultan ezme, levrek mantı, Arnavut ciğeri'],
   },
   'epigevsi-meze-cankaya': {
     id: 'epigevsi-meze-cankaya',
@@ -7555,6 +8242,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:30-21:00',
     mapQuery: 'Epigevsi Meze Çankaya Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'mezzelye-bahcelievler': {
     id: 'mezzelye-bahcelievler',
@@ -7566,6 +8254,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '07:30-22:00',
     mapQuery: 'Mezzelye Bahçelievler Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'mezyevi-yenimahalle': {
     id: 'mezyevi-yenimahalle',
@@ -7577,6 +8266,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-21:00',
     mapQuery: 'Mezyevi Yenimahalle Ankara',
     note: 'Meze',
+    highlights: ['Meze'],
   },
   'guderler-et-mangal-golbasi': {
     id: 'guderler-et-mangal-golbasi',
@@ -7588,6 +8278,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-21:00',
     mapQuery: 'Güderler Et Mangal Gölbaşı Ankara',
     note: 'Mangal',
+    highlights: ['Mangal'],
   },
   'kusbasi-modern-ocakbasi-yildiz': {
     id: 'kusbasi-modern-ocakbasi-yildiz',
@@ -7599,6 +8290,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '15:00-00:00',
     mapQuery: 'Kuşbaşı Modern Ocakbaşı Yıldız Ankara',
     note: 'Ocakbaşı',
+    highlights: ['Ocakbaşı'],
   },
   'afitap-muhur-ocakbasi-yenimahalle': {
     id: 'afitap-muhur-ocakbasi-yenimahalle',
@@ -7610,6 +8302,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-01:00',
     mapQuery: 'Afitap Mühür Ocakbaşı Yenimahalle Ankara',
     note: 'Ocakbaşı',
+    highlights: ['Ocakbaşı'],
   },
   'kaliruha-ocakbasi-oran': {
     id: 'kaliruha-ocakbasi-oran',
@@ -7621,6 +8314,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '12:00-00:00',
     mapQuery: 'Kaliruha Ocakbaşı Oran Ankara',
     note: 'Girit ezmesi, fıstıklı kebap',
+    highlights: ['Girit ezmesi, fıstıklı kebap'],
   },
   'yeni-nesil-kanatci-etimesgut': {
     id: 'yeni-nesil-kanatci-etimesgut',
@@ -7632,6 +8326,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-23:00',
     mapQuery: 'Yeni Nesil Kanatçı Etimesgut Ankara',
     note: 'Mangal',
+    highlights: ['Mangal'],
   },
   'cinaralti-mangalbasi-umitkoy': {
     id: 'cinaralti-mangalbasi-umitkoy',
@@ -7643,6 +8338,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '11:00-00:30',
     mapQuery: 'Çınaraltı Mangalbaşı Ümitköy Ankara',
     note: 'Mangal',
+    highlights: ['Mangal'],
   },
   'gaziantepli-meshur-nohutcu-sihhiye': {
     id: 'gaziantepli-meshur-nohutcu-sihhiye',
@@ -7654,6 +8350,7 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '09:00-19:30',
     mapQuery: 'Gaziantepli Meşhur Nohutçu Sıhhiye Ankara',
     note: 'Nohut',
+    highlights: ['Nohut'],
   },
   'qukies-bahcelievler': {
     id: 'qukies-bahcelievler',
@@ -7665,5 +8362,6 @@ export const RESTAURANTS: Record<RestaurantId, Restaurant> = {
     hours: '08:30-22:00',
     mapQuery: "Qukie's Bahçelievler Ankara",
     note: 'Qukies',
+    highlights: ['Qukies'],
   },
 };

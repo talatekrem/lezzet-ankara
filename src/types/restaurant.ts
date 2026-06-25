@@ -10,4 +10,5 @@ export interface Restaurant {
   hours?: string;
   mapQuery: string;
   note?: string;
+  highlights: string[];
 }

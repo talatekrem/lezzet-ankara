@@ -1,9 +1,9 @@
 import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import { CategoriesScreen } from '../screens/CategoriesScreen';
-import { RestaurantsScreen } from '../screens/RestaurantsScreen';
+import { RestaurantDetailScreen } from '../screens/RestaurantDetailScreen';
 import { COLORS } from '../theme';
+import { MainTabNavigator } from './MainTabNavigator';
 import type { RootStackParamList } from './types';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -23,12 +23,12 @@ const navigationTheme = {
 export function AppNavigator() {
   return (
     <NavigationContainer theme={navigationTheme}>
-      <Stack.Navigator
-        initialRouteName="Categories"
-        screenOptions={{ headerShown: false }}
-      >
-        <Stack.Screen component={CategoriesScreen} name="Categories" />
-        <Stack.Screen component={RestaurantsScreen} name="Restaurants" />
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen component={MainTabNavigator} name="MainTabs" />
+        <Stack.Screen
+          component={RestaurantDetailScreen}
+          name="RestaurantDetail"
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

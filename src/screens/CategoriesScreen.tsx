@@ -1,17 +1,17 @@
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
 
-import TitleUnderline from '../../assets/decor/title-underline.svg';
+import { TitleUnderline } from '../icons';
 import { CategoryCard } from '../components/category/CategoryCard';
 import { Screen } from '../components/layout/Screen';
 import { getAllCategories } from '../data';
-import type { RootStackParamList } from '../navigation/types';
+import type { ExploreStackParamList } from '../navigation/types';
 import { COLORS, SPACING, TYPOGRAPHY } from '../theme';
 
 const categories = getAllCategories();
 
 type CategoriesScreenProps = NativeStackScreenProps<
-  RootStackParamList,
+  ExploreStackParamList,
   'Categories'
 >;
 
@@ -20,6 +20,7 @@ export function CategoriesScreen({ navigation }: CategoriesScreenProps) {
     <Screen
       scroll
       contentContainerStyle={styles.content}
+      edges={['top', 'left', 'right']}
       scrollViewProps={{ showsVerticalScrollIndicator: false }}
     >
       <View style={styles.header}>

@@ -7,8 +7,8 @@
     "icon": "./assets/icon 2.png",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
+      "image": "./assets/splash-lezzet-ankara.png",
+      "resizeMode": "cover",
       "backgroundColor": "#16171D"
     },
     "ios": {
@@ -30,6 +30,24 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-lezzet-ankara.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#16171D",
+          "enableFullScreenImage_legacy": true,
+          "ios": {
+            "image": "./assets/splash-lezzet-ankara.png",
+            "backgroundColor": "#16171D"
+          },
+          "android": {
+            "image": "./assets/splash-lezzet-ankara.png",
+            "backgroundColor": "#16171D",
+            "resizeMode": "cover"
+          }
+        }
+      ],
       [
         "expo-font",
         {

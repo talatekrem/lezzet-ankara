@@ -1,21 +1,28 @@
+import type { CompositeScreenProps } from '@react-navigation/native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { useState } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { useMemo, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-import RightArrowIcon from '../../assets/icons/right-arrow.svg';
 import { CategoryCard } from '../components/category/CategoryCard';
-import { RestaurantCard } from '../components/restaurant/RestaurantCard';
 import { Screen } from '../components/layout/Screen';
+import { ScreenHeader } from '../components/layout/ScreenHeader';
+import { RestaurantCard } from '../components/restaurant/RestaurantCard';
+import { RestaurantFilters } from '../components/restaurant/RestaurantFilters';
 import { AppAlert } from '../components/ui/AppAlert';
-import { getCategoryById, getRestaurantsByCategoryId } from '../data';
-import type { RootStackParamList } from '../navigation/types';
-import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../theme';
+import {
+  categoryHasRestaurants,
+  getCategoryById,
+  getRestaurantsByCategoryId,
+} from '../data';
+import { useMapReminder } from '../hooks/useMapReminder';
+import type { ExploreStackParamList, RootStackParamList } from '../navigation/types';
+import { COLORS, SPACING, TYPOGRAPHY } from '../theme';
 import type { Restaurant } from '../types';
-import { openRestaurantLocation } from '../utils/maps';
+import { isRestaurantOpenNow } from '../utils/restaurantStatus';
 
-type RestaurantsScreenProps = NativeStackScreenProps<
-  RootStackParamList,
-  'Restaurants'
+type RestaurantsScreenProps = CompositeScreenProps<
+  NativeStackScreenProps<ExploreStackParamList, 'Restaurants'>,
+  NativeStackScreenProps<RootStackParamList>
 >;
 
 export function RestaurantsScreen({
@@ -26,68 +33,77 @@ export function RestaurantsScreen({
   const category = getCategoryById(categoryId);
   const restaurants = getRestaurantsByCategoryId(categoryId);
   const title = category?.name.toLocaleUpperCase('tr-TR') ?? 'KATEGORİ';
-  const subcategories = category?.subcategories ?? [];
+  const subcategories = (category?.subcategories ?? []).filter(
+    categoryHasRestaurants,
+  );
   const hasSubcategories = subcategories.length > 0;
   const shouldShowRanks = !hasSubcategories && restaurants.length > 4;
-  const [mapReminderVisible, setMapReminderVisible] = useState(false);
-  const [pendingMapQuery, setPendingMapQuery] = useState<string | null>(null);
+  const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
+  const [openNowOnly, setOpenNowOnly] = useState(false);
+  const {
+    mapReminderVisible,
+    requestMapOpen,
+    dismissMapReminder,
+    confirmMapReminder,
+  } = useMapReminder();
 
-  function handleMapPress(restaurant: Restaurant) {
-    setPendingMapQuery(restaurant.mapQuery);
-    setMapReminderVisible(true);
-  }
+  const districts = useMemo(
+    () =>
+      [...new Set(restaurants.map((restaurant) => restaurant.district))]
+        .filter(Boolean)
+        .sort((left, right) => left.localeCompare(right, 'tr')),
+    [restaurants],
+  );
 
-  function handleMapReminderDismiss() {
-    setMapReminderVisible(false);
-    setPendingMapQuery(null);
-  }
+  const filteredRestaurants = useMemo(() => {
+    return restaurants.filter((restaurant) => {
+      if (selectedDistrict && restaurant.district !== selectedDistrict) {
+        return false;
+      }
 
-  function handleMapReminderConfirm() {
-    const mapQuery = pendingMapQuery;
+      if (openNowOnly && !isRestaurantOpenNow(restaurant)) {
+        return false;
+      }
 
-    setMapReminderVisible(false);
-    setPendingMapQuery(null);
+      return true;
+    });
+  }, [openNowOnly, restaurants, selectedDistrict]);
 
-    if (mapQuery) {
-      void openRestaurantLocation(mapQuery);
-    }
+  function openRestaurant(restaurant: Restaurant, index: number) {
+    navigation.navigate('RestaurantDetail', {
+      restaurantId: restaurant.id,
+      categoryId,
+      rank: shouldShowRanks ? index + 1 : undefined,
+    });
   }
 
   return (
     <>
-    <Screen
-      scroll
-      contentContainerStyle={styles.content}
-      scrollViewProps={{ showsVerticalScrollIndicator: false }}
-    >
-      <View style={styles.header}>
-        <Pressable
-          accessibilityLabel="Back to categories"
-          accessibilityRole="button"
-          onPress={navigation.goBack}
-          style={({ pressed }) => [
-            styles.backButton,
-            pressed && styles.pressed,
-          ]}
-        >
-          <RightArrowIcon height={16} style={styles.backIcon} width={16} />
-        </Pressable>
+      <Screen
+        scroll
+        contentContainerStyle={styles.content}
+        edges={['top', 'left', 'right']}
+        scrollViewProps={{ showsVerticalScrollIndicator: false }}
+      >
+        <ScreenHeader
+          onBack={navigation.goBack}
+          subtitle={category?.description}
+          title={title}
+        />
 
-        <View style={styles.titleWrap}>
-          <Text allowFontScaling={false} style={styles.title}>
-            {title}
-          </Text>
-          {category?.description ? (
-            <Text allowFontScaling={false} style={styles.subtitle}>
-              {category.description}
-            </Text>
-          ) : null}
-        </View>
-      </View>
+        {!hasSubcategories && restaurants.length > 0 ? (
+          <RestaurantFilters
+            districts={districts}
+            openNowOnly={openNowOnly}
+            selectedDistrict={selectedDistrict}
+            onDistrictChange={setSelectedDistrict}
+            onOpenNowChange={setOpenNowOnly}
+          />
+        ) : null}
 
-      <View style={styles.list}>
-        {hasSubcategories
-          ? subcategories.map((subcategory) => (
+        <View style={styles.list}>
+          {hasSubcategories ? (
+            subcategories.map((subcategory) => (
               <CategoryCard
                 category={subcategory}
                 key={subcategory.id}
@@ -98,27 +114,39 @@ export function RestaurantsScreen({
                 }
               />
             ))
-          : restaurants.map((restaurant, index) => (
+          ) : filteredRestaurants.length === 0 ? (
+            <View style={styles.emptyState}>
+              <Text allowFontScaling={false} style={styles.emptyTitle}>
+                Sonuç bulunamadı
+              </Text>
+              <Text allowFontScaling={false} style={styles.emptyBody}>
+                Filtreleri değiştirerek tekrar deneyin.
+              </Text>
+            </View>
+          ) : (
+            filteredRestaurants.map((restaurant, index) => (
               <RestaurantCard
                 key={restaurant.id}
-                onMapPress={handleMapPress}
+                onMapPress={(item) => requestMapOpen(item.mapQuery)}
+                onPress={(item) => openRestaurant(item, index)}
                 rank={shouldShowRanks ? index + 1 : undefined}
                 restaurant={restaurant}
               />
-            ))}
-      </View>
-    </Screen>
+            ))
+          )}
+        </View>
+      </Screen>
 
-    <AppAlert
-      cancelLabel="Vazgeç"
-      confirmLabel="Haritada Aç"
-      message="Yola çıkmadan önce mekânı arayarak açılış ve kapanış saatlerini teyit etmenizi rica ederiz."
-      onCancel={handleMapReminderDismiss}
-      onConfirm={handleMapReminderConfirm}
-      title="HATIRLATMA"
-      visible={mapReminderVisible}
-    />
-  </>
+      <AppAlert
+        cancelLabel="Vazgeç"
+        confirmLabel="Haritada Aç"
+        message="Yola çıkmadan önce mekânı arayarak açılış ve kapanış saatlerini teyit etmenizi rica ederiz."
+        onCancel={dismissMapReminder}
+        onConfirm={confirmMapReminder}
+        title="HATIRLATMA"
+        visible={mapReminderVisible}
+      />
+    </>
   );
 }
 
@@ -127,49 +155,26 @@ const styles = StyleSheet.create({
     paddingBottom: SPACING.xxl,
     paddingTop: SPACING.lg,
   },
-  header: {
-    marginBottom: SPACING.md,
-  },
-  backButton: {
-    alignItems: 'center',
-    backgroundColor: COLORS.surface,
-    borderColor: COLORS.borderGoldSoft,
-    borderRadius: RADIUS.sm,
-    borderWidth: StyleSheet.hairlineWidth,
-    height: 38,
-    justifyContent: 'center',
-    shadowColor: COLORS.accentGoldStart,
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.08,
-    shadowRadius: 6,
-    width: 38,
-  },
-  backIcon: {
-    transform: [{ rotate: '180deg' }],
-  },
-  titleWrap: {
-    alignItems: 'center',
-    marginTop: SPACING.sm,
-  },
-  title: {
-    ...TYPOGRAPHY.screenTitle,
-    color: COLORS.screenTitle,
-    fontFamily: TYPOGRAPHY.meta.fontFamily,
-    fontSize: 24,
-    letterSpacing: 7,
-    lineHeight: 30,
-    textAlign: 'center',
-  },
-  subtitle: {
-    ...TYPOGRAPHY.meta,
-    letterSpacing: 0.25,
-    marginTop: SPACING.sm,
-    textAlign: 'center',
-  },
   list: {
     gap: SPACING.md,
   },
-  pressed: {
-    opacity: 0.78,
+  emptyState: {
+    alignItems: 'center',
+    gap: SPACING.sm,
+    paddingHorizontal: SPACING.md,
+    paddingTop: SPACING.xl,
+  },
+  emptyTitle: {
+    ...TYPOGRAPHY.restaurantName,
+    color: COLORS.screenTitle,
+    fontSize: 18,
+    textAlign: 'center',
+  },
+  emptyBody: {
+    ...TYPOGRAPHY.meta,
+    color: COLORS.textMuted,
+    fontSize: 14,
+    lineHeight: 20,
+    textAlign: 'center',
   },
 });

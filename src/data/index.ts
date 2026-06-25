@@ -1,7 +1,22 @@
+import {
+  categoryHasRestaurants,
+  getBrowsableCategories,
+  getCategoryLabelsForRestaurant,
+  getCategoryPathLabel,
+} from './categoryBrowse';
 import { CATEGORIES } from './categories';
 import { RESTAURANTS } from './restaurants';
+import { searchRestaurants } from './search';
 import type { Category, CategoryId, Restaurant, RestaurantId } from '../types';
 import { compareRestaurantsForDisplay } from '../utils/restaurantRanking';
+
+export {
+  categoryHasRestaurants,
+  getBrowsableCategories,
+  getCategoryLabelsForRestaurant,
+  getCategoryPathLabel,
+  searchRestaurants,
+};
 
 export function getRestaurantById(id: RestaurantId): Restaurant | undefined {
   return RESTAURANTS[id];
@@ -39,7 +54,7 @@ export function getCategoryById(id: CategoryId): Category | undefined {
 }
 
 export function getAllCategories(): Category[] {
-  return CATEGORIES;
+  return getBrowsableCategories();
 }
 
 function findCategoryById(

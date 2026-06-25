@@ -1,20 +1,17 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-import MapIcon from '../../../assets/icons/map.svg';
-import { COLORS, FONT_FAMILY, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
+import { MapIcon } from '../../icons';
+import { COLORS, RADIUS, SPACING, TYPOGRAPHY } from '../../theme';
 import type { Restaurant } from '../../types';
+import { getDisplayStatus } from '../../utils/restaurantStatus';
+import { StatusBadge } from './StatusBadge';
 
 type RestaurantCardProps = {
   restaurant: Restaurant;
+  onPress?: (restaurant: Restaurant) => void;
   onMapPress: (restaurant: Restaurant) => void;
   rank?: number;
-};
-
-const STATUS_LABELS: Record<Restaurant['status'], string> = {
-  open: 'Açık',
-  closed: 'Kapalı',
-  unknown: 'Bilinmiyor',
 };
 
 const MAP_BUTTON_GRADIENT = [
@@ -27,6 +24,7 @@ const MAP_BUTTON_ICON_TEXT_GAP = 12;
 
 export function RestaurantCard({
   restaurant,
+  onPress,
   onMapPress,
   rank,
 }: RestaurantCardProps) {
@@ -34,62 +32,72 @@ export function RestaurantCard({
 
   return (
     <View style={styles.card}>
-      <View style={styles.header}>
-        <View style={styles.headerRow}>
-          <View style={styles.headerMain}>
-            <View style={styles.titleRow}>
-              {rank != null ? (
-                <Text allowFontScaling={false} style={styles.rank}>
-                  {rank}
+      <Pressable
+        accessibilityRole="button"
+        disabled={!onPress}
+        onPress={() => onPress?.(restaurant)}
+        style={({ pressed }) => [
+          styles.headerPressable,
+          pressed && onPress && styles.pressed,
+        ]}
+      >
+        <View style={styles.header}>
+          <View style={styles.headerRow}>
+            <View style={styles.headerMain}>
+              <View style={styles.titleRow}>
+                {rank != null ? (
+                  <Text allowFontScaling={false} style={styles.rank}>
+                    {rank}
+                  </Text>
+                ) : null}
+                <Text allowFontScaling={false} numberOfLines={1} style={styles.name}>
+                  {restaurant.name}
                 </Text>
-              ) : null}
-              <Text allowFontScaling={false} numberOfLines={1} style={styles.name}>
-                {restaurant.name}
-              </Text>
+              </View>
+            </View>
+
+            <View style={styles.badgeWrap}>
+              <StatusBadge status={displayStatus} />
             </View>
           </View>
 
-          <View style={styles.badgeWrap}>
-            <StatusBadge status={displayStatus} />
-          </View>
-        </View>
-
-        <View style={styles.metaRow}>
-          <Text allowFontScaling={false} numberOfLines={1} style={styles.meta}>
-            {restaurant.district ? (
-              <>
-                <Text>{restaurant.district}</Text>
-                <Text>{' / '}</Text>
-              </>
+          <View style={styles.metaRow}>
+            <Text allowFontScaling={false} numberOfLines={1} style={styles.meta}>
+              {restaurant.district ? (
+                <>
+                  <Text>{restaurant.district}</Text>
+                  <Text>{' / '}</Text>
+                </>
+              ) : null}
+              <Text>puan </Text>
+              <Text style={styles.metaHighlight}>
+                {restaurant.rating.toFixed(1)}
+              </Text>
+              <Text>{' / yorum '}</Text>
+              <Text style={styles.metaHighlight}>
+                {restaurant.reviewCount}
+              </Text>
+            </Text>
+            {restaurant.hours ? (
+              <Text
+                adjustsFontSizeToFit
+                allowFontScaling={false}
+                numberOfLines={1}
+                minimumFontScale={0.85}
+                style={styles.hoursText}
+              >
+                {restaurant.hours}
+              </Text>
             ) : null}
-            <Text>puan </Text>
-            <Text style={styles.metaHighlight}>
-              {restaurant.rating.toFixed(1)}
-            </Text>
-            <Text>{' / yorum '}</Text>
-            <Text style={styles.metaHighlight}>
-              {restaurant.reviewCount}
-            </Text>
-          </Text>
-          {restaurant.hours ? (
-            <Text
-              adjustsFontSizeToFit
-              allowFontScaling={false}
-              numberOfLines={1}
-              minimumFontScale={0.85}
-              style={styles.hoursText}
-            >
-              {restaurant.hours}
+          </View>
+
+          {restaurant.note ? (
+            <Text allowFontScaling={false} numberOfLines={1} style={styles.note}>
+              {restaurant.note}
             </Text>
           ) : null}
         </View>
-
-        {restaurant.note ? (
-          <Text allowFontScaling={false} numberOfLines={1} style={styles.note}>
-            {restaurant.note}
-          </Text>
-        ) : null}
-      </View>
+      </Pressable>
 
       <Pressable
         accessibilityRole="button"
@@ -116,49 +124,6 @@ export function RestaurantCard({
   );
 }
 
-function getDisplayStatus(restaurant: Restaurant): Restaurant['status'] {
-  if (!restaurant.hours) {
-    return restaurant.status;
-  }
-
-  const hoursStatus = getStatusFromHours(restaurant.hours);
-  return hoursStatus ?? restaurant.status;
-}
-
-function getStatusFromHours(hours: string): Restaurant['status'] | undefined {
-  const match = hours.match(/^(\d{2}):(\d{2})-(\d{2}):(\d{2})$/);
-
-  if (!match) {
-    return undefined;
-  }
-
-  const [, openHour, openMinute, closeHour, closeMinute] = match;
-  const openMinutes = Number(openHour) * 60 + Number(openMinute);
-  const closeMinutes = Number(closeHour) * 60 + Number(closeMinute);
-  const now = new Date();
-  const currentMinutes = now.getHours() * 60 + now.getMinutes();
-
-  const isOpen =
-    closeMinutes > openMinutes
-      ? currentMinutes >= openMinutes && currentMinutes < closeMinutes
-      : currentMinutes >= openMinutes || currentMinutes < closeMinutes;
-
-  return isOpen ? 'open' : 'closed';
-}
-
-function StatusBadge({ status }: Pick<Restaurant, 'status'>) {
-  return (
-    <View style={[styles.badge, styles[status]]}>
-      <Text
-        allowFontScaling={false}
-        style={[styles.badgeText, styles[`${status}Text`]]}
-      >
-        {STATUS_LABELS[status]}
-      </Text>
-    </View>
-  );
-}
-
 const styles = StyleSheet.create({
   card: {
     backgroundColor: COLORS.surface,
@@ -172,9 +137,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.035,
     shadowRadius: 9,
   },
-  header: {
+  headerPressable: {
     marginBottom: 18,
   },
+  header: {},
   headerRow: {
     alignItems: 'flex-start',
     flexDirection: 'row',
@@ -253,41 +219,6 @@ const styles = StyleSheet.create({
     fontSize: 10,
     lineHeight: 14,
     marginTop: 2,
-  },
-  badge: {
-    backgroundColor: COLORS.badgeSubtle,
-    borderRadius: RADIUS.pill,
-    borderWidth: StyleSheet.hairlineWidth,
-    paddingHorizontal: 8,
-    paddingVertical: 3,
-  },
-  open: {
-    backgroundColor: COLORS.badgeOpenTint,
-    borderColor: COLORS.badgeOpenBorder,
-  },
-  closed: {
-    backgroundColor: COLORS.badgeClosedTint,
-    borderColor: COLORS.badgeClosedBorder,
-  },
-  unknown: {
-    backgroundColor: COLORS.badgeSubtle,
-    borderColor: COLORS.badgeMutedBorder,
-  },
-  badgeText: {
-    ...TYPOGRAPHY.meta,
-    fontFamily: FONT_FAMILY.interMedium,
-    fontSize: 10,
-    lineHeight: 13,
-    letterSpacing: 0.38,
-  },
-  openText: {
-    color: COLORS.badgeOpenText,
-  },
-  closedText: {
-    color: COLORS.badgeClosedText,
-  },
-  unknownText: {
-    color: COLORS.textSecondary,
   },
   mapButtonPressable: {
     borderRadius: RADIUS.pill,
